@@ -69,8 +69,8 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
 }
 
 // Kategori filtresi
-function kategoriFiltre(kat) {
+function kategoriFiltre(btn, kat) {
   document.querySelectorAll(".kat-btn").forEach(b => b.classList.remove("active"));
-  event.target.classList.add("active");
+  btn.classList.add("active");
   urunleriYukle("urun-grid", 0, kat === "hepsi" ? null : kat);
 }

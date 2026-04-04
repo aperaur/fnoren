@@ -6,34 +6,33 @@
   <meta name="description" content="Fnoren ürün kataloğu — 304 paslanmaz çelik mutfak ve banyo aksesuarları.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src https://aperaur-production.up.railway.app; img-src 'self' data: https://cdn.shopier.app;">
   <title>Ürünler — Fnoren</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
-  <style>
-    .filter-bar { display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:2rem; }
-    .kat-btn { background:transparent; border:1px solid var(--border); color:var(--muted); padding:0.4rem 1rem; font-family:'Rajdhani',sans-serif; font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; border-radius:var(--radius); }
-    .kat-btn:hover, .kat-btn.active { border-color:var(--accent); color:var(--accent); }
-  </style>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo">Fnoren</a>
   <ul class="nav-links">
-    <li><a href="urunler.html" style="color:var(--accent)">Ürünler</a></li>
+    <li><a href="urunler.html" class="active">Ürünler</a></li>
     <li><a href="hakkimizda.html">Hakkımızda</a></li>
     <li><a href="iletisim.html">İletişim</a></li>
   </ul>
 </nav>
 
-<section style="padding-top:7rem">
+<section class="section" style="padding-top:calc(var(--nav-h) + 4rem)">
   <div class="container">
-    <div class="section-label">Koleksiyon</div>
-    <h2>Tüm Ürünler</h2>
-    <div class="divider"></div>
+    <span class="label">Koleksiyon</span>
+    <h2 style="margin-top:0.5rem;margin-bottom:1.5rem">Tüm Ürünler</h2>
+    <hr class="divider">
 
     <div class="filter-bar">
-      <button class="kat-btn active" onclick="kategoriFiltre('hepsi')">Hepsi</button>
-      <button class="kat-btn" onclick="kategoriFiltre('mutfak')">Mutfak</button>
-      <button class="kat-btn" onclick="kategoriFiltre('banyo')">Banyo</button>
+      <button class="kat-btn active" onclick="kategoriFiltre(this,'hepsi')">Hepsi</button>
+      <button class="kat-btn" onclick="kategoriFiltre(this,'mutfak')">Mutfak</button>
+      <button class="kat-btn" onclick="kategoriFiltre(this,'banyo')">Banyo</button>
+      <button class="kat-btn" onclick="kategoriFiltre(this,'giris')">Giriş</button>
     </div>
 
     <div class="urun-grid" id="urun-grid"></div>
@@ -42,25 +41,29 @@
 
 <footer>
   <div class="footer-inner">
-    <span>© 2026 Fnoren — Bursa, TR</span>
-    <div style="display:flex;gap:1.5rem">
+    <span>© 2026 Fnoren</span>
+    <div class="footer-links">
       <a href="urunler.html">Ürünler</a>
       <a href="hakkimizda.html">Hakkımızda</a>
       <a href="iletisim.html">İletişim</a>
     </div>
-    <span>304 Paslanmaz Çelik</span>
+    <span>Bursa, TR — 304 Paslanmaz Çelik</span>
   </div>
 </footer>
 
-<button id="chat-toggle" title="Destek">💬</button>
+<button id="chat-toggle" title="Destek" aria-label="Destek">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </svg>
+</button>
 <div id="chat-panel">
   <div class="chat-header">
     <span>Fnoren Destek</span>
-    <button id="chat-close" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:1rem">✕</button>
+    <button id="chat-close" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:1rem;line-height:1">✕</button>
   </div>
   <div class="chat-msgs" id="chat-msgs"></div>
   <div class="chat-input-row">
-    <input id="chat-input" type="text" placeholder="Bir soru sorun..." autocomplete="off">
+    <input id="chat-input" type="text" placeholder="Soru sorun..." autocomplete="off">
     <button id="chat-send">→</button>
   </div>
 </div>

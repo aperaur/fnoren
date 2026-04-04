@@ -4,23 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>İletişim — Fnoren</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+
 <nav>
   <a href="index.html" class="nav-logo">Fnoren</a>
   <ul class="nav-links">
     <li><a href="urunler.html">Ürünler</a></li>
     <li><a href="hakkimizda.html">Hakkımızda</a></li>
-    <li><a href="iletisim.html" style="color:var(--accent)">İletişim</a></li>
+    <li><a href="iletisim.html" class="active">İletişim</a></li>
   </ul>
 </nav>
 
-<section style="padding-top:7rem">
-  <div class="container" style="max-width:600px">
-    <div class="section-label fade-in">İletişim</div>
-    <h2 class="fade-in">Bize Ulaşın</h2>
-    <div class="divider fade-in"></div>
+<section class="section" style="padding-top:calc(var(--nav-h) + 4rem)">
+  <div class="container" style="max-width:580px">
+    <span class="label fade-in">İletişim</span>
+    <h2 class="fade-in" style="margin-top:0.5rem">Bize Ulaşın</h2>
+    <hr class="divider fade-in">
 
     <form action="https://formspree.io/f/FORM_ID" method="POST" class="fade-in">
       <div class="form-group">
@@ -38,24 +42,25 @@
       <button type="submit" class="btn btn-primary">Gönder →</button>
     </form>
 
-    <div style="margin-top:3rem;color:var(--muted);font-size:0.88rem" class="fade-in">
-      <p>📧 <a href="mailto:fnoreforms@gmail.com" style="color:var(--muted)">fnoreforms@gmail.com</a></p>
-      <p style="margin-top:0.5rem">📍 Bursa, Türkiye</p>
+    <div style="margin-top:3rem;display:flex;flex-direction:column;gap:0.5rem" class="fade-in">
+      <a href="mailto:fnoreforms@gmail.com" style="font-size:0.8125rem;color:var(--muted)">fnoreforms@gmail.com</a>
+      <span style="font-size:0.8125rem;color:var(--muted)">Bursa, Türkiye</span>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-inner">
-    <span>© 2026 Fnoren — Bursa, TR</span>
-    <div style="display:flex;gap:1.5rem">
+    <span>© 2026 Fnoren</span>
+    <div class="footer-links">
       <a href="urunler.html">Ürünler</a>
       <a href="hakkimizda.html">Hakkımızda</a>
       <a href="iletisim.html">İletişim</a>
     </div>
-    <span>304 Paslanmaz Çelik</span>
+    <span>Bursa, TR — 304 Paslanmaz Çelik</span>
   </div>
 </footer>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
