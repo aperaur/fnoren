@@ -1,4 +1,19 @@
+# Hassas dosyalar
+.env
 *.env
-node_modules/
+secrets/
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Node (ileride lazım olursa)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
