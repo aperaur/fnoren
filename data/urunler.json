@@ -1,0 +1,1473 @@
+{
+  "meta": {
+    "versiyon": "1.0",
+    "guncelleme": "2026-04-04T06:08",
+    "aciklama": "fnoren urun veritabani — shopier sync aktif",
+    "status": "AKTIF",
+    "shopier_sync_notu": "product scope icin Shopier panel > API > urun izinleri gerekli",
+    "scraper_son_guncelleme": "2026-04-04T11:34",
+    "shopier_scraper_kaynak": "shopier.com/fnoren"
+  },
+  "kategoriler": {
+    "K": "Mutfak",
+    "B": "Banyo",
+    "E": "Giris",
+    "A": "Aksesuar"
+  },
+  "platform_komisyon": {
+    "Trendyol": {
+      "Tk": 18.5,
+      "2": 23,
+      "3": 23,
+      "4": 21,
+      "5": 18.5,
+      "6": 18.5,
+      "7": 21
+    },
+    "Hepsiburada": {
+      "Tk": 17,
+      "2": 22,
+      "3": 18,
+      "4": 18,
+      "5": 16,
+      "6": 16,
+      "7": 22
+    },
+    "Shopier": {
+      "Tk": 2.99,
+      "2": 2.99,
+      "3": 2.99,
+      "4": 2.99,
+      "5": 2.99,
+      "6": 2.99,
+      "7": 2.99
+    }
+  },
+  "urunler": [
+    {
+      "base_kod": "FNK001",
+      "ad": "Vayon",
+      "ad_tr": "Vayon Kesme Tahtasi M",
+      "ad_en": "Vayon Cutting Board M",
+      "kategori": "K",
+      "kategori_no": 4,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 188,
+        "lazer": 43.4,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 926,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 24,
+        "boy": 34,
+        "yukseklik": 2
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#kesmatahtasi",
+        "#paslanmazcelik",
+        "#mutfak"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#cuttingboard",
+        "#stainlesssteel",
+        "#kitchen"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/1.Vayon",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 890,
+      "platform_links": {
+        "shopier": "42605441"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNK002",
+      "ad": "Vayon",
+      "ad_tr": "Vayon Kesme Tahtasi L",
+      "ad_en": "Vayon Cutting Board L",
+      "kategori": "K",
+      "kategori_no": 4,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 259,
+        "lazer": 53.2,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 1062,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 28,
+        "boy": 38,
+        "yukseklik": 2
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#kesmatahtasi",
+        "#paslanmazcelik",
+        "#mutfak"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#cuttingboard",
+        "#stainlesssteel",
+        "#kitchen"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/1.Vayon",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 890,
+      "platform_links": {
+        "shopier": "42605441"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNB001",
+      "ad": "Reone",
+      "ad_tr": "Reone Banyo Kose Rafi",
+      "ad_en": "Reone Corner Shelf",
+      "kategori": "B",
+      "kategori_no": 6,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 56,
+        "lazer": 53,
+        "buku": 28,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 768,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#banyorafi",
+        "#koserafi",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#cornershelf",
+        "#bathroomshelf",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/2. kose rafi - reone",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 990,
+      "platform_links": {
+        "shopier": "42800872"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNB002",
+      "ad": "Serel",
+      "ad_tr": "Serel Cift Tarafli Duvar Rafi",
+      "ad_en": "Serel Double-Sided Wall Shelf",
+      "kategori": "B",
+      "kategori_no": 6,
+      "malzeme": "ST",
+      "platform": "Shopier",
+      "satis_fiyati_tl": 950,
+      "stok": {
+        "adet": 1,
+        "kritik_seviye": 3,
+        "uretilen": 1,
+        "satilan": 0,
+        "son_urun_badge": true
+      },
+      "son_urun": true,
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#banyorafi",
+        "#koserafi",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#cornershelf",
+        "#bathroomshelf",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/3. kose rafi - serel",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 950,
+      "platform_links": {
+        "shopier": "42819842"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNB003",
+      "ad": "Arelon",
+      "ad_tr": "Arelon Banyo Kose Rafi",
+      "ad_en": "Arelon Corner Shelf",
+      "kategori": "B",
+      "kategori_no": 6,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 62.5,
+        "lazer": 53,
+        "buku": 42,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 802,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#banyorafi",
+        "#koserafi",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#cornershelf",
+        "#bathroomshelf",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/4. kose rafi - arelon",
+      "durum": "aktif",
+      "gtin13": ""
+    },
+    {
+      "base_kod": "FNB004",
+      "ad": "Reone",
+      "ad_tr": "Reone Duvar Sabunluk",
+      "ad_en": "Reone Wall Soap Dispenser",
+      "kategori": "B",
+      "kategori_no": 5,
+      "malzeme": "ST",
+      "platform": "Trendyol",
+      "maliyet": {
+        "hammadde": 149,
+        "lazer": 126,
+        "buku": 28,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 1046,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#sabunluk",
+        "#duvarsabunluk",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#soapdispenser",
+        "#wallmounted",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/5. Duvar sabunluk-reone",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 990,
+      "platform_links": {
+        "shopier": "42800872"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNB005",
+      "ad": "Serel",
+      "ad_tr": "Serel Duvar Sabunluk",
+      "ad_en": "Serel Wall Soap Dispenser",
+      "kategori": "B",
+      "kategori_no": 5,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 149,
+        "lazer": 126,
+        "buku": 28,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 1046,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0,
+        "son_urun_badge": true
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#sabunluk",
+        "#duvarsabunluk",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#soapdispenser",
+        "#wallmounted",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/8. duvar sabunluk - serel",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 950,
+      "platform_links": {
+        "shopier": "42819842"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNB006",
+      "ad": "Stryn",
+      "ad_tr": "Stryn Duvar Sabunluk",
+      "ad_en": "Stryn Wall Soap Dispenser",
+      "kategori": "B",
+      "kategori_no": 5,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 130,
+        "lazer": 126,
+        "buku": 28,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 1056,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#sabunluk",
+        "#duvarsabunluk",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#soapdispenser",
+        "#wallmounted",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/9. duvar sabunluk - stryn",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 1020,
+      "platform_links": {
+        "shopier": "42831877"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNB007",
+      "ad": "Reone",
+      "ad_tr": "Reone WC Pecetelik",
+      "ad_en": "Reone WC Napkin Holder",
+      "kategori": "B",
+      "kategori_no": "Tk",
+      "malzeme": "ST",
+      "platform": "Trendyol",
+      "maliyet": {
+        "hammadde": 47,
+        "lazer": 25,
+        "buku": 14,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 690,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#wcpecetelik",
+        "#tuvaletaksesuar",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#wcnapkinholder",
+        "#bathroomaccessories",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/12. wc pecetelik - reone",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 990,
+      "platform_links": {
+        "shopier": "42800872"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNB008",
+      "ad": "Serel",
+      "ad_tr": "Serel WC Pecetelik",
+      "ad_en": "Serel WC Napkin Holder",
+      "kategori": "B",
+      "kategori_no": "Tk",
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 47,
+        "lazer": 25,
+        "buku": 14,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 680,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0,
+        "son_urun_badge": true
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#wcpecetelik",
+        "#tuvaletaksesuar",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#wcnapkinholder",
+        "#bathroomaccessories",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/13. wc pecetelik - serel",
+      "durum": "aktif",
+      "gtin13": "",
+      "fiyat": 950,
+      "platform_links": {
+        "shopier": "42819842"
+      },
+      "scraper_guncelleme": "2026-04-04T11:34"
+    },
+    {
+      "base_kod": "FNB009",
+      "ad": "Era",
+      "ad_tr": "Era WC Pecetelik",
+      "ad_en": "Era WC Napkin Holder",
+      "kategori": "B",
+      "kategori_no": "Tk",
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 47,
+        "lazer": 25,
+        "buku": 14,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 680,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#wcpecetelik",
+        "#tuvaletaksesuar",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#wcnapkinholder",
+        "#bathroomaccessories",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/14. wc pecetelik - era",
+      "durum": "aktif",
+      "gtin13": ""
+    },
+    {
+      "base_kod": "FNB010",
+      "ad": "Ion",
+      "ad_tr": "Ion WC Pecetelik",
+      "ad_en": "Ion WC Napkin Holder",
+      "kategori": "B",
+      "kategori_no": "Tk",
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 52,
+        "lazer": 35,
+        "buku": 56,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 780,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#wcpecetelik",
+        "#tuvaletaksesuar",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#wcnapkinholder",
+        "#bathroomaccessories",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/11. wc pecetelik m2- ion",
+      "durum": "aktif",
+      "gtin13": ""
+    },
+    {
+      "base_kod": "FNE001",
+      "ad": "Docka",
+      "ad_tr": "Docka Cok Amacli Askilik",
+      "ad_en": "Docka Multi-purpose Hook",
+      "kategori": "E",
+      "kategori_no": 2,
+      "malzeme": "ST",
+      "platform": "Shopier",
+      "maliyet": {
+        "hammadde": 46,
+        "lazer": 28,
+        "buku": 28,
+        "iscilik": 50,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 625,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#askilik",
+        "#giris",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#hook",
+        "#entryway",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/10. giris askilik - docka",
+      "durum": "aktif",
+      "gtin13": ""
+    },
+    {
+      "base_kod": "FNK003",
+      "ad": "Linvo",
+      "ad_tr": "Linvo Mutfak Pecetelik",
+      "ad_en": "Linvo Napkin Holder",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#pecetelik",
+        "#mutfak",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#napkinholder",
+        "#kitchen",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Linvo",
+      "durum": "aktif",
+      "gtin13": ""
+    },
+    {
+      "base_kod": "FNK004",
+      "ad": "Linore",
+      "ad_tr": "Linore Kagit Havluluk",
+      "ad_en": "Linore Paper Towel Holder",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#kagithavluluk",
+        "#mutfak",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#papertowelholder",
+        "#kitchen",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/6. kagit havluluk - Linore",
+      "durum": "aktif",
+      "gtin13": ""
+    },
+    {
+      "base_kod": "FNK005",
+      "ad": "RUNA",
+      "ad_tr": "Runa Pecetelik Serisi",
+      "ad_en": "Runa Napkin Holder Series",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#runa",
+        "#pecetelik",
+        "#lazerkes",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#runa",
+        "#napkinholder",
+        "#lasercut",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Runa",
+      "durum": "aktif",
+      "gtin13": "",
+      "seri": "RUNA",
+      "kaynak": "manuel",
+      "guncelleme": "2026-04-04T06:08"
+    },
+    {
+      "base_kod": "FNK006",
+      "ad": "SEMEN",
+      "ad_tr": "Semen Pecetelik Serisi",
+      "ad_en": "Semen Napkin Holder Series",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#semen",
+        "#pecetelik",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#semen",
+        "#napkinholder",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Semen",
+      "durum": "aktif",
+      "gtin13": "",
+      "seri": "SEMEN",
+      "kaynak": "manuel",
+      "guncelleme": "2026-04-04T06:08"
+    },
+    {
+      "base_kod": "FNK007",
+      "ad": "MARIS",
+      "ad_tr": "Maris Pecetelik Serisi",
+      "ad_en": "Maris Napkin Holder Series",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#maris",
+        "#pecetelik",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#maris",
+        "#napkinholder",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Maris",
+      "durum": "aktif",
+      "gtin13": "",
+      "seri": "MARIS",
+      "kaynak": "manuel",
+      "guncelleme": "2026-04-04T06:08"
+    },
+    {
+      "base_kod": "FNK008",
+      "ad": "AQUILA",
+      "ad_tr": "Aquila Pecetelik Serisi",
+      "ad_en": "Aquila Napkin Holder Series",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#aquila",
+        "#pecetelik",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#aquila",
+        "#napkinholder",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/Fotolar/AQUILA",
+      "durum": "aktif",
+      "gtin13": "",
+      "seri": "AQUILA",
+      "kaynak": "manuel",
+      "guncelleme": "2026-04-04T06:08"
+    },
+    {
+      "base_kod": "FNK009",
+      "ad": "GINKGO",
+      "ad_tr": "Ginkgo Pecetelik Serisi",
+      "ad_en": "Ginkgo Napkin Holder Series",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#ginkgo",
+        "#pecetelik",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#ginkgo",
+        "#napkinholder",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Gingko",
+      "durum": "aktif",
+      "gtin13": "",
+      "seri": "GINKGO",
+      "kaynak": "manuel",
+      "guncelleme": "2026-04-04T06:08"
+    },
+    {
+      "base_kod": "FNK010",
+      "ad": "LUPUS",
+      "ad_tr": "Lupus Pecetelik Serisi",
+      "ad_en": "Lupus Napkin Holder Series",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#lupus",
+        "#pecetelik",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#lupus",
+        "#napkinholder",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Lupus",
+      "durum": "aktif",
+      "gtin13": "",
+      "seri": "LUPUS",
+      "kaynak": "manuel",
+      "guncelleme": "2026-04-04T06:08"
+    },
+    {
+      "base_kod": "FNK011",
+      "ad": "UMBE",
+      "ad_tr": "Umbe Pecetelik Serisi",
+      "ad_en": "Umbe Napkin Holder Series",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#umbe",
+        "#pecetelik",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#umbe",
+        "#napkinholder",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Umbe",
+      "durum": "aktif",
+      "gtin13": "",
+      "seri": "UMBE",
+      "kaynak": "manuel",
+      "guncelleme": "2026-04-04T06:08"
+    },
+    {
+      "base_kod": "FNK012",
+      "ad": "SOL",
+      "ad_tr": "Sol Pecetelik Serisi",
+      "ad_en": "Sol Napkin Holder Series",
+      "kategori": "K",
+      "kategori_no": 7,
+      "malzeme": "ST",
+      "platform": "Hepsiburada",
+      "maliyet": {
+        "hammadde": 0,
+        "lazer": 0,
+        "buku": 0,
+        "iscilik": 70,
+        "ambalaj": 50,
+        "kargo": 120,
+        "extra": 20,
+        "kar_marji": 40,
+        "kdv": 20
+      },
+      "satis_fiyati_tl": 0,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {
+        "en": 0,
+        "boy": 0,
+        "yukseklik": 0
+      },
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "hashtag_tr": [
+        "#fnoren",
+        "#sol",
+        "#pecetelik",
+        "#paslanmazcelik"
+      ],
+      "hashtag_en": [
+        "#fnoren",
+        "#sol",
+        "#napkinholder",
+        "#stainlesssteel"
+      ],
+      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Sol",
+      "durum": "aktif",
+      "gtin13": "",
+      "seri": "SOL",
+      "kaynak": "manuel",
+      "guncelleme": "2026-04-04T06:08"
+    },
+    {
+      "base_kod": "FNK013",
+      "ad": "Vayon",
+      "ad_tr": "Vayon Kesme Tahtasi L",
+      "ad_en": "Vayon Cutting Board L",
+      "kategori": "K",
+      "kategori_no": 4,
+      "malzeme": "ST",
+      "platform": "Shopier",
+      "satis_fiyati_tl": 990,
+      "fiyat": 990,
+      "stok": { "adet": 0, "kritik_seviye": 3 },
+      "olculer_cm": { "en": 28, "boy": 38, "yukseklik": 2 },
+      "durum": "aktif",
+      "kaynak": "scraper",
+      "guncelleme": "2026-04-04T18:00",
+      "platform_links": { "shopier": "42656244" },
+      "scraper_guncelleme": "2026-04-04T18:00"
+    },
+    {
+      "base_kod": "FNK014",
+      "ad": "Vayon",
+      "ad_tr": "Vayon Kesme Tahtasi XL",
+      "ad_en": "Vayon Cutting Board XL",
+      "kategori": "K",
+      "kategori_no": 4,
+      "malzeme": "ST",
+      "platform": "Shopier",
+      "satis_fiyati_tl": 1850,
+      "fiyat": 1850,
+      "stok": { "adet": 0, "kritik_seviye": 3 },
+      "durum": "aktif",
+      "kaynak": "scraper",
+      "guncelleme": "2026-04-04T18:00",
+      "platform_links": { "shopier": "42656323" },
+      "scraper_guncelleme": "2026-04-04T18:00"
+    },
+    {
+      "base_kod": "FNB005",
+      "ad": "Serel",
+      "ad_tr": "Serel Banyo Kose Rafi",
+      "ad_en": "Serel Bathroom Corner Shelf",
+      "kategori": "B",
+      "kategori_no": 6,
+      "malzeme": "ST",
+      "platform": "Shopier",
+      "satis_fiyati_tl": 680,
+      "fiyat": 680,
+      "stok": { "adet": 0, "kritik_seviye": 3 },
+      "durum": "aktif",
+      "kaynak": "scraper",
+      "guncelleme": "2026-04-04T18:00",
+      "platform_links": { "shopier": "42797149" },
+      "scraper_guncelleme": "2026-04-04T18:00"
+    },
+    {
+      "base_kod": "FNB006",
+      "ad": "Reone",
+      "ad_tr": "Reone Celik Kose Rafi",
+      "ad_en": "Reone Steel Corner Shelf",
+      "kategori": "B",
+      "kategori_no": 6,
+      "malzeme": "ST",
+      "platform": "Shopier",
+      "satis_fiyati_tl": 680,
+      "fiyat": 680,
+      "stok": { "adet": 0, "kritik_seviye": 3 },
+      "durum": "aktif",
+      "kaynak": "scraper",
+      "guncelleme": "2026-04-04T18:00",
+      "platform_links": { "shopier": "42667308" },
+      "scraper_guncelleme": "2026-04-04T18:00"
+    }
+  ]
+}

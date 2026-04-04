@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fnoren — 304 kalite paslanmaz çelik, zamansız tasarımlar. Mutfak ve banyo aksesuarları.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src https://aperaur-production.up.railway.app; img-src 'self' data: https://cdn.shopier.app;">
+  <title>Fnoren — Zamansız Tasarımlar</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Fnoren</a>
+  <ul class="nav-links">
+    <li><a href="urunler.html">Ürünler</a></li>
+    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag">304 Paslanmaz Çelik — Bursa</div>
+    <h1>Zamansız<br><span>Tasarımlar</span></h1>
+    <p class="hero-sub">Timeless Stainless Elegance</p>
+    <a href="urunler.html" class="btn btn-primary">Koleksiyonu Gör →</a>
+  </div>
+</section>
+
+<!-- ÖNE ÇIKAN ÜRÜNLER -->
+<section style="padding-top:2rem">
+  <div class="container">
+    <div class="section-label">Koleksiyon</div>
+    <h2>Öne Çıkan Ürünler</h2>
+    <div class="divider"></div>
+    <div class="urun-grid" id="one-cikan-grid"></div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="urunler.html" class="btn btn-outline">Tüm Ürünleri Gör</a>
+    </div>
+  </div>
+</section>
+
+<!-- HAKKINDA -->
+<section>
+  <div class="container">
+    <div class="about-section">
+      <div>
+        <div class="section-label fade-in">Hakkımızda</div>
+        <h2 class="fade-in">Fnoren</h2>
+        <div class="divider fade-in"></div>
+        <p class="about-text fade-in">
+          Bursa'da doğan Fnoren, 304 kalite paslanmaz çeliğin işlevselliğini
+          minimalist bir estetikle buluşturuyor. Her ürün, günlük kullanımın
+          gereksinimlerini karşılarken mekânınıza karakter katmak üzere tasarlandı.
+        </p>
+        <br>
+        <p class="about-text fade-in">
+          Üretimden tasarıma tek elden. Malzeme seçiminden son ürüne kadar
+          her adımda kalite ve sürdürülebilirlik önceliğimiz.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-box fade-in">
+          <span class="stat-num">304</span>
+          <span class="stat-lbl">Kalite Çelik</span>
+        </div>
+        <div class="stat-box fade-in">
+          <span class="stat-num">8+</span>
+          <span class="stat-lbl">Ürün</span>
+        </div>
+        <div class="stat-box fade-in">
+          <span class="stat-num">%100</span>
+          <span class="stat-lbl">Yerli Üretim</span>
+        </div>
+        <div class="stat-box fade-in">
+          <span class="stat-num">2024</span>
+          <span class="stat-lbl">Kuruluş</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERİ -->
+<section>
+  <div class="container">
+    <div class="section-label fade-in">Galeri</div>
+    <h2 class="fade-in">Üretimden</h2>
+    <div class="divider fade-in"></div>
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Görsel placeholder'lar — gerçek görseller eklenince img ile değiştirilecek -->
+      <div class="gallery-item fade-in" style="height:200px;background:var(--surface2);display:flex;align-items:center;justify-content:center;color:var(--border)">◈</div>
+      <div class="gallery-item fade-in" style="height:280px;background:var(--surface2);display:flex;align-items:center;justify-content:center;color:var(--border)">◈</div>
+      <div class="gallery-item fade-in" style="height:220px;background:var(--surface2);display:flex;align-items:center;justify-content:center;color:var(--border)">◈</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Fnoren — Bursa, TR</span>
+    <div style="display:flex;gap:1.5rem">
+      <a href="urunler.html">Ürünler</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+    <span>304 Paslanmaz Çelik</span>
+  </div>
+</footer>
+
+<!-- CHAT WIDGET -->
+<button id="chat-toggle" title="Destek">💬</button>
+<div id="chat-panel">
+  <div class="chat-header">
+    <span>Fnoren Destek</span>
+    <button id="chat-close" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:1rem">✕</button>
+  </div>
+  <div class="chat-msgs" id="chat-msgs"></div>
+  <div class="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Bir soru sorun..." autocomplete="off">
+    <button id="chat-send">→</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/urunler.js"></script>
+<script src="assets/js/widget.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    urunleriYukle("one-cikan-grid", 3);
+  });
+</script>
+</body>
+</html>
