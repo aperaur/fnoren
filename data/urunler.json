@@ -1,12 +1,10 @@
 {
   "meta": {
-    "versiyon": "1.0",
-    "guncelleme": "2026-04-04T06:08",
-    "aciklama": "fnoren urun veritabani — shopier sync aktif",
+    "versiyon": "3.0",
+    "guncelleme": "2026-05-31T14:42",
+    "aciklama": "fnoren urun veritabani — PIM aktif (NJ-329 build)",
     "status": "AKTIF",
-    "shopier_sync_notu": "product scope icin Shopier panel > API > urun izinleri gerekli",
-    "scraper_son_guncelleme": "2026-04-04T11:34",
-    "shopier_scraper_kaynak": "shopier.com/fnoren"
+    "kaynak": "E:/APEX/AperAur/pim/katalog/aktif"
   },
   "kategoriler": {
     "K": "Mutfak",
@@ -45,26 +43,392 @@
   },
   "urunler": [
     {
-      "base_kod": "FNK001",
-      "ad": "Vayon",
-      "ad_tr": "Vayon Kesme Tahtasi M",
-      "ad_en": "Vayon Cutting Board M",
-      "kategori": "K",
-      "kategori_no": 4,
-      "malzeme": "ST",
+      "base_kod": "FNB001",
+      "pim_id": "FN-B-001",
+      "seri": "Serel",
+      "ad": "Serel - Paslanmaz Banyo Köşe Rafı",
+      "ad_tr": "Fnoren Serel - Paslanmaz Banyo Köşe Rafı",
+      "kategori": "B",
+      "kategori_adi": "Köşe Rafları",
+      "malzeme": "304 ST",
       "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 188,
-        "lazer": 43.4,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
+      "fiyat": 767,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
       },
-      "satis_fiyati_tl": 926,
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "Serel Serisi Paslanmaz Banyo Köşe Rafı – Sadelikten Gelen Güç",
+      "aciklama_uzun": "Fnoren Serel - Paslanmaz Banyo Köşe Rafı\nSerel Serisi Paslanmaz Banyo Köşe Rafı – Sadelikten Gelen Güç\nBanyonuzda yalın, fonksiyonel ve güçlü bir çözüm arıyorsanız\nSerel Serisi Paslanmaz Banyo Köşe Rafı\n, minimal tasarımıyla beklentilerin ötesine geçiyor. Net çizgileri, parlamayan pürüzsüz yüzeyi ve sağlam gövdesiyle her banyoya uyum sağlayan, zamansız bir yardımcı.\nÜrün Özellikleri:\n:\nPaslanmaz Çelik Gövde\n: Uzun ömürlü kullanım için üstün neme ve buhara dayanıklılık sağlar.\nKöşe Tipi Tasarım\n: Dar alanlarda düzen oluşturmanın en akılcı yolu.\nKaymaz ve Sağlam Yüzey\n: Deterjan, şampuan ve aksesuarlar için güvenli tutuş sağlar.\nKurulum Kolaylığı\n: Çift taraflı bant ile dilediğiniz uygun yüzeye monte edebilirsiniz.",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/serel-paslanmaz-banyo-kose-rafi-pm-HBC0000ARPE5C"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnb001",
+      "durum": "aktif",
+      "fiyat_kdv": 767,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNB002",
+      "pim_id": "FN-B-002",
+      "seri": "Reone",
+      "ad": "Reone - Paslanmaz Çelik Köşe Rafı",
+      "ad_tr": "Fnoren Reone - Paslanmaz Çelik Köşe Rafı",
+      "kategori": "B",
+      "kategori_adi": "Köşe Rafları",
+      "malzeme": "304 ST",
+      "platform": "Hepsiburada",
+      "fiyat": 767,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "Reone Serisi Paslanmaz Banyo Köşe Rafı – Şıklığın ve Dayanıklılığın Buluşma Noktası",
+      "aciklama_uzun": "Fnoren Reone - Paslanmaz Çelik Köşe Rafı\nReone Serisi Paslanmaz Banyo Köşe Rafı – Şıklığın ve Dayanıklılığın Buluşma Noktası\nBanyonuzda hem estetik hem de işlevsel bir düzen arıyorsanız,\nReone Serisi Paslanmaz Banyo Köşe Rafı\ntam size göre!\nModern çizgileri ve zamansız tasarımıyla her banyo stiline kolayca uyum sağlar. Paslanmaz çelik yapısı sayesinde uzun ömürlü kullanım sunarken, köşe yerleşimiyle alandan maksimum tasarruf sağlar.\nÜrün Özellikleri:\n%100 Paslanmaz Çelik\n: Nemli ortamlarda kararma, paslanma ve deformasyona karşı üstün direnç.\nAkıllı Ve Esnek Tasarım\n: Alanınızı verimli kullanmanızı sağlar; küçük banyolar için ideal çözüm.\nModern Yüzey\n: Zarif görünümü ile banyonuzun şıklığını tamamlar.\nÇok Amaçlı Kullanım\n: Şampuan, sabun, tıraş ürünleri ve aksesuarlar için ideal taşıma kapasitesi.",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/reone-paslanmaz-celik-kose-rafi-pm-HBC0000AQBCP2"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnb002",
+      "durum": "aktif",
+      "fiyat_kdv": 767,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNB003",
+      "pim_id": "FN-B-003",
+      "seri": "Reone",
+      "ad": "Reone - Paslanmaz Çift Taraflı Duvar Rafı",
+      "ad_tr": "Fnoren Reone - Paslanmaz Çift Taraflı Duvar Rafı",
+      "kategori": "B",
+      "kategori_adi": "Banyo Organizeri",
+      "malzeme": "304 ST",
+      "platform": "Trendyol",
+      "fiyat": 1046,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "Reone Serisi Paslanmaz Çift Taraflı Duvar Rafı  – Banyonuzda Zekice Düzen, Zamansız Tasarım",
+      "aciklama_uzun": "Fnoren Reone - Paslanmaz Çift Taraflı Duvar Rafı\nReone Serisi Paslanmaz Çift Taraflı Duvar Rafı  – Banyonuzda Zekice Düzen, Zamansız Tasarım\nReone\n, işlevselliği sadelikle birleştiren, modern banyolar için özel olarak tasarlanmış paslanmaz çelik ürün serisidir. Köşe rafından duvar rafına kadar her bir parça; dayanıklılık, minimalizm ve kullanım kolaylığını bir araya getirir. Yalın tasarımıyla her tarza uyum sağlar, uzun ömürlü yapısıyla yıllarca formunu korur.\nReone Serisi’nde Neler Var?\nKöşe Rafı\n: Banyonuzun en az kullanılan alanını maksimum düzene çeviren pratik bir çözüm.\nDuvar Rafı\n: Duvarda düz bir hat üzerinde zarif bir düzen sağlayan, çok amaçlı kullanım alanına sahip raf.\nPaslanmaz Çelik Malzeme\n: Her ürün neme ve buhara karşı dirençli, uzun ömürlü ve hijyenik.\nKolay Montaj\n: Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nKolay Temizlik\n: Pürüzsüz yüzeyi sayesinde şık bir görünüm sunar.\nNeden Fnoren?\nÇünkü Fnoren; banyoyu yalnızca bir ihtiyaç alanı olarak değil, bir yaşam alanı olarak görür.\nSadeliği abartıdan uzak bir estetikle sunar. Her detayıyla fonksiyonel, her çizgisiyle zamansızdır.",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/reone-paslanmaz-cift-tarafli-duvar-rafi-pm-HBC0000APV57W"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnb003",
+      "durum": "aktif",
+      "fiyat_kdv": 1046,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNB004",
+      "pim_id": "FN-B-004",
+      "seri": "Serel",
+      "ad": "Serel - Paslanmaz Çift Taraflı Duvar Rafı",
+      "ad_tr": "Fnoren Serel - Paslanmaz Çift Taraflı Duvar Rafı",
+      "kategori": "B",
+      "kategori_adi": "Banyo Organizeri",
+      "malzeme": "304 ST",
+      "platform": "Hepsiburada",
+      "fiyat": 1046,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "Serel Serisi Paslanmaz Çift Taraflı Duvar Rafı – Banyonuzda Zekice Düzen, Zamansız Tasarım",
+      "aciklama_uzun": "Fnoren Serel - Paslanmaz Çift Taraflı Duvar Rafı\nSerel Serisi Paslanmaz Çift Taraflı Duvar Rafı – Banyonuzda Zekice Düzen, Zamansız Tasarım\nSerel\n, işlevselliği sadelikle birleştiren, modern banyolar için özel olarak tasarlanmış paslanmaz çelik ürün serisidir. Köşe rafından duvar rafına kadar her bir parça; dayanıklılık, minimalizm ve kullanım kolaylığını bir araya getirir. Yalın tasarımıyla her tarza uyum sağlar, uzun ömürlü yapısıyla yıllarca formunu korur.\nSerel Serisi’nde Neler Var?\nKöşe Rafı\n: Banyonuzun en az kullanılan alanını maksimum düzene çeviren pratik bir çözüm.\nDuvar Rafı\n: Duvarda düz bir hat üzerinde zarif bir düzen sağlayan, çok amaçlı kullanım alanına sahip raf.\nPaslanmaz Çelik Malzeme\n: Her ürün neme ve buhara karşı dirençli, uzun ömürlü ve hijyenik.\nKolay Montaj\n: Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nKolay Temizlik\n: Pürüzsüz yüzeyi sayesinde şık bir görünüm sunar.\nNeden Fnoren?\nÇünkü Fnoren; banyoyu yalnızca bir ihtiyaç alanı olarak değil, bir yaşam alanı olarak görür.\nSadeliği abartıdan uzak bir estetikle sunar. Her detayıyla fonksiyonel, her çizgisiyle zamansızdır.",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/serel-paslanmaz-cift-tarafli-duvar-rafi-pm-HBC0000ASLNA6"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": null,
+      "durum": "aktif",
+      "fiyat_kdv": 1046,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNB005",
+      "pim_id": "FN-B-005",
+      "seri": "Stryn",
+      "ad": "Stryn - Paslanmaz Duvar Rafı",
+      "ad_tr": "Fnoren Stryn - Paslanmaz Duvar Rafı",
+      "kategori": "B",
+      "kategori_adi": "Raflar",
+      "malzeme": "304 ST",
+      "platform": "Hepsiburada",
+      "fiyat": 1014,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "Stryn — Paslanmaz Çelik Duvar Rafı",
+      "aciklama_uzun": "Stryn - Paslanmaz Duvar Rafı\nStryn — Paslanmaz Çelik Duvar Rafı\nZarafetle işlenmiş minimal depolama çözümü\nStryn\n, sade geometrisi ve 304 kalite paslanmaz çelik yüzeyiyle yaşam alanlarına teknik bir zarafet kazandırır. Banyo, mutfak veya çalışma alanlarında; duvar yüzeyine estetik bir şekilde entegre olurken uzun ömürlü bir kullanım sunar.\nHer detayında dayanıklılık, sadelik ve fonksiyon dengesi düşünülmüştür.\nMalzeme:\n304 kalite paslanmaz çelik (HL / Satin yüzey opsiyonu)\nKorozyona dayanıklı\n— nemli ortamlarda uzun yıllar formunu korur\nKolay montaj:\nVidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nYük taşıma kapasitesi:\nGünlük eşyalar, banyo ürünleri, dekor objeleri için idealdir\nTasarım:\nMinimal, modern ve teknik çizgilere sahip “Fnoren” estetiği\nKullanım Alanları:\nBanyo – Mutfak – Ofis – Giriş alanları – Yaşam alanları\nNeden Stryn?\nÇünkü Stryn, sadece bir raf değildir.\nMekânınızdaki çizgileri tamamlayan; paslanmazın gücüyle sade bir ifadeyi birleştiren bir yüzeydir.",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/stryn-paslanmaz-duvar-rafi-pm-HBC0000AOVQ2G"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": null,
+      "durum": "aktif",
+      "fiyat_kdv": 1014,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNB006",
+      "pim_id": "FN-B-006",
+      "seri": "Ion",
+      "ad": "ion-wc pçt",
+      "ad_tr": "Fnoren ion-wc pçt",
+      "kategori": "B",
+      "kategori_adi": "Tuvalet Kağıtlığı",
+      "malzeme": "304 ST",
+      "platform": "Hepsiburada",
+      "fiyat": 777,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_uzun": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {},
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnb006",
+      "durum": "tanitim_yakinda",
+      "fiyat_kdv": 777,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNB007",
+      "pim_id": "FN-B-007",
+      "seri": "Reone",
+      "ad": "Reone - Paslanmaz Çelik Tuvalet Kağıdı Askısı",
+      "ad_tr": "Fnoren Reone - Paslanmaz Çelik Tuvalet Kağıdı Askısı",
+      "kategori": "B",
+      "kategori_adi": "Tuvalet Kağıtlığı",
+      "malzeme": "304 ST",
+      "platform": "Trendyol",
+      "fiyat": 682,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "Reone — Paslanmaz Çelik Tuvalet Kağıdı Askısı",
+      "aciklama_uzun": "Reone - Paslanmaz Çelik Tuvalet Kağıdı Askısı\nReone — Paslanmaz Çelik Tuvalet Kağıdı Askısı\nYüzeyle Mekân Arasında Kusursuz Denge\nReone\n, Fnoren’in banyo koleksiyonunda teknik sadelik ve modern estetiği buluşturan bir Tuvalet Kağıdı Askısı modelidir.\n304 kalite paslanmaz çelikten üretilen gövdesi, yüksek nemli ortamlarda bile uzun yıllar boyunca formunu ve parlaklığını korur.\nKöşesiz geçişleri ve rafine yüzey hatlarıyla, banyo mimarisine doğal bir biçimde entegre olur.\nReone; dayanıklılığı, kolay montajı ve minimal estetiğiyle fonksiyonel bir aksesuarın ötesine geçer — bir tasarım detayına dönüşür.\nÖne Çıkan Özellikler:\nMalzeme:\n304 kalite paslanmaz çelik (HL / Satin yüzey)\nTasarım:\nYumuşak hatlı, teknik ve zarif form dili\nDayanıklılık:\nKorozyona ve neme karşı yüksek direnç\nMontaj:\nDuvar tipi, montaj aparatları kutu içeriğine dahildir\nKullanım Alanı:\nWC ve banyo alanlarında uzun ömürlü kullanım\nReone\n, Fnoren’in “crafted surfaces for living spaces” yaklaşımını sade bir çizgide ifade eder.\nForm, yüzey ve işlev bir araya gelir; mekân sessiz bir zarafet kazanır.",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/reone-paslanmaz-celik-tuvalet-kagidi-askisi-pm-HBC0000AOVPKV"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnb007",
+      "durum": "aktif",
+      "fiyat_kdv": 682,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNB008",
+      "pim_id": "FN-B-008",
+      "seri": "Serel",
+      "ad": "Serel - Paslanmaz Çelik Tuvalet Kağıdı Askısı",
+      "ad_tr": "Fnoren Serel - Paslanmaz Çelik Tuvalet Kağıdı Askısı",
+      "kategori": "B",
+      "kategori_adi": "Tuvalet Kağıtlığı",
+      "malzeme": "304 ST",
+      "platform": "Hepsiburada",
+      "fiyat": 682,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "Serel — Paslanmaz Çelik",
+      "aciklama_uzun": "Serel - Paslanmaz Çelik Tuvalet Kağıdı Askısı\nSerel — Paslanmaz Çelik\nTuvalet Kağıdı Askısı\nModern Minimalizmle Yeniden Tanımlanan Fonksiyon\nSerel\n, Fnoren Studio’nun teknik sadelik anlayışını banyo alanlarına taşıyan bir kağıtlık tasarımıdır.\n304 kalite paslanmaz çelik gövdesi, uzun ömürlü kullanım için üretilmiştir; korozyon, nem ve deterjan etkilerine karşı yüksek dayanıklılık gösterir.\nYalın çizgiler, işlevsel form ve kusursuz yüzey geçişleriyle Serel, banyo alanlarında hem görsel hem yapısal denge sağlar.\nDuvar yüzeyine zarif biçimde entegre olur ve her detayında “crafted surfaces” felsefesini taşır.\nÖne Çıkan Özellikler:\nMalzeme:\n304 kalite paslanmaz çelik (HL / Satin yüzey)\nTasarım:\nMinimal, rafine ve dengeli form\nDayanıklılık:\nKorozyona, neme ve kimyasallara karşı yüksek direnç\nKolay montaj:\nVidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nKullanım Alanı:\nWC ve banyo alanlarında uzun ömürlü kullanım\nSerel\n, sade bir kağıtlıktan fazlasıdır — yüzeyle mekân arasındaki sessiz uyumu tanımlar.\nFnoren’in teknik zarafet anlayışının en sade ifadesi.",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/serel-paslanmaz-celik-tuvalet-kagidi-askisi-pm-HBC0000APV4L5"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnb008",
+      "durum": "aktif",
+      "fiyat_kdv": 682,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNB009",
+      "pim_id": "FN-B-009",
+      "seri": "Era",
+      "ad": "Era - Paslanmaz Çelik Tuvalet Kağıdı Askısı",
+      "ad_tr": "Fnoren Era - Paslanmaz Çelik Tuvalet Kağıdı Askısı",
+      "kategori": "B",
+      "kategori_adi": "Tuvalet Kağıtlığı",
+      "malzeme": "304 ST",
+      "platform": "Hepsiburada",
+      "fiyat": 682,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "Era — Paslanmaz Çelik Duvar Tipi Tuvalet Kağıdı Askısı",
+      "aciklama_uzun": "Era - Paslanmaz Çelik Tuvalet Kağıdı Askısı\nEra — Paslanmaz Çelik Duvar Tipi Tuvalet Kağıdı Askısı\nSade Form, Güçlü Duruş\nEra\n, Fnoren’in banyo serisinde çizgisiz yüzey diliyle öne çıkan, yalın ama etkileyici bir tuvalet kağıtlığı modelidir.\n304 kalite paslanmaz çelikten üretilen gövdesi, nem ve korozyona karşı yüksek dayanıklılık sunarken; pürüzsüz yüzeyiyle mekânda sessiz bir zarafet yaratır.\nHer detayında sadelik, işlev ve denge vurgulanmıştır.\nDuvar yüzeyine kolayca entegre olur ve modern banyolarda temiz bir görünüm sağlar.\nÖne Çıkan Özellikler:\nMalzeme:\n304 kalite paslanmaz çelik (HL / Satin yüzey)\nTasarım:\nDüz, çizgisiz ve minimal form dili\nDayanıklılık:\nKorozyon ve neme karşı yüksek direnç\nKolay montaj:\nVidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nKullanım Alanı:\nBanyo ve WC alanlarında sade görünüm arayanlar için ideal\nEra\n, sadeliğin zarafete dönüştüğü noktada durur.\nFnoren’in “crafted surfaces” yaklaşımını en saf biçimiyle temsil eder.",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/era-paslanmaz-celik-tuvalet-kagidi-askisi-pm-HBC0000AOVEYF"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnb009",
+      "durum": "aktif",
+      "fiyat_kdv": 682,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNE001",
+      "pim_id": "FN-E-001",
+      "seri": "Docka",
+      "ad": "docka",
+      "ad_tr": "Fnoren docka",
+      "kategori": "E",
+      "kategori_adi": "Kapı ve Duvar Askılıkları",
+      "malzeme": "304 ST",
+      "platform": "Shopier",
+      "fiyat": 675,
+      "stok": {
+        "adet": 0,
+        "kritik_seviye": 3,
+        "uretilen": 0,
+        "satilan": 0
+      },
+      "olculer_cm": {},
+      "agirlik_gram": 0,
+      "aciklama_tr": "",
+      "aciklama_uzun": "",
+      "aciklama_en": "",
+      "platform_kodu": {
+        "hb": "",
+        "trendyol": "",
+        "etsy": ""
+      },
+      "platform_links": {},
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fne001",
+      "durum": "tanitim_yakinda",
+      "fiyat_kdv": 675,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
+    },
+    {
+      "base_kod": "FNK001",
+      "pim_id": "FN-K-001",
+      "seri": "Vayon",
+      "ad": "Vayon - Paslanmaz Çelik Kesme Tahtası 24×34 cm",
+      "ad_tr": "Fnoren Vayon - Paslanmaz Çelik Kesme Tahtası 24×34 cm",
+      "kategori": "K",
+      "kategori_adi": "Kesme Tahtası",
+      "malzeme": "304 ST",
+      "platform": "Hepsiburada",
+      "fiyat": 926,
       "stok": {
         "adet": 0,
         "kritik_seviye": 3,
@@ -74,58 +438,39 @@
       "olculer_cm": {
         "en": 24,
         "boy": 34,
-        "yukseklik": 2
+        "yukseklik": 0
       },
       "agirlik_gram": 0,
-      "aciklama_tr": "",
+      "aciklama_tr": "Vayon - Paslanmaz Çelik Kesme Tahtası (24×34 cm orta boy)",
+      "aciklama_uzun": "Vayon - Paslanmaz Çelik Kesme Tahtası\n🔹\nHijyenik, Dayanıklı ve Şık – Mutfakta Profesyonelliği Hissedin!\nGeleneksel ahşap veya plastik tahtalara veda edin. %100\npaslanmaz çelikten üretilmiş\n, yüzeyi sayesinde\nkoku tutmaz\n,\nküf barındırmaz\nve\nleke bırakmaz\n. Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz.\n🔹\nFonksiyonel Tasarım, Estetik Detaylar\nOval detayı sayesinde kolay taşınır, kaymaz yapısıyla güvenli kullanım sağlar. ister et ister sebze doğrayın; her mutfakta yerini bulur.\n🔹\nBıçak Dostu Yüzey\nÖzel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz. Profesyonel şeflerin tercih ettiği yüzey tipi!\n🔹\nKolay Temizlik – Anında Hijyen\nSuya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır.\n🔹\nÇevre Dostu Seçim\nDayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır. Doğaya duyarlı kullanıcılar için sürdürülebilir bir seçim!\nÜrün Özellikleri\nBoyut: 24x34 cm ve 28x38 seçenekleri mevcut\nMalzeme: AISI 304 Paslanmaz Çelik\nYüzey: Fırçalanmış\nTemizlik: Elde yıkanabilir\nKullanım: Et, sebze, meyve ve sunum amaçlı.",
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
         "trendyol": "",
         "etsy": ""
       },
-      "hashtag_tr": [
-        "#fnoren",
-        "#kesmatahtasi",
-        "#paslanmazcelik",
-        "#mutfak"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#cuttingboard",
-        "#stainlesssteel",
-        "#kitchen"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/1.Vayon",
-      "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 890,
       "platform_links": {
-        "shopier": "42605441"
+        "hepsiburada": "https://www.hepsiburada.com/vayon-paslanmaz-celik-kesme-tahtasi-p-HBCV0000AOUV9F"
       },
-      "scraper_guncelleme": "2026-04-04T11:34"
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnk001",
+      "durum": "aktif",
+      "fiyat_kdv": 926,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
     },
     {
       "base_kod": "FNK002",
-      "ad": "Vayon",
-      "ad_tr": "Vayon Kesme Tahtasi L",
-      "ad_en": "Vayon Cutting Board L",
+      "pim_id": "FN-K-002",
+      "seri": "Vayon",
+      "ad": "Vayon - Paslanmaz Çelik Kesme Tahtası 28×38 cm",
+      "ad_tr": "Fnoren Vayon - Paslanmaz Çelik Kesme Tahtası 28×38 cm",
       "kategori": "K",
-      "kategori_no": 4,
-      "malzeme": "ST",
+      "kategori_adi": "Kesme Tahtası",
+      "malzeme": "304 ST",
       "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 259,
-        "lazer": 53.2,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 1062,
+      "fiyat": 1062,
       "stok": {
         "adet": 0,
         "kritik_seviye": 3,
@@ -135,1339 +480,141 @@
       "olculer_cm": {
         "en": 28,
         "boy": 38,
-        "yukseklik": 2
+        "yukseklik": 0
       },
       "agirlik_gram": 0,
-      "aciklama_tr": "",
+      "aciklama_tr": "Vayon - Paslanmaz Çelik Kesme Tahtası (28×38 cm büyük boy)",
+      "aciklama_uzun": "Vayon - Paslanmaz Çelik Kesme Tahtası\n🔹\nHijyenik, Dayanıklı ve Şık – Mutfakta Profesyonelliği Hissedin!\nGeleneksel ahşap veya plastik tahtalara veda edin. %100\npaslanmaz çelikten üretilmiş\n, yüzeyi sayesinde\nkoku tutmaz\n,\nküf barındırmaz\nve\nleke bırakmaz\n. Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz.\n🔹\nFonksiyonel Tasarım, Estetik Detaylar\nOval detayı sayesinde kolay taşınır, kaymaz yapısıyla güvenli kullanım sağlar. ister et ister sebze doğrayın; her mutfakta yerini bulur.\n🔹\nBıçak Dostu Yüzey\nÖzel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz. Profesyonel şeflerin tercih ettiği yüzey tipi!\n🔹\nKolay Temizlik – Anında Hijyen\nSuya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır.\n🔹\nÇevre Dostu Seçim\nDayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır. Doğaya duyarlı kullanıcılar için sürdürülebilir bir seçim!\nÜrün Özellikleri\nBoyut: 24x34 cm ve 28x38 seçenekleri mevcut\nMalzeme: AISI 304 Paslanmaz Çelik\nYüzey: Fırçalanmış\nTemizlik: Elde yıkanabilir\nKullanım: Et, sebze, meyve ve sunum amaçlı.",
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
         "trendyol": "",
         "etsy": ""
       },
-      "hashtag_tr": [
-        "#fnoren",
-        "#kesmatahtasi",
-        "#paslanmazcelik",
-        "#mutfak"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#cuttingboard",
-        "#stainlesssteel",
-        "#kitchen"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/1.Vayon",
-      "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 890,
       "platform_links": {
-        "shopier": "42605441"
+        "hepsiburada": "https://www.hepsiburada.com/vayon-paslanmaz-celik-kesme-tahtasi-p-HBCV0000AOUV9F"
       },
-      "scraper_guncelleme": "2026-04-04T11:34"
-    },
-    {
-      "base_kod": "FNB001",
-      "ad": "Reone",
-      "ad_tr": "Reone Banyo Kose Rafi",
-      "ad_en": "Reone Corner Shelf",
-      "kategori": "B",
-      "kategori_no": 6,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 56,
-        "lazer": 53,
-        "buku": 28,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 768,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#banyorafi",
-        "#koserafi",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#cornershelf",
-        "#bathroomshelf",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/2. kose rafi - reone",
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnk002",
       "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 990,
-      "platform_links": {
-        "shopier": "42800872"
-      },
-      "scraper_guncelleme": "2026-04-04T11:34"
-    },
-    {
-      "base_kod": "FNB002",
-      "ad": "Serel",
-      "ad_tr": "Serel Cift Tarafli Duvar Rafi",
-      "ad_en": "Serel Double-Sided Wall Shelf",
-      "kategori": "B",
-      "kategori_no": 6,
-      "malzeme": "ST",
-      "platform": "Shopier",
-      "satis_fiyati_tl": 950,
-      "stok": {
-        "adet": 1,
-        "kritik_seviye": 3,
-        "uretilen": 1,
-        "satilan": 0,
-        "son_urun_badge": true
-      },
-      "son_urun": true,
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#banyorafi",
-        "#koserafi",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#cornershelf",
-        "#bathroomshelf",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/3. kose rafi - serel",
-      "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 950,
-      "platform_links": {
-        "shopier": "42819842"
-      },
-      "scraper_guncelleme": "2026-04-04T11:34"
-    },
-    {
-      "base_kod": "FNB003",
-      "ad": "Arelon",
-      "ad_tr": "Arelon Banyo Kose Rafi",
-      "ad_en": "Arelon Corner Shelf",
-      "kategori": "B",
-      "kategori_no": 6,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 62.5,
-        "lazer": 53,
-        "buku": 42,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 802,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#banyorafi",
-        "#koserafi",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#cornershelf",
-        "#bathroomshelf",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/4. kose rafi - arelon",
-      "durum": "aktif",
-      "gtin13": ""
-    },
-    {
-      "base_kod": "FNB004",
-      "ad": "Reone",
-      "ad_tr": "Reone Duvar Sabunluk",
-      "ad_en": "Reone Wall Soap Dispenser",
-      "kategori": "B",
-      "kategori_no": 5,
-      "malzeme": "ST",
-      "platform": "Trendyol",
-      "maliyet": {
-        "hammadde": 149,
-        "lazer": 126,
-        "buku": 28,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 1046,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#sabunluk",
-        "#duvarsabunluk",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#soapdispenser",
-        "#wallmounted",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/5. Duvar sabunluk-reone",
-      "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 990,
-      "platform_links": {
-        "shopier": "42800872"
-      },
-      "scraper_guncelleme": "2026-04-04T11:34"
-    },
-    {
-      "base_kod": "FNB005",
-      "ad": "Serel",
-      "ad_tr": "Serel Duvar Sabunluk",
-      "ad_en": "Serel Wall Soap Dispenser",
-      "kategori": "B",
-      "kategori_no": 5,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 149,
-        "lazer": 126,
-        "buku": 28,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 1046,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0,
-        "son_urun_badge": true
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#sabunluk",
-        "#duvarsabunluk",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#soapdispenser",
-        "#wallmounted",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/8. duvar sabunluk - serel",
-      "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 950,
-      "platform_links": {
-        "shopier": "42819842"
-      },
-      "scraper_guncelleme": "2026-04-04T11:34"
-    },
-    {
-      "base_kod": "FNB006",
-      "ad": "Stryn",
-      "ad_tr": "Stryn Duvar Sabunluk",
-      "ad_en": "Stryn Wall Soap Dispenser",
-      "kategori": "B",
-      "kategori_no": 5,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 130,
-        "lazer": 126,
-        "buku": 28,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 1056,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#sabunluk",
-        "#duvarsabunluk",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#soapdispenser",
-        "#wallmounted",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/9. duvar sabunluk - stryn",
-      "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 1020,
-      "platform_links": {
-        "shopier": "42831877"
-      },
-      "scraper_guncelleme": "2026-04-04T11:34"
-    },
-    {
-      "base_kod": "FNB007",
-      "ad": "Reone",
-      "ad_tr": "Reone WC Pecetelik",
-      "ad_en": "Reone WC Napkin Holder",
-      "kategori": "B",
-      "kategori_no": "Tk",
-      "malzeme": "ST",
-      "platform": "Trendyol",
-      "maliyet": {
-        "hammadde": 47,
-        "lazer": 25,
-        "buku": 14,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 690,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#wcpecetelik",
-        "#tuvaletaksesuar",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#wcnapkinholder",
-        "#bathroomaccessories",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/12. wc pecetelik - reone",
-      "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 990,
-      "platform_links": {
-        "shopier": "42800872"
-      },
-      "scraper_guncelleme": "2026-04-04T11:34"
-    },
-    {
-      "base_kod": "FNB008",
-      "ad": "Serel",
-      "ad_tr": "Serel WC Pecetelik",
-      "ad_en": "Serel WC Napkin Holder",
-      "kategori": "B",
-      "kategori_no": "Tk",
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 47,
-        "lazer": 25,
-        "buku": 14,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 680,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0,
-        "son_urun_badge": true
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#wcpecetelik",
-        "#tuvaletaksesuar",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#wcnapkinholder",
-        "#bathroomaccessories",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/13. wc pecetelik - serel",
-      "durum": "aktif",
-      "gtin13": "",
-      "fiyat": 950,
-      "platform_links": {
-        "shopier": "42819842"
-      },
-      "scraper_guncelleme": "2026-04-04T11:34"
-    },
-    {
-      "base_kod": "FNB009",
-      "ad": "Era",
-      "ad_tr": "Era WC Pecetelik",
-      "ad_en": "Era WC Napkin Holder",
-      "kategori": "B",
-      "kategori_no": "Tk",
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 47,
-        "lazer": 25,
-        "buku": 14,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 680,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#wcpecetelik",
-        "#tuvaletaksesuar",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#wcnapkinholder",
-        "#bathroomaccessories",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/14. wc pecetelik - era",
-      "durum": "aktif",
-      "gtin13": ""
-    },
-    {
-      "base_kod": "FNB010",
-      "ad": "Ion",
-      "ad_tr": "Ion WC Pecetelik",
-      "ad_en": "Ion WC Napkin Holder",
-      "kategori": "B",
-      "kategori_no": "Tk",
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 52,
-        "lazer": 35,
-        "buku": 56,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 780,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#wcpecetelik",
-        "#tuvaletaksesuar",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#wcnapkinholder",
-        "#bathroomaccessories",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/11. wc pecetelik m2- ion",
-      "durum": "aktif",
-      "gtin13": ""
-    },
-    {
-      "base_kod": "FNE001",
-      "ad": "Docka",
-      "ad_tr": "Docka Cok Amacli Askilik",
-      "ad_en": "Docka Multi-purpose Hook",
-      "kategori": "E",
-      "kategori_no": 2,
-      "malzeme": "ST",
-      "platform": "Shopier",
-      "maliyet": {
-        "hammadde": 46,
-        "lazer": 28,
-        "buku": 28,
-        "iscilik": 50,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 625,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#askilik",
-        "#giris",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#hook",
-        "#entryway",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/10. giris askilik - docka",
-      "durum": "aktif",
-      "gtin13": ""
+      "fiyat_kdv": 1062,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
     },
     {
       "base_kod": "FNK003",
-      "ad": "Linvo",
-      "ad_tr": "Linvo Mutfak Pecetelik",
-      "ad_en": "Linvo Napkin Holder",
+      "pim_id": "FN-K-003",
+      "seri": "Linvo",
+      "ad": "Linvo - Masaüstü Peçetelik",
+      "ad_tr": "Fnoren Linvo - Masaüstü Peçetelik",
       "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
+      "kategori_adi": "Tuvalet Kağıtlığı",
+      "malzeme": "304 ST",
+      "platform": "Shopier",
+      "fiyat": 651,
       "stok": {
         "adet": 0,
         "kritik_seviye": 3,
         "uretilen": 0,
         "satilan": 0
       },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
+      "olculer_cm": {},
       "agirlik_gram": 0,
-      "aciklama_tr": "",
+      "aciklama_tr": "Linvo - Masaüstü Peçetelik",
+      "aciklama_uzun": "Linvo - Masaüstü Peçetelik\nLinvo Masaüstü Peçetelik – Sadelikte Saklı Zarafet\nLinvo\n, masaüstü düzenini sadece toparlamakla kalmaz; bulunduğu alana estetik bir denge kazandırır. Fonksiyonelliği zarif çizgilerle buluşturan bu özel tasarım, sofralarda, ofislerde ve günlük yaşam alanlarında şıklığı tamamlayan bir detay olarak öne çıkar.\nÜrün Özellikleri:\nModern & Minimal Tasarım\nTemiz hatları, sade formu ve dengeli yapısıyla her dekorasyon stiline uyum sağlar.\nSağlam Malzeme\nYüksek kaliteli paslanmaz çelik uzun ömürlü kullanım sunar.\nKolay Erişim ve Stabil Duruş\nPeçetelere kolay erişim sağlarken duruşuyla göz yormaz, dikkat çeker.\nMasa Üstü İçin İdeal Ölçüler\nAlan kaplamayan ama yeterli hacim sunan boyutlarıyla yemek masalarında, kahve köşelerinde ve ofislerde konforlu kullanım sağlar.",
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
         "trendyol": "",
         "etsy": ""
       },
-      "hashtag_tr": [
-        "#fnoren",
-        "#pecetelik",
-        "#mutfak",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#napkinholder",
-        "#kitchen",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Linvo",
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/linvo-masaustu-pecetelik-pm-HBC0000AOVGNA"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnk003",
       "durum": "aktif",
-      "gtin13": ""
+      "fiyat_kdv": 651,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
     },
     {
       "base_kod": "FNK004",
-      "ad": "Linore",
-      "ad_tr": "Linore Kagit Havluluk",
-      "ad_en": "Linore Paper Towel Holder",
+      "pim_id": "FN-K-004",
+      "seri": "Linore",
+      "ad": "Linore - Paslanmaz Rulo Havlu Tutacağı",
+      "ad_tr": "Fnoren Linore - Paslanmaz Rulo Havlu Tutacağı",
       "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
+      "kategori_adi": "Mutfak",
+      "malzeme": "304 ST",
+      "platform": null,
+      "fiyat": 621,
       "stok": {
         "adet": 0,
         "kritik_seviye": 3,
         "uretilen": 0,
         "satilan": 0
       },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
+      "olculer_cm": {},
       "agirlik_gram": 0,
-      "aciklama_tr": "",
+      "aciklama_tr": "Linore Paslanmaz Kağıt Havlu Askılığı – Temizlik İçin Zarif Bir Dokunuş",
+      "aciklama_uzun": "Linore - Paslanmaz Rulo Havlu Tutacağı\nLinore Paslanmaz Kağıt Havlu Askılığı – Temizlik İçin Zarif Bir Dokunuş\nLinore Kağıt Havlu Askılığı\n, banyoda, mutfakta ya da atölyede pratik erişim ve şıklığı bir arada sunar. Minimal çizgisi, sağlam paslanmaz çelik yapısıyla birleşerek hem estetik hem de fonksiyonel bir çözüm oluşturur.\nDuvarınıza monte ederek alan kazanabilir, mutfakta tezgah üstünde ya da banyonuzda düzeni yeniden tanımlayabilirsiniz.\nÜrün Özellikleri:\nPaslanmaz Çelik Gövde\n: Neme ve buhara karşı maksimum dayanıklılık.\nKolay Kağıt Değişimi\n: Tak-çıkar yapısı sayesinde kağıt rulo değiştirmek zahmetsiz.\nYatay veya Dikey Kullanım\n: İhtiyacınıza göre farklı yönlerde monte edilebilir.\nDuvara Montajlı Tasarım\n: Yüzeylerde yer kaplamadan estetik bir duruş sunar.\nEv ve İş Yerine Uygun\n: Mutfak, banyo, atölye ve temizlik alanları için ideal.",
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
         "trendyol": "",
         "etsy": ""
       },
-      "hashtag_tr": [
-        "#fnoren",
-        "#kagithavluluk",
-        "#mutfak",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#papertowelholder",
-        "#kitchen",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/6. kagit havluluk - Linore",
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/linore-paslanmaz-rulo-havlu-tutacagi-pm-HBC0000ASE1LK"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnk004",
       "durum": "aktif",
-      "gtin13": ""
+      "fiyat_kdv": 621,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
     },
     {
       "base_kod": "FNK005",
-      "ad": "RUNA",
-      "ad_tr": "Runa Pecetelik Serisi",
-      "ad_en": "Runa Napkin Holder Series",
+      "pim_id": "FN-K-005",
+      "seri": "Vayon",
+      "ad": "Vayon İkili Set - Paslanmaz Çelik Kesme Tahtası 24×34 & 28×38 cm",
+      "ad_tr": "Fnoren Vayon İkili Set - Paslanmaz Çelik Kesme Tahtası 24×34 & 28×38 cm",
       "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
+      "kategori_adi": "Mutfak",
+      "malzeme": "304 ST",
+      "platform": null,
+      "fiyat": 0,
       "stok": {
         "adet": 0,
         "kritik_seviye": 3,
         "uretilen": 0,
         "satilan": 0
       },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
+      "olculer_cm": {},
       "agirlik_gram": 0,
-      "aciklama_tr": "",
+      "aciklama_tr": "Vayon İkili Set — 24×34 & 28×38 cm",
+      "aciklama_uzun": "Fnoren Vayon Ikili Set - Paslanmaz Çelik Kesme Tahtası 24X34 & 28X38CM\nVayon İkili Set\n- 24x34 & 28x38cm\n- Paslanmaz Çelik Kesme Tahtası\n🔹\nHijyenik, Dayanıklı ve Şık – Mutfakta Profesyonelliği Hissedin!\nGeleneksel ahşap veya plastik tahtalara veda edin. %100\npaslanmaz çelikten üretilmiş\n, antibakteriyel yüzeyi sayesinde\nkoku tutmaz\n,\nküf barındırmaz\nve\nleke bırakmaz\n. Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz.\n🔹\nFonksiyonel Tasarım, Estetik Detaylar\nOval detayı sayesinde kolay taşınır, ele oturan yapısıyla güvenli kullanım sağlar. İster et ister sebze doğrayın; her mutfakta yerini bulur.\n🔹\nBıçak Dostu Yüzey\nÖzel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz. Profesyonel şeflerin tercih ettiği yüzey tipi!\n🔹\nKolay Temizlik – Anında Hijyen\nSuya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır.\n🔹\nÇevre Dostu Seçim\nDayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır. Doğaya duyarlı kullanıcılar için sürdürülebilir bir seçim!\nÜrün Özellikleri\nBoyut: 24x34 ve 28x38 cm\nMalzeme: AISI 304 Paslanmaz Çelik\nYüzey: Hairline\nKenar: Oval taşıma detayı\nTemizlik: Elde yıkanabilir\nKullanım: Et, sebze, meyve ve sunum amaçlı.",
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
         "trendyol": "",
         "etsy": ""
       },
-      "hashtag_tr": [
-        "#fnoren",
-        "#runa",
-        "#pecetelik",
-        "#lazerkes",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#runa",
-        "#napkinholder",
-        "#lasercut",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Runa",
+      "platform_links": {
+        "hepsiburada": "https://www.hepsiburada.com/vayon-ikili-set-paslanmaz-celik-kesme-tahtasi-24x34-28x38cm-pm-HBC0000AQ3LUJ"
+      },
+      "hashtag_tr": [],
+      "hashtag_en": [],
+      "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnk005",
       "durum": "aktif",
-      "gtin13": "",
-      "seri": "RUNA",
-      "kaynak": "manuel",
-      "guncelleme": "2026-04-04T06:08"
-    },
-    {
-      "base_kod": "FNK006",
-      "ad": "SEMEN",
-      "ad_tr": "Semen Pecetelik Serisi",
-      "ad_en": "Semen Napkin Holder Series",
-      "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#semen",
-        "#pecetelik",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#semen",
-        "#napkinholder",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Semen",
-      "durum": "aktif",
-      "gtin13": "",
-      "seri": "SEMEN",
-      "kaynak": "manuel",
-      "guncelleme": "2026-04-04T06:08"
-    },
-    {
-      "base_kod": "FNK007",
-      "ad": "MARIS",
-      "ad_tr": "Maris Pecetelik Serisi",
-      "ad_en": "Maris Napkin Holder Series",
-      "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#maris",
-        "#pecetelik",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#maris",
-        "#napkinholder",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Maris",
-      "durum": "aktif",
-      "gtin13": "",
-      "seri": "MARIS",
-      "kaynak": "manuel",
-      "guncelleme": "2026-04-04T06:08"
-    },
-    {
-      "base_kod": "FNK008",
-      "ad": "AQUILA",
-      "ad_tr": "Aquila Pecetelik Serisi",
-      "ad_en": "Aquila Napkin Holder Series",
-      "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#aquila",
-        "#pecetelik",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#aquila",
-        "#napkinholder",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/Fotolar/AQUILA",
-      "durum": "aktif",
-      "gtin13": "",
-      "seri": "AQUILA",
-      "kaynak": "manuel",
-      "guncelleme": "2026-04-04T06:08"
-    },
-    {
-      "base_kod": "FNK009",
-      "ad": "GINKGO",
-      "ad_tr": "Ginkgo Pecetelik Serisi",
-      "ad_en": "Ginkgo Napkin Holder Series",
-      "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#ginkgo",
-        "#pecetelik",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#ginkgo",
-        "#napkinholder",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Gingko",
-      "durum": "aktif",
-      "gtin13": "",
-      "seri": "GINKGO",
-      "kaynak": "manuel",
-      "guncelleme": "2026-04-04T06:08"
-    },
-    {
-      "base_kod": "FNK010",
-      "ad": "LUPUS",
-      "ad_tr": "Lupus Pecetelik Serisi",
-      "ad_en": "Lupus Napkin Holder Series",
-      "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#lupus",
-        "#pecetelik",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#lupus",
-        "#napkinholder",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Lupus",
-      "durum": "aktif",
-      "gtin13": "",
-      "seri": "LUPUS",
-      "kaynak": "manuel",
-      "guncelleme": "2026-04-04T06:08"
-    },
-    {
-      "base_kod": "FNK011",
-      "ad": "UMBE",
-      "ad_tr": "Umbe Pecetelik Serisi",
-      "ad_en": "Umbe Napkin Holder Series",
-      "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#umbe",
-        "#pecetelik",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#umbe",
-        "#napkinholder",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Umbe",
-      "durum": "aktif",
-      "gtin13": "",
-      "seri": "UMBE",
-      "kaynak": "manuel",
-      "guncelleme": "2026-04-04T06:08"
-    },
-    {
-      "base_kod": "FNK012",
-      "ad": "SOL",
-      "ad_tr": "Sol Pecetelik Serisi",
-      "ad_en": "Sol Napkin Holder Series",
-      "kategori": "K",
-      "kategori_no": 7,
-      "malzeme": "ST",
-      "platform": "Hepsiburada",
-      "maliyet": {
-        "hammadde": 0,
-        "lazer": 0,
-        "buku": 0,
-        "iscilik": 70,
-        "ambalaj": 50,
-        "kargo": 120,
-        "extra": 20,
-        "kar_marji": 40,
-        "kdv": 20
-      },
-      "satis_fiyati_tl": 0,
-      "stok": {
-        "adet": 0,
-        "kritik_seviye": 3,
-        "uretilen": 0,
-        "satilan": 0
-      },
-      "olculer_cm": {
-        "en": 0,
-        "boy": 0,
-        "yukseklik": 0
-      },
-      "agirlik_gram": 0,
-      "aciklama_tr": "",
-      "aciklama_en": "",
-      "platform_kodu": {
-        "hb": "",
-        "trendyol": "",
-        "etsy": ""
-      },
-      "hashtag_tr": [
-        "#fnoren",
-        "#sol",
-        "#pecetelik",
-        "#paslanmazcelik"
-      ],
-      "hashtag_en": [
-        "#fnoren",
-        "#sol",
-        "#napkinholder",
-        "#stainlesssteel"
-      ],
-      "gorsel_yolu": "0. Trendyol Urun Goselstirme/7.Pecetelikler/Peçetelik-Sol",
-      "durum": "aktif",
-      "gtin13": "",
-      "seri": "SOL",
-      "kaynak": "manuel",
-      "guncelleme": "2026-04-04T06:08"
-    },
-    {
-      "base_kod": "FNK013",
-      "ad": "Vayon",
-      "ad_tr": "Vayon Kesme Tahtasi L",
-      "ad_en": "Vayon Cutting Board L",
-      "kategori": "K",
-      "kategori_no": 4,
-      "malzeme": "ST",
-      "platform": "Shopier",
-      "satis_fiyati_tl": 990,
-      "fiyat": 990,
-      "stok": { "adet": 0, "kritik_seviye": 3 },
-      "olculer_cm": { "en": 28, "boy": 38, "yukseklik": 2 },
-      "durum": "aktif",
-      "kaynak": "scraper",
-      "guncelleme": "2026-04-04T18:00",
-      "platform_links": { "shopier": "42656244" },
-      "scraper_guncelleme": "2026-04-04T18:00"
-    },
-    {
-      "base_kod": "FNK014",
-      "ad": "Vayon",
-      "ad_tr": "Vayon Kesme Tahtasi XL",
-      "ad_en": "Vayon Cutting Board XL",
-      "kategori": "K",
-      "kategori_no": 4,
-      "malzeme": "ST",
-      "platform": "Shopier",
-      "satis_fiyati_tl": 1850,
-      "fiyat": 1850,
-      "stok": { "adet": 0, "kritik_seviye": 3 },
-      "durum": "aktif",
-      "kaynak": "scraper",
-      "guncelleme": "2026-04-04T18:00",
-      "platform_links": { "shopier": "42656323" },
-      "scraper_guncelleme": "2026-04-04T18:00"
-    },
-    {
-      "base_kod": "FNB005",
-      "ad": "Serel",
-      "ad_tr": "Serel Banyo Kose Rafi",
-      "ad_en": "Serel Bathroom Corner Shelf",
-      "kategori": "B",
-      "kategori_no": 6,
-      "malzeme": "ST",
-      "platform": "Shopier",
-      "satis_fiyati_tl": 680,
-      "fiyat": 680,
-      "stok": { "adet": 0, "kritik_seviye": 3 },
-      "durum": "aktif",
-      "kaynak": "scraper",
-      "guncelleme": "2026-04-04T18:00",
-      "platform_links": { "shopier": "42797149" },
-      "scraper_guncelleme": "2026-04-04T18:00"
-    },
-    {
-      "base_kod": "FNB006",
-      "ad": "Reone",
-      "ad_tr": "Reone Celik Kose Rafi",
-      "ad_en": "Reone Steel Corner Shelf",
-      "kategori": "B",
-      "kategori_no": 6,
-      "malzeme": "ST",
-      "platform": "Shopier",
-      "satis_fiyati_tl": 680,
-      "fiyat": 680,
-      "stok": { "adet": 0, "kritik_seviye": 3 },
-      "durum": "aktif",
-      "kaynak": "scraper",
-      "guncelleme": "2026-04-04T18:00",
-      "platform_links": { "shopier": "42667308" },
-      "scraper_guncelleme": "2026-04-04T18:00"
+      "fiyat_kdv": 0,
+      "kaynak": "PIM aktif (NJ-329 build)",
+      "guncelleme": "2026-05-31T14:42"
     }
   ]
 }

@@ -3,18 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fnoren — 304 kalite paslanmaz çelik, zamansız tasarımlar. Mutfak ve banyo aksesuarları.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src https://aperaur-production.up.railway.app; img-src 'self' data: https://cdn.shopier.app;">
+  <meta name="description" content="Fnoren — 304 kalite paslanmaz çelik, zamansız tasarımlar. Mutfak ve banyo aksesuarları. Bursa.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.cdnfonts.com; font-src https://fonts.gstatic.com https://fonts.cdnfonts.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net; connect-src 'self' https://aperaur-production.up.railway.app https://www.google-analytics.com https://connect.facebook.net; img-src 'self' data: https://cdn.shopier.app https://www.facebook.com;">
   <title>Fnoren — Zamansız Tasarımlar</title>
+  <link rel="icon" href="assets/img/brand/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TV9T87ZLDX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TV9T87ZLDX');</script>
+  <!-- Facebook Pixel -->
+  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','922068336659784');fbq('track','PageView');</script>
 </head>
 <body>
+<div class="grid-glow" id="grid-glow"></div>
+<div class="grid-glow-lines" id="grid-glow-lines"></div>
 
 <nav>
-  <a href="index.html" class="nav-logo">Fnoren</a>
+  <a href="index.html" class="nav-icon"><img src="assets/img/brand/logo.png" alt="Fn."></a>
+  <a href="index.html" class="nav-brand">Fnoren</a>
   <ul class="nav-links">
     <li><a href="urunler.html">Ürünler</a></li>
     <li><a href="hakkimizda.html">Hakkımızda</a></li>
@@ -23,39 +32,33 @@
 </nav>
 
 <section class="hero">
-  <div class="hero-text">
-    <span class="label">304 Paslanmaz Çelik — Bursa</span>
+  <div class="hero-text mark-bracket mark-bracket-lg" style="padding:5rem calc(var(--gutter) * 2)">
+    <span class="label mono">304 Paslanmaz Çelik — Bursa</span>
     <h1>Zamansız<br>Tasarımlar</h1>
-    <p>Mutfak ve banyo aksesuarları.<br>Üretimden tasarıma tek elden.</p>
+    <p>Mutfak ve banyo aksesuarları.<br>Tasarımından son bükümüne kadar tek elden.</p>
     <a href="urunler.html" class="btn btn-primary">Koleksiyonu Gör →</a>
   </div>
-  <div class="hero-visual">
-    <div class="hero-visual-inner">
-      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0.5" y="0.5" width="63" height="63" stroke="#d4d5d6"/>
-        <line x1="0" y1="32" x2="64" y2="32" stroke="#d4d5d6" stroke-width="0.5"/>
-        <line x1="32" y1="0" x2="32" y2="64" stroke="#d4d5d6" stroke-width="0.5"/>
-      </svg>
-      <span class="hero-placeholder-label">Görsel</span>
-    </div>
+  <div class="hero-visual" style="position:relative;overflow:hidden">
+    <span class="side-label" style="position:absolute;left:16px;bottom:24px;z-index:2">AISI 304</span>
+    <img src="assets/img/products/hero-aski.webp" alt="Paslanmaz Çelik Elbise Askısı — Fırçalanmış Doku" style="width:100%;height:100%;object-fit:cover">
   </div>
 </section>
 
 <div class="specs-row">
-  <div class="spec-item">
-    <span class="spec-num">304</span>
+  <div class="spec-item fade-in">
+    <span class="spec-num mono">304</span>
     <span class="spec-label">Paslanmaz Çelik</span>
   </div>
-  <div class="spec-item">
-    <span class="spec-num">27</span>
+  <div class="spec-item fade-in">
+    <span class="spec-num mono">27</span>
     <span class="spec-label">Ürün</span>
   </div>
-  <div class="spec-item">
-    <span class="spec-num">4</span>
+  <div class="spec-item fade-in">
+    <span class="spec-num mono">4</span>
     <span class="spec-label">Kategori</span>
   </div>
-  <div class="spec-item">
-    <span class="spec-num">∞</span>
+  <div class="spec-item fade-in">
+    <span class="spec-num mono">∞</span>
     <span class="spec-label">Dayanıklılık</span>
   </div>
 </div>
@@ -74,19 +77,63 @@
   </div>
 </section>
 
+<div class="container">
+  <div class="divider-num">
+    <span class="num">02</span>
+    <span class="divider-label">malzeme</span>
+    <span class="line"></span>
+  </div>
+</div>
+
+<!-- Manifesto — Dark Section -->
+<section class="section-dark">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+      <div class="fade-in">
+        <span class="label" style="display:block;margin-bottom:1.5rem">Malzeme</span>
+        <h2 style="margin-bottom:1.5rem">Neden 304 Çelik?</h2>
+        <p style="margin-bottom:1rem">Plastik eskir. Ahşap çürür. 304 kalite paslanmaz çelik nesiller boyu dayanır.</p>
+        <p style="margin-bottom:1rem">Korozyona dirençli. Gıda güvenli. Fırçalanmış mat yüzeyi parmak izi tutmaz, zamanla güzelleşir.</p>
+        <p>Her ürün ham çelik plakadan başlar — lazer kesim, büküm, kaynak, fırçalama. Dört aşama, tek atölye, sıfır taşeron.</p>
+      </div>
+      <div class="fade-in mark-bracket" style="text-align:center;padding:2rem">
+        <table class="spec-table" style="max-width:320px;margin:0 auto">
+          <tr><td>Alaşım</td><td>AISI 304 (18/8)</td></tr>
+          <tr><td>Krom</td><td>%18</td></tr>
+          <tr><td>Nikel</td><td>%8</td></tr>
+          <tr><td>Yüzey</td><td>Fırçalanmış Mat</td></tr>
+          <tr><td>Gıda Güvenli</td><td>Evet</td></tr>
+          <tr><td>Korozyon</td><td>Dirençli</td></tr>
+          <tr><td>Üretim</td><td>Bursa, TR</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="divider-num">
+    <span class="num">03</span>
+    <span class="divider-label">atölye</span>
+    <span class="line"></span>
+  </div>
+</div>
+
 <section class="section" style="padding-top:0">
   <div class="container">
     <div class="about-grid">
-      <div class="about-text-col fade-in">
+      <div class="about-text-col fade-in mark-bracket">
         <span class="label" style="display:block;margin-bottom:1rem">Atölye</span>
         <h2>Tek Elden Üretim</h2>
-        <p style="margin-top:1.5rem">304 kalite paslanmaz çeliği işlevsellikle buluşturan tasarımlar. CAD'den atölyeye, atölyeden evinize.</p>
-        <p style="margin-top:1rem">Paslanmaz, korozyona dayanıklı, gıda güvenli. Yıllarca değerini korur.</p>
+        <p style="margin-top:1.5rem">CAD'den atölyeye, atölyeden evinize. Her ürün Bursa'daki atölyemizde tasarlanır ve üretilir.</p>
+        <p style="margin-top:1rem">Aracı yok, fason yok. Tasarımcının vizyonu ile üreticinin çekici aynı çatı altında.</p>
         <div style="margin-top:2.5rem">
           <a href="hakkimizda.html" class="btn btn-outline">Hikayemiz →</a>
         </div>
       </div>
-      <div class="about-visual-col">Görsel</div>
+      <div class="about-visual-col">
+        <img src="assets/img/products/FNB001.webp" alt="Reone Köşe Rafı" style="max-width:70%;max-height:70%;object-fit:contain">
+      </div>
     </div>
   </div>
 </section>
@@ -99,7 +146,7 @@
       <a href="hakkimizda.html">Hakkımızda</a>
       <a href="iletisim.html">İletişim</a>
     </div>
-    <span>Bursa, TR — 304 Paslanmaz Çelik</span>
+    <span class="mono" style="font-size:0.625rem">Bursa, TR — 304 Paslanmaz Çelik</span>
   </div>
 </footer>
 

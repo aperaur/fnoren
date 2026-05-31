@@ -1,5 +1,6 @@
-/* urunler.js — urunler.json'dan dinamik ürün kartları */
+/* urunler.js — fnoren Swiss Industrial v3.2 — PIM-aligned NJ-329 */
 const SHOPIER_BASE = "https://www.shopier.com/ShowProduct/api/?s=";
+const HB_STORE     = "https://www.hepsiburada.com/magaza/fnoren";
 
 async function urunleriYukle(hedefId, limit = 0, kategori = null) {
   const hedef = document.getElementById(hedefId);
@@ -7,7 +8,7 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
 
   let veri;
   try {
-    const resp = await fetch("/data/urunler.json");
+    const resp = await fetch("data/urunler.json");
     if (!resp.ok) throw new Error("Veri yüklenemedi");
     veri = await resp.json();
   } catch (e) {
@@ -15,14 +16,14 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
     return;
   }
 
-  let urunler = (veri.urunler || []).filter(u =>
-    u.durum !== "deprecated" &&
-    u.durum !== "DEPRECATED" &&
-    (u.platform_links?.shopier)          // sadece Shopier'da olanlar
-  );
+  let urunler = (veri.urunler || []).filter(u => {
+    if (u.durum !== "aktif") return false;
+    const pl = u.platform_links || {};
+    return Boolean(pl.shopier || pl.hepsiburada);
+  });
 
   if (kategori) {
-    const katMap = { mutfak: "K", banyo: "B", yasam: "E", aksesuar: "A" };
+    const katMap = { mutfak: "K", banyo: "B", giris: "E", aksesuar: "A" };
     const kod = katMap[kategori] || kategori;
     urunler = urunler.filter(u => u.kategori === kod);
   }
@@ -31,32 +32,37 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
 
   hedef.innerHTML = "";
   urunler.forEach((u, i) => {
-    const shopierUrl = `${SHOPIER_BASE}${u.platform_links.shopier}`;
-    const fiyat      = u.fiyat || u.satis_fiyati_tl || 0;
-    const stokAdet   = u.stok?.adet ?? null;
-    const sonUrun    = u.son_urun || u.stok?.son_urun_badge;
-    const ad         = u.ad_tr || u.ad || "Ürün";
-
-    // Stok göstergesi
-    let stokClass = "stok-ok", stokMetin = "Stokta";
-    if (stokAdet === 0)       { stokClass = "stok-out";  stokMetin = "Tükendi"; }
-    else if (stokAdet !== null && stokAdet <= 3) { stokClass = "stok-warn"; stokMetin = `Son ${stokAdet} adet`; }
-    else if (sonUrun)         { stokClass = "stok-warn"; stokMetin = "Son ürün"; }
+    const pl       = u.platform_links || {};
+    const shopUrl  = pl.shopier ? `${SHOPIER_BASE}${pl.shopier}` : null;
+    const hbUrl    = pl.hepsiburada || null;
+    const ad       = u.ad_tr || u.ad || "Ürün";
+    const seri     = u.seri || u.ad || "";
+    const baseKod  = u.base_kod || "";
+    const kisa     = u.aciklama_tr || "";
+    const cb       = "?v=nj329";
 
     const kart = document.createElement("div");
     kart.className = "urun-kart fade-in";
-    kart.style.transitionDelay = `${i * 60}ms`;
+    kart.style.transitionDelay = `${i * 80}ms`;
+    kart.onclick = () => window.location.href = `urun.html?kod=${baseKod}`;
+    const buttons = [];
+    if (hbUrl)  buttons.push(`<a href="${hbUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-hb" onclick="event.stopPropagation()">Hepsiburada'da Gör →</a>`);
+    if (shopUrl) buttons.push(`<a href="${shopUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-shopier" onclick="event.stopPropagation()">Shopier'da Gör →</a>`);
     kart.innerHTML = `
-      ${sonUrun ? '<span class="badge-son-urun">Son Ürün</span>' : ""}
+      <span class="card-mark-tl"></span>
+      <span class="card-mark-br"></span>
       <div class="urun-img-wrap">
-        <div class="urun-placeholder">◈</div>
+        <img src="assets/img/products/${baseKod}.jpg${cb}" alt="${ad}" loading="lazy" width="400" height="400">
       </div>
+      <span class="label mono meta-num" style="display:block;margin-bottom:0.25rem;font-size:0.625rem">${baseKod}</span>
       <h3>${ad}</h3>
-      <div class="urun-fiyat">${fiyat.toLocaleString("tr-TR")} <span>₺</span></div>
-      <div class="stok-label">
-        <span class="stok-dot ${stokClass}"></span>${stokMetin}
+      <span class="label meta-tri" style="display:block;margin-top:0.125rem;font-size:0.5625rem">${seri}</span>
+      ${kisa ? `<p style="margin:0.5rem 0 0;font-size:0.8125rem;color:var(--muted);line-height:1.45">${kisa}</p>` : ''}
+      <div class="stok-badge stok-badge--ok" style="margin:0.75rem 0">
+        <span class="stok-dot stok-ok"></span>
+        Satışta
       </div>
-      ${stokAdet !== 0 ? `<a href="${shopierUrl}" target="_blank" rel="noopener" class="btn btn-shopier">Shopier'dan Al →</a>` : '<span style="color:var(--error);font-size:0.8rem">Tükendi</span>'}
+      ${buttons.join("")}
     `;
     hedef.appendChild(kart);
   });

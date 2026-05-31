@@ -17,3 +17,9 @@ node_modules/
 # Python
 __pycache__/
 *.pyc
+
+# NJ helper scriptleri (tek seferlik data hijyen / migration)
+/.tools/
+
+# Eski AURA feed prototip kalıntısı (NJ-329 keşfedildi, fnoren ile alakasız)
+/export/
