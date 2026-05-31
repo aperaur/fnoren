@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css?v=nj329h">
 </head>
 <body>
 
@@ -78,44 +78,136 @@ document.addEventListener("DOMContentLoaded", async () => {
   const olcu      = urun.olculer_cm;
   const kat       = katMap[urun.kategori] || urun.kategori;
   const kisa      = urun.aciklama_tr || "";
-  const uzun      = urun.aciklama_uzun || "";
-  // Uzun açıklamayı paragraflara böl (line breaks)
-  const uzunHtml  = uzun
-    ? uzun.split(/\n\s*\n|\n/).filter(s => s.trim()).map(s => `<p>${s.trim()}</p>`).join("")
-    : "";
+  const paragraflar = urun.aciklama_paragraflar || [];
+  const ozellikler  = urun.ozellikler || {};
+  const cb        = "?v=nj329h";
 
   document.title = `${ad} — Fnoren`;
 
+  // Galeri: -01 ana, -02/-03/-04 ek
+  const galeriIdx = [1, 2, 3, 4];
+  const galeriHtml = galeriIdx.map(i => {
+    const src = i === 1 ? `assets/img/products/${kod}.jpg${cb}` : `assets/img/products/${kod}-0${i}.jpg${cb}`;
+    return `<button class="galeri-thumb${i === 1 ? ' active' : ''}" data-idx="${i}" onclick="anaFoto(this,'${src}')"><img src="${src}" alt="${ad} ${i}" loading="lazy"></button>`;
+  }).join("");
+
+  const ozellikRows = Object.entries(ozellikler).map(([k, v]) =>
+    `<tr><td>${k}</td><td>${v}</td></tr>`
+  ).join("");
+
+  const paragrafHtml = paragraflar.length
+    ? paragraflar.map(p => `<p>${p}</p>`).join("")
+    : "";
+
+  // Tüm 4 foto URL'leri (lightbox icin galeri arrayi)
+  const fotoUrls = galeriIdx.map(i => i === 1 ? `assets/img/products/${kod}.jpg${cb}` : `assets/img/products/${kod}-0${i}.jpg${cb}`);
+
   document.getElementById("product-detail").innerHTML = `
-    <div class="product-img-col fade-in">
-      <img src="assets/img/products/${kod}.jpg?v=nj329" alt="${ad}">
+    <aside class="galeri-strip">${galeriHtml}</aside>
+    <div class="product-img-col">
+      <div class="product-ana-foto" id="ana-foto-wrap" onclick="openLightbox()">
+        <img src="${fotoUrls[0]}" alt="${ad}" id="ana-foto">
+      </div>
     </div>
-    <div class="product-info-col fade-in">
-      <span class="label mono" style="margin-bottom:0.5rem">${seri} — ${kat}</span>
+    <div class="product-info-col">
+      <span class="label mono">${seri} — ${kat}</span>
       <h1>${ad}</h1>
-      ${kisa ? `<p style="margin:1rem 0 0;color:var(--muted);line-height:1.6;font-size:0.9375rem">${kisa}</p>` : ''}
-      <div class="stok-badge stok-badge--ok" style="margin:1.5rem 0">
+      ${kisa ? `<p class="kisa-aciklama">${kisa}</p>` : ''}
+      <div class="stok-badge stok-badge--ok">
         <span class="stok-dot stok-ok"></span>
         Satışta
       </div>
-
-      <table class="spec-table" style="margin-bottom:2rem">
-        <tr><td>Malzeme</td><td>304 Paslanmaz Çelik (AISI 304)</td></tr>
-        <tr><td>Yüzey</td><td>Fırçalanmış Mat / HL</td></tr>
-        ${olcu && olcu.en ? `<tr><td>Ölçü</td><td>${olcu.en} × ${olcu.boy}${olcu.yukseklik ? ' × ' + olcu.yukseklik : ''} cm</td></tr>` : ''}
-        ${urun.agirlik_gram ? `<tr><td>Ağırlık</td><td>${urun.agirlik_gram}g</td></tr>` : ''}
-        <tr><td>Kategori</td><td>${kat}</td></tr>
-        <tr><td>Üretim</td><td>Bursa, TR</td></tr>
-      </table>
-
+      ${ozellikRows ? `<table class="spec-table">${ozellikRows}</table>` : ''}
       <div class="product-buttons">
         ${hbUrl ? `<a href="${hbUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-hb">Hepsiburada'da Satın Al →</a>` : ''}
         ${shopUrl ? `<a href="${shopUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-shopier">Shopier'da Satın Al →</a>` : ''}
       </div>
-
-      ${uzunHtml ? `<section class="product-long-desc" style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)"><span class="label mono" style="display:block;margin-bottom:1rem">Ürün Detayı</span><div style="line-height:1.7;color:var(--muted)">${uzunHtml}</div></section>` : ''}
+      ${paragrafHtml ? `<div class="product-long-desc"><span class="label mono detay-baslik">Ürün Detayı</span><div class="detay-text">${paragrafHtml}</div></div>` : ''}
     </div>
   `;
+
+  // Lightbox HTML — body direkt child (grid'in DIŞINDA)
+  const existingLb = document.getElementById("lightbox");
+  if (existingLb) existingLb.remove();
+  document.body.insertAdjacentHTML("beforeend", `
+    <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
+      <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Kapat">✕</button>
+      <div class="lightbox-content" id="lightbox-content" onclick="event.stopPropagation()">
+        <div class="lightbox-img" id="lightbox-img" onclick="toggleZoom(event)"></div>
+      </div>
+      <div class="lightbox-thumbs">
+        ${fotoUrls.map((u, i) => `<button class="lightbox-thumb${i === 0 ? ' active' : ''}" onclick="lightboxFoto(this,'${u}',event)"><img src="${u}" alt="${ad} ${i+1}"></button>`).join("")}
+      </div>
+    </div>
+  `);
+
+  // Mevcut foto URL state
+  let lbCurrent = fotoUrls[0];
+
+  window.openLightbox = () => {
+    const lb = document.getElementById("lightbox");
+    const img = document.getElementById("lightbox-img");
+    img.style.backgroundImage = `url('${lbCurrent}')`;
+    img.classList.remove("zoom");
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+  };
+  window.closeLightbox = (e) => {
+    if (e && e.target !== e.currentTarget && !e.target.classList.contains("lightbox-close")) return;
+    document.getElementById("lightbox").classList.remove("open");
+    document.body.style.overflow = "";
+  };
+  window.lightboxFoto = (el, src, e) => {
+    e.stopPropagation();
+    lbCurrent = src;
+    const img = document.getElementById("lightbox-img");
+    img.style.backgroundImage = `url('${src}')`;
+    img.classList.remove("zoom");
+    document.querySelectorAll(".lightbox-thumb").forEach(t => t.classList.remove("active"));
+    el.classList.add("active");
+  };
+  window.toggleZoom = (e) => {
+    e.stopPropagation();
+    const img = document.getElementById("lightbox-img");
+    img.classList.toggle("zoom");
+  };
+  // Thumb img onerror -> parent button gizle (var olmayan galeri foto)
+  document.querySelectorAll(".galeri-thumb img").forEach(img => {
+    img.addEventListener("error", () => { img.parentElement.style.display = "none"; });
+  });
+  // Lightbox thumb onerror -> gizle
+  document.querySelectorAll(".lightbox-thumb img").forEach(img => {
+    img.addEventListener("error", () => { img.parentElement.style.display = "none"; });
+  });
+
+  // Mousemove cursor-tracking lens zoom
+  document.getElementById("lightbox-img").addEventListener("mousemove", (e) => {
+    const img = e.currentTarget;
+    if (!img.classList.contains("zoom")) return;
+    const rect = img.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    img.style.backgroundPosition = `${x}% ${y}%`;
+  });
+  // ESC ile kapat
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.getElementById("lightbox").classList.remove("open");
+      document.body.style.overflow = "";
+    }
+  });
+
+  // Galeri thumb click handler — ana foto degistir
+  window.anaFoto = (el, src) => {
+    document.getElementById("ana-foto").src = src;
+    document.querySelectorAll(".galeri-thumb").forEach(t => t.classList.remove("active"));
+    el.classList.add("active");
+  };
+
+  // Thumb 404 kontrol — yoksa gizle
+  document.querySelectorAll(".galeri-thumb img").forEach(img => {
+    img.addEventListener("error", () => img.parentElement.style.display = "none");
+  });
 
   // Trigger fade-in
   const obs = new IntersectionObserver((entries) => {

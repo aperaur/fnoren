@@ -1,7 +1,7 @@
 {
   "meta": {
     "versiyon": "3.0",
-    "guncelleme": "2026-05-31T14:42",
+    "guncelleme": "2026-05-31T17:02",
     "aciklama": "fnoren urun veritabani — PIM aktif (NJ-329 build)",
     "status": "AKTIF",
     "kaynak": "E:/APEX/AperAur/pim/katalog/aktif"
@@ -63,6 +63,14 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Serel Serisi Paslanmaz Banyo Köşe Rafı – Sadelikten Gelen Güç",
       "aciklama_uzun": "Fnoren Serel - Paslanmaz Banyo Köşe Rafı\nSerel Serisi Paslanmaz Banyo Köşe Rafı – Sadelikten Gelen Güç\nBanyonuzda yalın, fonksiyonel ve güçlü bir çözüm arıyorsanız\nSerel Serisi Paslanmaz Banyo Köşe Rafı\n, minimal tasarımıyla beklentilerin ötesine geçiyor. Net çizgileri, parlamayan pürüzsüz yüzeyi ve sağlam gövdesiyle her banyoya uyum sağlayan, zamansız bir yardımcı.\nÜrün Özellikleri:\n:\nPaslanmaz Çelik Gövde\n: Uzun ömürlü kullanım için üstün neme ve buhara dayanıklılık sağlar.\nKöşe Tipi Tasarım\n: Dar alanlarda düzen oluşturmanın en akılcı yolu.\nKaymaz ve Sağlam Yüzey\n: Deterjan, şampuan ve aksesuarlar için güvenli tutuş sağlar.\nKurulum Kolaylığı\n: Çift taraflı bant ile dilediğiniz uygun yüzeye monte edebilirsiniz.",
+      "aciklama_paragraflar": [
+        "Banyonuzda yalın, fonksiyonel ve güçlü bir çözüm arıyorsanız Serel Serisi Paslanmaz Banyo Köşe Rafı, minimal tasarımıyla beklentilerin ötesine geçiyor. Net çizgileri, parlamayan pürüzsüz yüzeyi ve sağlam gövdesiyle her banyoya uyum sağlayan, zamansız bir yardımcı. Ürün Özellikleri:: Paslanmaz Çelik Gövde: Uzun ömürlü kullanım için üstün neme ve buhara dayanıklılık sağlar."
+      ],
+      "ozellikler": {
+        "Köşe Tipi Tasarım": "Dar alanlarda düzen oluşturmanın en akılcı yolu.",
+        "Kaymaz ve Sağlam Yüzey": "Deterjan, şampuan ve aksesuarlar için güvenli tutuş sağlar.",
+        "Kurulum Kolaylığı": "Çift taraflı bant ile dilediğiniz uygun yüzeye monte edebilirsiniz."
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -78,7 +86,7 @@
       "durum": "aktif",
       "fiyat_kdv": 767,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNB002",
@@ -101,6 +109,15 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Reone Serisi Paslanmaz Banyo Köşe Rafı – Şıklığın ve Dayanıklılığın Buluşma Noktası",
       "aciklama_uzun": "Fnoren Reone - Paslanmaz Çelik Köşe Rafı\nReone Serisi Paslanmaz Banyo Köşe Rafı – Şıklığın ve Dayanıklılığın Buluşma Noktası\nBanyonuzda hem estetik hem de işlevsel bir düzen arıyorsanız,\nReone Serisi Paslanmaz Banyo Köşe Rafı\ntam size göre!\nModern çizgileri ve zamansız tasarımıyla her banyo stiline kolayca uyum sağlar. Paslanmaz çelik yapısı sayesinde uzun ömürlü kullanım sunarken, köşe yerleşimiyle alandan maksimum tasarruf sağlar.\nÜrün Özellikleri:\n%100 Paslanmaz Çelik\n: Nemli ortamlarda kararma, paslanma ve deformasyona karşı üstün direnç.\nAkıllı Ve Esnek Tasarım\n: Alanınızı verimli kullanmanızı sağlar; küçük banyolar için ideal çözüm.\nModern Yüzey\n: Zarif görünümü ile banyonuzun şıklığını tamamlar.\nÇok Amaçlı Kullanım\n: Şampuan, sabun, tıraş ürünleri ve aksesuarlar için ideal taşıma kapasitesi.",
+      "aciklama_paragraflar": [
+        "Banyonuzda hem estetik hem de işlevsel bir düzen arıyorsanız, Reone Serisi Paslanmaz Banyo Köşe Rafı tam size göre! Modern çizgileri ve zamansız tasarımıyla her banyo stiline kolayca uyum sağlar. Paslanmaz çelik yapısı sayesinde uzun ömürlü kullanım sunarken, köşe yerleşimiyle alandan maksimum tasarruf sağlar."
+      ],
+      "ozellikler": {
+        "%100 Paslanmaz Çelik": "Nemli ortamlarda kararma, paslanma ve deformasyona karşı üstün direnç.",
+        "Akıllı Ve Esnek Tasarım": "Alanınızı verimli kullanmanızı sağlar; küçük banyolar için ideal çözüm.",
+        "Modern Yüzey": "Zarif görünümü ile banyonuzun şıklığını tamamlar.",
+        "Çok Amaçlı Kullanım": "Şampuan, sabun, tıraş ürünleri ve aksesuarlar için ideal taşıma kapasitesi."
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -116,7 +133,7 @@
       "durum": "aktif",
       "fiyat_kdv": 767,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNB003",
@@ -139,6 +156,16 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Reone Serisi Paslanmaz Çift Taraflı Duvar Rafı  – Banyonuzda Zekice Düzen, Zamansız Tasarım",
       "aciklama_uzun": "Fnoren Reone - Paslanmaz Çift Taraflı Duvar Rafı\nReone Serisi Paslanmaz Çift Taraflı Duvar Rafı  – Banyonuzda Zekice Düzen, Zamansız Tasarım\nReone\n, işlevselliği sadelikle birleştiren, modern banyolar için özel olarak tasarlanmış paslanmaz çelik ürün serisidir. Köşe rafından duvar rafına kadar her bir parça; dayanıklılık, minimalizm ve kullanım kolaylığını bir araya getirir. Yalın tasarımıyla her tarza uyum sağlar, uzun ömürlü yapısıyla yıllarca formunu korur.\nReone Serisi’nde Neler Var?\nKöşe Rafı\n: Banyonuzun en az kullanılan alanını maksimum düzene çeviren pratik bir çözüm.\nDuvar Rafı\n: Duvarda düz bir hat üzerinde zarif bir düzen sağlayan, çok amaçlı kullanım alanına sahip raf.\nPaslanmaz Çelik Malzeme\n: Her ürün neme ve buhara karşı dirençli, uzun ömürlü ve hijyenik.\nKolay Montaj\n: Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nKolay Temizlik\n: Pürüzsüz yüzeyi sayesinde şık bir görünüm sunar.\nNeden Fnoren?\nÇünkü Fnoren; banyoyu yalnızca bir ihtiyaç alanı olarak değil, bir yaşam alanı olarak görür.\nSadeliği abartıdan uzak bir estetikle sunar. Her detayıyla fonksiyonel, her çizgisiyle zamansızdır.",
+      "aciklama_paragraflar": [
+        ", işlevselliği sadelikle birleştiren, modern banyolar için özel olarak tasarlanmış paslanmaz çelik ürün serisidir. Köşe rafından duvar rafına kadar her bir parça; dayanıklılık, minimalizm ve kullanım kolaylığını bir araya getirir. Yalın tasarımıyla her tarza uyum sağlar, uzun ömürlü yapısıyla yıllarca formunu korur. Reone Serisi’nde Neler Var?"
+      ],
+      "ozellikler": {
+        "Köşe Rafı": "Banyonuzun en az kullanılan alanını maksimum düzene çeviren pratik bir çözüm.",
+        "Duvar Rafı": "Duvarda düz bir hat üzerinde zarif bir düzen sağlayan, çok amaçlı kullanım alanına sahip raf.",
+        "Paslanmaz Çelik Malzeme": "Her ürün neme ve buhara karşı dirençli, uzun ömürlü ve hijyenik.",
+        "Kolay Montaj": "Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.",
+        "Kolay Temizlik": "Pürüzsüz yüzeyi sayesinde şık bir görünüm sunar."
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -154,7 +181,7 @@
       "durum": "aktif",
       "fiyat_kdv": 1046,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNB004",
@@ -177,6 +204,16 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Serel Serisi Paslanmaz Çift Taraflı Duvar Rafı – Banyonuzda Zekice Düzen, Zamansız Tasarım",
       "aciklama_uzun": "Fnoren Serel - Paslanmaz Çift Taraflı Duvar Rafı\nSerel Serisi Paslanmaz Çift Taraflı Duvar Rafı – Banyonuzda Zekice Düzen, Zamansız Tasarım\nSerel\n, işlevselliği sadelikle birleştiren, modern banyolar için özel olarak tasarlanmış paslanmaz çelik ürün serisidir. Köşe rafından duvar rafına kadar her bir parça; dayanıklılık, minimalizm ve kullanım kolaylığını bir araya getirir. Yalın tasarımıyla her tarza uyum sağlar, uzun ömürlü yapısıyla yıllarca formunu korur.\nSerel Serisi’nde Neler Var?\nKöşe Rafı\n: Banyonuzun en az kullanılan alanını maksimum düzene çeviren pratik bir çözüm.\nDuvar Rafı\n: Duvarda düz bir hat üzerinde zarif bir düzen sağlayan, çok amaçlı kullanım alanına sahip raf.\nPaslanmaz Çelik Malzeme\n: Her ürün neme ve buhara karşı dirençli, uzun ömürlü ve hijyenik.\nKolay Montaj\n: Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nKolay Temizlik\n: Pürüzsüz yüzeyi sayesinde şık bir görünüm sunar.\nNeden Fnoren?\nÇünkü Fnoren; banyoyu yalnızca bir ihtiyaç alanı olarak değil, bir yaşam alanı olarak görür.\nSadeliği abartıdan uzak bir estetikle sunar. Her detayıyla fonksiyonel, her çizgisiyle zamansızdır.",
+      "aciklama_paragraflar": [
+        ", işlevselliği sadelikle birleştiren, modern banyolar için özel olarak tasarlanmış paslanmaz çelik ürün serisidir. Köşe rafından duvar rafına kadar her bir parça; dayanıklılık, minimalizm ve kullanım kolaylığını bir araya getirir. Yalın tasarımıyla her tarza uyum sağlar, uzun ömürlü yapısıyla yıllarca formunu korur. Serel Serisi’nde Neler Var?"
+      ],
+      "ozellikler": {
+        "Köşe Rafı": "Banyonuzun en az kullanılan alanını maksimum düzene çeviren pratik bir çözüm.",
+        "Duvar Rafı": "Duvarda düz bir hat üzerinde zarif bir düzen sağlayan, çok amaçlı kullanım alanına sahip raf.",
+        "Paslanmaz Çelik Malzeme": "Her ürün neme ve buhara karşı dirençli, uzun ömürlü ve hijyenik.",
+        "Kolay Montaj": "Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.",
+        "Kolay Temizlik": "Pürüzsüz yüzeyi sayesinde şık bir görünüm sunar."
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -192,7 +229,7 @@
       "durum": "aktif",
       "fiyat_kdv": 1046,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNB005",
@@ -215,6 +252,16 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Stryn — Paslanmaz Çelik Duvar Rafı",
       "aciklama_uzun": "Stryn - Paslanmaz Duvar Rafı\nStryn — Paslanmaz Çelik Duvar Rafı\nZarafetle işlenmiş minimal depolama çözümü\nStryn\n, sade geometrisi ve 304 kalite paslanmaz çelik yüzeyiyle yaşam alanlarına teknik bir zarafet kazandırır. Banyo, mutfak veya çalışma alanlarında; duvar yüzeyine estetik bir şekilde entegre olurken uzun ömürlü bir kullanım sunar.\nHer detayında dayanıklılık, sadelik ve fonksiyon dengesi düşünülmüştür.\nMalzeme:\n304 kalite paslanmaz çelik (HL / Satin yüzey opsiyonu)\nKorozyona dayanıklı\n— nemli ortamlarda uzun yıllar formunu korur\nKolay montaj:\nVidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nYük taşıma kapasitesi:\nGünlük eşyalar, banyo ürünleri, dekor objeleri için idealdir\nTasarım:\nMinimal, modern ve teknik çizgilere sahip “Fnoren” estetiği\nKullanım Alanları:\nBanyo – Mutfak – Ofis – Giriş alanları – Yaşam alanları\nNeden Stryn?\nÇünkü Stryn, sadece bir raf değildir.\nMekânınızdaki çizgileri tamamlayan; paslanmazın gücüyle sade bir ifadeyi birleştiren bir yüzeydir.",
+      "aciklama_paragraflar": [
+        "Zarafetle işlenmiş minimal depolama çözümü Stryn, sade geometrisi ve 304 kalite paslanmaz çelik yüzeyiyle yaşam alanlarına teknik bir zarafet kazandırır. Banyo, mutfak veya çalışma alanlarında; duvar yüzeyine estetik bir şekilde entegre olurken uzun ömürlü bir kullanım sunar. Her detayında dayanıklılık, sadelik ve fonksiyon dengesi düşünülmüştür."
+      ],
+      "ozellikler": {
+        "Malzeme": "304 kalite paslanmaz çelik (HL / Satin yüzey opsiyonu)",
+        "Kolay montaj": "Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.",
+        "Yük taşıma kapasitesi": "Günlük eşyalar, banyo ürünleri, dekor objeleri için idealdir",
+        "Tasarım": "Minimal, modern ve teknik çizgilere sahip “Fnoren” estetiği",
+        "Kullanım Alanları": "Banyo – Mutfak – Ofis – Giriş alanları – Yaşam alanları"
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -230,7 +277,7 @@
       "durum": "aktif",
       "fiyat_kdv": 1014,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNB006",
@@ -253,6 +300,8 @@
       "agirlik_gram": 0,
       "aciklama_tr": "",
       "aciklama_uzun": "",
+      "aciklama_paragraflar": [],
+      "ozellikler": {},
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -266,7 +315,7 @@
       "durum": "tanitim_yakinda",
       "fiyat_kdv": 777,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNB007",
@@ -289,6 +338,17 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Reone — Paslanmaz Çelik Tuvalet Kağıdı Askısı",
       "aciklama_uzun": "Reone - Paslanmaz Çelik Tuvalet Kağıdı Askısı\nReone — Paslanmaz Çelik Tuvalet Kağıdı Askısı\nYüzeyle Mekân Arasında Kusursuz Denge\nReone\n, Fnoren’in banyo koleksiyonunda teknik sadelik ve modern estetiği buluşturan bir Tuvalet Kağıdı Askısı modelidir.\n304 kalite paslanmaz çelikten üretilen gövdesi, yüksek nemli ortamlarda bile uzun yıllar boyunca formunu ve parlaklığını korur.\nKöşesiz geçişleri ve rafine yüzey hatlarıyla, banyo mimarisine doğal bir biçimde entegre olur.\nReone; dayanıklılığı, kolay montajı ve minimal estetiğiyle fonksiyonel bir aksesuarın ötesine geçer — bir tasarım detayına dönüşür.\nÖne Çıkan Özellikler:\nMalzeme:\n304 kalite paslanmaz çelik (HL / Satin yüzey)\nTasarım:\nYumuşak hatlı, teknik ve zarif form dili\nDayanıklılık:\nKorozyona ve neme karşı yüksek direnç\nMontaj:\nDuvar tipi, montaj aparatları kutu içeriğine dahildir\nKullanım Alanı:\nWC ve banyo alanlarında uzun ömürlü kullanım\nReone\n, Fnoren’in “crafted surfaces for living spaces” yaklaşımını sade bir çizgide ifade eder.\nForm, yüzey ve işlev bir araya gelir; mekân sessiz bir zarafet kazanır.",
+      "aciklama_paragraflar": [
+        "Yüzeyle Mekân Arasında Kusursuz Denge Reone, Fnoren’in banyo koleksiyonunda teknik sadelik ve modern estetiği buluşturan bir Tuvalet Kağıdı Askısı modelidir. 304 kalite paslanmaz çelikten üretilen gövdesi, yüksek nemli ortamlarda bile uzun yıllar boyunca formunu ve parlaklığını korur.",
+        "Köşesiz geçişleri ve rafine yüzey hatlarıyla, banyo mimarisine doğal bir biçimde entegre olur. Reone; dayanıklılığı, kolay montajı ve minimal estetiğiyle fonksiyonel bir aksesuarın ötesine geçer — bir tasarım detayına dönüşür."
+      ],
+      "ozellikler": {
+        "Malzeme": "304 kalite paslanmaz çelik (HL / Satin yüzey)",
+        "Tasarım": "Yumuşak hatlı, teknik ve zarif form dili",
+        "Dayanıklılık": "Korozyona ve neme karşı yüksek direnç",
+        "Montaj": "Duvar tipi, montaj aparatları kutu içeriğine dahildir",
+        "Kullanım Alanı": "WC ve banyo alanlarında uzun ömürlü kullanım"
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -304,7 +364,7 @@
       "durum": "aktif",
       "fiyat_kdv": 682,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNB008",
@@ -327,6 +387,17 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Serel — Paslanmaz Çelik",
       "aciklama_uzun": "Serel - Paslanmaz Çelik Tuvalet Kağıdı Askısı\nSerel — Paslanmaz Çelik\nTuvalet Kağıdı Askısı\nModern Minimalizmle Yeniden Tanımlanan Fonksiyon\nSerel\n, Fnoren Studio’nun teknik sadelik anlayışını banyo alanlarına taşıyan bir kağıtlık tasarımıdır.\n304 kalite paslanmaz çelik gövdesi, uzun ömürlü kullanım için üretilmiştir; korozyon, nem ve deterjan etkilerine karşı yüksek dayanıklılık gösterir.\nYalın çizgiler, işlevsel form ve kusursuz yüzey geçişleriyle Serel, banyo alanlarında hem görsel hem yapısal denge sağlar.\nDuvar yüzeyine zarif biçimde entegre olur ve her detayında “crafted surfaces” felsefesini taşır.\nÖne Çıkan Özellikler:\nMalzeme:\n304 kalite paslanmaz çelik (HL / Satin yüzey)\nTasarım:\nMinimal, rafine ve dengeli form\nDayanıklılık:\nKorozyona, neme ve kimyasallara karşı yüksek direnç\nKolay montaj:\nVidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nKullanım Alanı:\nWC ve banyo alanlarında uzun ömürlü kullanım\nSerel\n, sade bir kağıtlıktan fazlasıdır — yüzeyle mekân arasındaki sessiz uyumu tanımlar.\nFnoren’in teknik zarafet anlayışının en sade ifadesi.",
+      "aciklama_paragraflar": [
+        "Tuvalet Kağıdı Askısı Modern Minimalizmle Yeniden Tanımlanan Fonksiyon Serel, Fnoren Studio’nun teknik sadelik anlayışını banyo alanlarına taşıyan bir kağıtlık tasarımıdır. 304 kalite paslanmaz çelik gövdesi, uzun ömürlü kullanım için üretilmiştir; korozyon, nem ve deterjan etkilerine karşı yüksek dayanıklılık gösterir.",
+        "Yalın çizgiler, işlevsel form ve kusursuz yüzey geçişleriyle Serel, banyo alanlarında hem görsel hem yapısal denge sağlar. Duvar yüzeyine zarif biçimde entegre olur ve her detayında “crafted surfaces” felsefesini taşır."
+      ],
+      "ozellikler": {
+        "Malzeme": "304 kalite paslanmaz çelik (HL / Satin yüzey)",
+        "Tasarım": "Minimal, rafine ve dengeli form",
+        "Dayanıklılık": "Korozyona, neme ve kimyasallara karşı yüksek direnç",
+        "Kolay montaj": "Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.",
+        "Kullanım Alanı": "WC ve banyo alanlarında uzun ömürlü kullanım"
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -342,7 +413,7 @@
       "durum": "aktif",
       "fiyat_kdv": 682,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNB009",
@@ -365,6 +436,17 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Era — Paslanmaz Çelik Duvar Tipi Tuvalet Kağıdı Askısı",
       "aciklama_uzun": "Era - Paslanmaz Çelik Tuvalet Kağıdı Askısı\nEra — Paslanmaz Çelik Duvar Tipi Tuvalet Kağıdı Askısı\nSade Form, Güçlü Duruş\nEra\n, Fnoren’in banyo serisinde çizgisiz yüzey diliyle öne çıkan, yalın ama etkileyici bir tuvalet kağıtlığı modelidir.\n304 kalite paslanmaz çelikten üretilen gövdesi, nem ve korozyona karşı yüksek dayanıklılık sunarken; pürüzsüz yüzeyiyle mekânda sessiz bir zarafet yaratır.\nHer detayında sadelik, işlev ve denge vurgulanmıştır.\nDuvar yüzeyine kolayca entegre olur ve modern banyolarda temiz bir görünüm sağlar.\nÖne Çıkan Özellikler:\nMalzeme:\n304 kalite paslanmaz çelik (HL / Satin yüzey)\nTasarım:\nDüz, çizgisiz ve minimal form dili\nDayanıklılık:\nKorozyon ve neme karşı yüksek direnç\nKolay montaj:\nVidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.\nKullanım Alanı:\nBanyo ve WC alanlarında sade görünüm arayanlar için ideal\nEra\n, sadeliğin zarafete dönüştüğü noktada durur.\nFnoren’in “crafted surfaces” yaklaşımını en saf biçimiyle temsil eder.",
+      "aciklama_paragraflar": [
+        "Sade Form, Güçlü Duruş Era, Fnoren’in banyo serisinde çizgisiz yüzey diliyle öne çıkan, yalın ama etkileyici bir tuvalet kağıtlığı modelidir. 304 kalite paslanmaz çelikten üretilen gövdesi, nem ve korozyona karşı yüksek dayanıklılık sunarken; pürüzsüz yüzeyiyle mekânda sessiz bir zarafet yaratır.",
+        "Her detayında sadelik, işlev ve denge vurgulanmıştır. Duvar yüzeyine kolayca entegre olur ve modern banyolarda temiz bir görünüm sağlar."
+      ],
+      "ozellikler": {
+        "Malzeme": "304 kalite paslanmaz çelik (HL / Satin yüzey)",
+        "Tasarım": "Düz, çizgisiz ve minimal form dili",
+        "Dayanıklılık": "Korozyon ve neme karşı yüksek direnç",
+        "Kolay montaj": "Vidasız ve sürdürülebilir bir yöntem olarak yapışkanlı montaj sistemleriyle zahmetsiz kurulum.",
+        "Kullanım Alanı": "Banyo ve WC alanlarında sade görünüm arayanlar için ideal"
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -380,7 +462,7 @@
       "durum": "aktif",
       "fiyat_kdv": 682,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNE001",
@@ -403,6 +485,8 @@
       "agirlik_gram": 0,
       "aciklama_tr": "",
       "aciklama_uzun": "",
+      "aciklama_paragraflar": [],
+      "ozellikler": {},
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -416,7 +500,7 @@
       "durum": "tanitim_yakinda",
       "fiyat_kdv": 675,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNK001",
@@ -443,6 +527,18 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Vayon - Paslanmaz Çelik Kesme Tahtası (24×34 cm orta boy)",
       "aciklama_uzun": "Vayon - Paslanmaz Çelik Kesme Tahtası\n🔹\nHijyenik, Dayanıklı ve Şık – Mutfakta Profesyonelliği Hissedin!\nGeleneksel ahşap veya plastik tahtalara veda edin. %100\npaslanmaz çelikten üretilmiş\n, yüzeyi sayesinde\nkoku tutmaz\n,\nküf barındırmaz\nve\nleke bırakmaz\n. Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz.\n🔹\nFonksiyonel Tasarım, Estetik Detaylar\nOval detayı sayesinde kolay taşınır, kaymaz yapısıyla güvenli kullanım sağlar. ister et ister sebze doğrayın; her mutfakta yerini bulur.\n🔹\nBıçak Dostu Yüzey\nÖzel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz. Profesyonel şeflerin tercih ettiği yüzey tipi!\n🔹\nKolay Temizlik – Anında Hijyen\nSuya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır.\n🔹\nÇevre Dostu Seçim\nDayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır. Doğaya duyarlı kullanıcılar için sürdürülebilir bir seçim!\nÜrün Özellikleri\nBoyut: 24x34 cm ve 28x38 seçenekleri mevcut\nMalzeme: AISI 304 Paslanmaz Çelik\nYüzey: Fırçalanmış\nTemizlik: Elde yıkanabilir\nKullanım: Et, sebze, meyve ve sunum amaçlı.",
+      "aciklama_paragraflar": [
+        "🔹 Hijyenik, Dayanıklı ve Şık — Mutfakta Profesyonelliği Hissedin! Geleneksel ahşap veya plastik tahtalara veda edin. %100 paslanmaz çelikten üretilmiş, yüzeyi sayesinde koku tutmaz, küf barındırmaz ve leke bırakmaz. Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz. 🔹 Fonksiyonel Tasarım, Estetik Detaylar Oval detayı sayesinde kolay taşınır, kaymaz yapısıyla güvenli kullanım sağlar. ister et ister sebze doğrayın; her mutfakta yerini bulur. 🔹 Bıçak Dostu Yüzey Özel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz.",
+        "Profesyonel şeflerin tercih ettiği yüzey tipi! 🔹 Kolay Temizlik — Anında Hijyen Suya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır. 🔹 Çevre Dostu Seçim Dayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır.",
+        "Doğaya duyarlı kullanıcılar için sürdürülebilir bir seçim!"
+      ],
+      "ozellikler": {
+        "Boyut": "24x34 cm ve 28x38 seçenekleri mevcut",
+        "Malzeme": "AISI 304 Paslanmaz Çelik",
+        "Yüzey": "Fırçalanmış",
+        "Temizlik": "Elde yıkanabilir",
+        "Kullanım": "Et, sebze, meyve ve sunum amaçlı."
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -458,7 +554,7 @@
       "durum": "aktif",
       "fiyat_kdv": 926,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNK002",
@@ -485,6 +581,18 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Vayon - Paslanmaz Çelik Kesme Tahtası (28×38 cm büyük boy)",
       "aciklama_uzun": "Vayon - Paslanmaz Çelik Kesme Tahtası\n🔹\nHijyenik, Dayanıklı ve Şık – Mutfakta Profesyonelliği Hissedin!\nGeleneksel ahşap veya plastik tahtalara veda edin. %100\npaslanmaz çelikten üretilmiş\n, yüzeyi sayesinde\nkoku tutmaz\n,\nküf barındırmaz\nve\nleke bırakmaz\n. Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz.\n🔹\nFonksiyonel Tasarım, Estetik Detaylar\nOval detayı sayesinde kolay taşınır, kaymaz yapısıyla güvenli kullanım sağlar. ister et ister sebze doğrayın; her mutfakta yerini bulur.\n🔹\nBıçak Dostu Yüzey\nÖzel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz. Profesyonel şeflerin tercih ettiği yüzey tipi!\n🔹\nKolay Temizlik – Anında Hijyen\nSuya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır.\n🔹\nÇevre Dostu Seçim\nDayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır. Doğaya duyarlı kullanıcılar için sürdürülebilir bir seçim!\nÜrün Özellikleri\nBoyut: 24x34 cm ve 28x38 seçenekleri mevcut\nMalzeme: AISI 304 Paslanmaz Çelik\nYüzey: Fırçalanmış\nTemizlik: Elde yıkanabilir\nKullanım: Et, sebze, meyve ve sunum amaçlı.",
+      "aciklama_paragraflar": [
+        "🔹 Hijyenik, Dayanıklı ve Şık — Mutfakta Profesyonelliği Hissedin! Geleneksel ahşap veya plastik tahtalara veda edin. %100 paslanmaz çelikten üretilmiş, yüzeyi sayesinde koku tutmaz, küf barındırmaz ve leke bırakmaz. Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz. 🔹 Fonksiyonel Tasarım, Estetik Detaylar Oval detayı sayesinde kolay taşınır, kaymaz yapısıyla güvenli kullanım sağlar. ister et ister sebze doğrayın; her mutfakta yerini bulur. 🔹 Bıçak Dostu Yüzey Özel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz.",
+        "Profesyonel şeflerin tercih ettiği yüzey tipi! 🔹 Kolay Temizlik — Anında Hijyen Suya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır. 🔹 Çevre Dostu Seçim Dayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır.",
+        "Doğaya duyarlı kullanıcılar için sürdürülebilir bir seçim!"
+      ],
+      "ozellikler": {
+        "Boyut": "24x34 cm ve 28x38 seçenekleri mevcut",
+        "Malzeme": "AISI 304 Paslanmaz Çelik",
+        "Yüzey": "Fırçalanmış",
+        "Temizlik": "Elde yıkanabilir",
+        "Kullanım": "Et, sebze, meyve ve sunum amaçlı."
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -500,7 +608,7 @@
       "durum": "aktif",
       "fiyat_kdv": 1062,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNK003",
@@ -523,6 +631,10 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Linvo - Masaüstü Peçetelik",
       "aciklama_uzun": "Linvo - Masaüstü Peçetelik\nLinvo Masaüstü Peçetelik – Sadelikte Saklı Zarafet\nLinvo\n, masaüstü düzenini sadece toparlamakla kalmaz; bulunduğu alana estetik bir denge kazandırır. Fonksiyonelliği zarif çizgilerle buluşturan bu özel tasarım, sofralarda, ofislerde ve günlük yaşam alanlarında şıklığı tamamlayan bir detay olarak öne çıkar.\nÜrün Özellikleri:\nModern & Minimal Tasarım\nTemiz hatları, sade formu ve dengeli yapısıyla her dekorasyon stiline uyum sağlar.\nSağlam Malzeme\nYüksek kaliteli paslanmaz çelik uzun ömürlü kullanım sunar.\nKolay Erişim ve Stabil Duruş\nPeçetelere kolay erişim sağlarken duruşuyla göz yormaz, dikkat çeker.\nMasa Üstü İçin İdeal Ölçüler\nAlan kaplamayan ama yeterli hacim sunan boyutlarıyla yemek masalarında, kahve köşelerinde ve ofislerde konforlu kullanım sağlar.",
+      "aciklama_paragraflar": [
+        ", masaüstü düzenini sadece toparlamakla kalmaz; bulunduğu alana estetik bir denge kazandırır. Fonksiyonelliği zarif çizgilerle buluşturan bu özel tasarım, sofralarda, ofislerde ve günlük yaşam alanlarında şıklığı tamamlayan bir detay olarak öne çıkar."
+      ],
+      "ozellikler": {},
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -538,7 +650,7 @@
       "durum": "aktif",
       "fiyat_kdv": 651,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNK004",
@@ -561,6 +673,14 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Linore Paslanmaz Kağıt Havlu Askılığı – Temizlik İçin Zarif Bir Dokunuş",
       "aciklama_uzun": "Linore - Paslanmaz Rulo Havlu Tutacağı\nLinore Paslanmaz Kağıt Havlu Askılığı – Temizlik İçin Zarif Bir Dokunuş\nLinore Kağıt Havlu Askılığı\n, banyoda, mutfakta ya da atölyede pratik erişim ve şıklığı bir arada sunar. Minimal çizgisi, sağlam paslanmaz çelik yapısıyla birleşerek hem estetik hem de fonksiyonel bir çözüm oluşturur.\nDuvarınıza monte ederek alan kazanabilir, mutfakta tezgah üstünde ya da banyonuzda düzeni yeniden tanımlayabilirsiniz.\nÜrün Özellikleri:\nPaslanmaz Çelik Gövde\n: Neme ve buhara karşı maksimum dayanıklılık.\nKolay Kağıt Değişimi\n: Tak-çıkar yapısı sayesinde kağıt rulo değiştirmek zahmetsiz.\nYatay veya Dikey Kullanım\n: İhtiyacınıza göre farklı yönlerde monte edilebilir.\nDuvara Montajlı Tasarım\n: Yüzeylerde yer kaplamadan estetik bir duruş sunar.\nEv ve İş Yerine Uygun\n: Mutfak, banyo, atölye ve temizlik alanları için ideal.",
+      "aciklama_paragraflar": [
+        ", banyoda, mutfakta ya da atölyede pratik erişim ve şıklığı bir arada sunar. Minimal çizgisi, sağlam paslanmaz çelik yapısıyla birleşerek hem estetik hem de fonksiyonel bir çözüm oluşturur. Duvarınıza monte ederek alan kazanabilir, mutfakta tezgah üstünde ya da banyonuzda düzeni yeniden tanımlayabilirsiniz."
+      ],
+      "ozellikler": {
+        "Paslanmaz Çelik Gövde": "Neme ve buhara karşı maksimum dayanıklılık.",
+        "Yatay veya Dikey Kullanım": "İhtiyacınıza göre farklı yönlerde monte edilebilir.",
+        "Duvara Montajlı Tasarım": "Yüzeylerde yer kaplamadan estetik bir duruş sunar."
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -576,7 +696,7 @@
       "durum": "aktif",
       "fiyat_kdv": 621,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     },
     {
       "base_kod": "FNK005",
@@ -599,6 +719,18 @@
       "agirlik_gram": 0,
       "aciklama_tr": "Vayon İkili Set — 24×34 & 28×38 cm",
       "aciklama_uzun": "Fnoren Vayon Ikili Set - Paslanmaz Çelik Kesme Tahtası 24X34 & 28X38CM\nVayon İkili Set\n- 24x34 & 28x38cm\n- Paslanmaz Çelik Kesme Tahtası\n🔹\nHijyenik, Dayanıklı ve Şık – Mutfakta Profesyonelliği Hissedin!\nGeleneksel ahşap veya plastik tahtalara veda edin. %100\npaslanmaz çelikten üretilmiş\n, antibakteriyel yüzeyi sayesinde\nkoku tutmaz\n,\nküf barındırmaz\nve\nleke bırakmaz\n. Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz.\n🔹\nFonksiyonel Tasarım, Estetik Detaylar\nOval detayı sayesinde kolay taşınır, ele oturan yapısıyla güvenli kullanım sağlar. İster et ister sebze doğrayın; her mutfakta yerini bulur.\n🔹\nBıçak Dostu Yüzey\nÖzel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz. Profesyonel şeflerin tercih ettiği yüzey tipi!\n🔹\nKolay Temizlik – Anında Hijyen\nSuya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır.\n🔹\nÇevre Dostu Seçim\nDayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır. Doğaya duyarlı kullanıcılar için sürdürülebilir bir seçim!\nÜrün Özellikleri\nBoyut: 24x34 ve 28x38 cm\nMalzeme: AISI 304 Paslanmaz Çelik\nYüzey: Hairline\nKenar: Oval taşıma detayı\nTemizlik: Elde yıkanabilir\nKullanım: Et, sebze, meyve ve sunum amaçlı.",
+      "aciklama_paragraflar": [
+        "Fnoren Vayon Ikili Set - Paslanmaz Çelik Kesme Tahtası 24X34 & 28X38CM Vayon İkili Set - 24x34 & 28x38cm - Paslanmaz Çelik Kesme Tahtası 🔹 Hijyenik, Dayanıklı ve Şık — Mutfakta Profesyonelliği Hissedin! Geleneksel ahşap veya plastik tahtalara veda edin. %100 paslanmaz çelikten üretilmiş, antibakteriyel yüzeyi sayesinde koku tutmaz, küf barındırmaz ve leke bırakmaz.",
+        "Artık mutfağınızda maksimum hijyen ve minimum çaba ile çalışabilirsiniz. 🔹 Fonksiyonel Tasarım, Estetik Detaylar Oval detayı sayesinde kolay taşınır, ele oturan yapısıyla güvenli kullanım sağlar. İster et ister sebze doğrayın; her mutfakta yerini bulur. 🔹 Bıçak Dostu Yüzey Özel \"brushed\" yüzeyi, bıçaklarınızın keskinliğini korur ve iz bırakmaz.",
+        "Profesyonel şeflerin tercih ettiği yüzey tipi! 🔹 Kolay Temizlik — Anında Hijyen Suya dayanıklı yapısı sayesinde elde veya bulaşık makinesinde rahatlıkla temizlenebilir. Yüzeyinde bakteri barındırmaz, her kullanımda ilk günkü gibi tertemiz kalır. 🔹 Çevre Dostu Seçim Dayanıklı yapısı sayesinde uzun yıllar kullanılır, plastik atığı azaltır."
+      ],
+      "ozellikler": {
+        "Boyut": "24x34 ve 28x38 cm",
+        "Malzeme": "AISI 304 Paslanmaz Çelik",
+        "Yüzey": "Hairline",
+        "Temizlik": "Elde yıkanabilir",
+        "Kullanım": "Et, sebze, meyve ve sunum amaçlı."
+      },
       "aciklama_en": "",
       "platform_kodu": {
         "hb": "",
@@ -614,7 +746,7 @@
       "durum": "aktif",
       "fiyat_kdv": 0,
       "kaynak": "PIM aktif (NJ-329 build)",
-      "guncelleme": "2026-05-31T14:42"
+      "guncelleme": "2026-05-31T17:02"
     }
   ]
 }
