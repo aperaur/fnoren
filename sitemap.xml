@@ -19,12 +19,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fnoren.com/iletisim.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://fnoren.com/uretim.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -37,10 +31,10 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fnoren.com/garanti.html</loc>
+    <loc>https://fnoren.com/iletisim.html</loc>
     <lastmod>2026-06-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fnoren.com/urun.html?kod=FNB001</loc>
@@ -121,16 +115,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fnoren.com/yasal/kvkk.html</loc>
+    <loc>https://fnoren.com/yasal/gizlilik-kvkk.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://fnoren.com/yasal/gizlilik.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://fnoren.com/yasal/cerez.html</loc>
@@ -139,19 +127,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fnoren.com/yasal/satis-bilgisi.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://fnoren.com/yasal/iade-degisim.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://fnoren.com/yasal/teslimat.html</loc>
+    <loc>https://fnoren.com/yasal/satis-teslimat.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
