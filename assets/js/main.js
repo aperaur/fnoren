@@ -1,4 +1,28 @@
 /* main.js — fnoren Swiss Industrial v3.0 */
+
+// A11y — skip-to-content + ana içerik detect (Sprint 4.1)
+(function () {
+  function injectSkip() {
+    if (document.querySelector(".skip-to-content")) return;
+    const skip = document.createElement("a");
+    skip.href = "#main";
+    skip.className = "skip-to-content";
+    skip.textContent = "İçeriğe atla";
+    document.body.insertBefore(skip, document.body.firstChild);
+
+    // Ana içerik ID — sayfa türüne göre ilk anlamlı section
+    if (!document.getElementById("main")) {
+      const main = document.querySelector("section.hero, section.section, section.faq-hero, section.uretim-hero, section.legal-page, .about-page");
+      if (main) main.id = "main";
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", injectSkip);
+  } else {
+    injectSkip();
+  }
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
 
   // Intersection Observer — fade-in + reveal

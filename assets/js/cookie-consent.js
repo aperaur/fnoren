@@ -73,27 +73,59 @@
   function inject() {
     if (document.getElementById("cookie-banner")) return;
     const banner = buildBanner();
+    banner.setAttribute("aria-modal", "false"); // non-blocking, sayfaya devam edilebilir
     document.body.appendChild(banner);
 
     const styleEl = document.createElement("style");
     styleEl.textContent = "@keyframes cookieFade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}";
     document.head.appendChild(styleEl);
 
-    document.getElementById("cookie-all").addEventListener("click", () => {
+    const btnAll = document.getElementById("cookie-all");
+    const btnNec = document.getElementById("cookie-necessary");
+
+    function closeBanner() {
+      banner.style.transition = "opacity 0.3s, transform 0.3s";
+      banner.style.opacity = "0";
+      banner.style.transform = "translateY(20px)";
+      setTimeout(() => banner.remove(), 300);
+    }
+
+    btnAll.addEventListener("click", () => {
       localStorage.setItem(CONSENT_KEY, "all");
       window.applyConsent("all");
-      banner.style.transition = "opacity 0.3s, transform 0.3s";
-      banner.style.opacity = "0";
-      banner.style.transform = "translateY(20px)";
-      setTimeout(() => banner.remove(), 300);
+      closeBanner();
     });
-    document.getElementById("cookie-necessary").addEventListener("click", () => {
+    btnNec.addEventListener("click", () => {
       localStorage.setItem(CONSENT_KEY, "necessary");
       window.applyConsent("necessary");
-      banner.style.transition = "opacity 0.3s, transform 0.3s";
-      banner.style.opacity = "0";
-      banner.style.transform = "translateY(20px)";
-      setTimeout(() => banner.remove(), 300);
+      closeBanner();
+    });
+
+    // A11y — focus trap (Sprint 4.5)
+    // İlk button auto-focus (sayfa içeriği yarıştırmasın diye 200ms delay)
+    setTimeout(() => btnNec.focus(), 200);
+
+    // Esc → "necessary" varsayılan (GDPR opt-in mantığı: rıza yoksa reddet)
+    banner.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        localStorage.setItem(CONSENT_KEY, "necessary");
+        window.applyConsent("necessary");
+        closeBanner();
+      }
+      // Tab cycle — banner içinde dolaş, dışına çıkma
+      if (e.key === "Tab") {
+        const focusable = [btnAll, btnNec];
+        const current = document.activeElement;
+        const idx = focusable.indexOf(current);
+        if (e.shiftKey && idx === 0) {
+          e.preventDefault();
+          focusable[focusable.length - 1].focus();
+        } else if (!e.shiftKey && idx === focusable.length - 1) {
+          e.preventDefault();
+          focusable[0].focus();
+        }
+      }
     });
   }
 

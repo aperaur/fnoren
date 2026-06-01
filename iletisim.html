@@ -53,22 +53,24 @@
 <section class="section" style="padding-top:calc(var(--nav-h) + 4rem)">
   <div class="container" style="max-width:580px">
     <span class="label fade-in">İletişim</span>
-    <h2 class="fade-in" style="margin-top:0.5rem">Bize Ulaşın</h2>
+    <h1 class="fade-in" style="margin-top:0.5rem">Bize Ulaşın</h1>
     <hr class="divider fade-in">
 
-    <form action="https://formspree.io/f/FORM_ID" method="POST" class="fade-in">
+    <form action="https://formspree.io/f/FORM_ID" method="POST" class="fade-in" aria-labelledby="form-baslik" novalidate>
+      <span id="form-baslik" class="sr-only">İletişim formu</span>
       <div class="form-group">
-        <label>Ad Soyad</label>
-        <input type="text" name="name" required placeholder="Adınız">
+        <label for="fn-ad">Ad Soyad <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+        <input type="text" id="fn-ad" name="name" required aria-required="true" autocomplete="name" placeholder="Adınız">
       </div>
       <div class="form-group">
-        <label>E-posta</label>
-        <input type="email" name="email" required placeholder="email@ornek.com">
+        <label for="fn-email">E-posta <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+        <input type="email" id="fn-email" name="email" required aria-required="true" autocomplete="email" placeholder="email@ornek.com">
       </div>
       <div class="form-group">
-        <label>Mesaj</label>
-        <textarea name="message" required placeholder="Mesajınız..."></textarea>
+        <label for="fn-mesaj">Mesaj <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+        <textarea id="fn-mesaj" name="message" required aria-required="true" rows="5" placeholder="Mesajınız..."></textarea>
       </div>
+      <p class="form-note" style="font-size:0.75rem;color:var(--muted);margin:0.5rem 0 1rem"><span aria-hidden="true" style="color:var(--accent)">*</span> Zorunlu alanlar. Formu göndererek <a href="yasal/gizlilik.html">Gizlilik Politikası</a>'nı kabul etmiş olursunuz.</p>
       <button type="submit" class="btn btn-primary">Gönder →</button>
     </form>
 
