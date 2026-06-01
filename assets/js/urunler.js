@@ -74,9 +74,21 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
   hedef.querySelectorAll(".fade-in").forEach(el => obs.observe(el));
 }
 
-// Kategori filtresi
+// Kategori filtresi — URL sync ile
 function kategoriFiltre(btn, kat) {
   document.querySelectorAll(".kat-btn").forEach(b => b.classList.remove("active"));
   btn.classList.add("active");
   urunleriYukle("urun-grid", 0, kat === "hepsi" ? null : kat);
+
+  // URL state — geri butonu çalışır, paylaşılabilir
+  const url = new URL(window.location.href);
+  if (kat === "hepsi") {
+    url.searchParams.delete("kategori");
+  } else {
+    url.searchParams.set("kategori", kat);
+  }
+  window.history.replaceState({}, "", url.toString());
+
+  // Title update
+  document.title = kat === "hepsi" ? "Ürünler — Fnoren" : `${kat.charAt(0).toUpperCase()+kat.slice(1)} — Fnoren`;
 }

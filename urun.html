@@ -90,6 +90,7 @@
 
 <script src="assets/js/main.js?v=nj330a"></script>
 <script src="assets/js/cookie-consent.js?v=nj330a"></script>
+<script src="assets/js/whatsapp-cta.js?v=nj330a"></script>
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
@@ -239,10 +240,62 @@ document.addEventListener("DOMContentLoaded", async () => {
       <div class="product-buttons">
         ${hbUrl ? `<a href="${hbUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-hb">Hepsiburada'da Satın Al →</a>` : ''}
         ${shopUrl ? `<a href="${shopUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-shopier">Shopier'da Satın Al →</a>` : ''}
+        <a href="https://wa.me/message/B74C2W566WVEJ1" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-wa-ask" onclick="if(window.fnorenWhatsappPrefill)window.fnorenWhatsappPrefill('${ad.replace(/'/g, "\\'")}','${canonicalUrl}')">WhatsApp ile Sor</a>
       </div>
       ${paragrafHtml ? `<div class="product-long-desc"><span class="label mono detay-baslik">Ürün Detayı</span><div class="detay-text">${paragrafHtml}</div></div>` : ''}
     </div>
   `;
+
+  // Cross-sell: aynı seri öncelik, yetersizse aynı kategori
+  const aktifler = (veri.urunler || []).filter(u => u.base_kod !== kod && u.durum === "aktif" && (u.platform_links?.shopier || u.platform_links?.hepsiburada));
+  const ayniSeri = aktifler.filter(u => urun.seri && u.seri === urun.seri);
+  const ayniKat  = aktifler.filter(u => u.kategori === urun.kategori && !ayniSeri.includes(u));
+  const onerilen = [...ayniSeri, ...ayniKat].slice(0, 4);
+
+  if (onerilen.length > 0) {
+    const crossHtml = `
+      <section class="cross-sell">
+        <div class="cross-sell-inner">
+          <div class="cross-sell-head">
+            <div>
+              <span class="label mono">${ayniSeri.length > 0 ? `${urun.seri} Serisi + Aynı Kategori` : 'Aynı Kategori'}</span>
+              <h2>İlgini çekebilir</h2>
+            </div>
+            <a href="urunler.html?kategori=${(urun.kategori||'').toLowerCase()}">Tüm ${kat} →</a>
+          </div>
+          <div class="cross-grid">
+            ${onerilen.map(u => {
+              const _ad = u.ad_tr || u.ad || '';
+              return `
+              <a href="urun.html?kod=${u.base_kod}" class="cross-card">
+                <div class="cross-foto">
+                  <img src="assets/img/products/${u.base_kod}.jpg" alt="${_ad}" loading="lazy">
+                </div>
+                <div class="cross-info">
+                  <span class="cross-seri">${u.seri || ''}</span>
+                  <h3>${_ad}</h3>
+                </div>
+              </a>
+            `;}).join('')}
+          </div>
+        </div>
+      </section>
+    `;
+    document.querySelector('section.section').insertAdjacentHTML('afterend', crossHtml);
+  }
+
+  // Mobile sticky CTA bar — sadece satış kanalı buton(lar)ı varsa
+  const existingMsc = document.getElementById("mobile-sticky-cta");
+  if (existingMsc) existingMsc.remove();
+  if (hbUrl || shopUrl) {
+    document.body.insertAdjacentHTML("beforeend", `
+      <div class="mobile-sticky-cta" id="mobile-sticky-cta" role="navigation" aria-label="Satın alma kanalları">
+        ${hbUrl ? `<a href="${hbUrl}" target="_blank" rel="noopener noreferrer" class="msc-btn msc-hb">Hepsiburada'da Al</a>` : ''}
+        ${shopUrl ? `<a href="${shopUrl}" target="_blank" rel="noopener noreferrer" class="msc-btn msc-shopier">Shopier'da Al</a>` : ''}
+      </div>
+    `);
+    document.body.classList.add("has-msc");
+  }
 
   // Lightbox HTML — body direkt child (grid'in DIŞINDA)
   const existingLb = document.getElementById("lightbox");

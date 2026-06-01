@@ -1034,6 +1034,8 @@ footer {
   padding: 3rem var(--gutter) 2rem;
   background: var(--bg);
   margin-top: 4rem;
+  position: relative;
+  z-index: 1;
 }
 .footer-inner {
   max-width: var(--max-w);
@@ -1127,6 +1129,156 @@ footer {
   .footer-bottom {
     flex-direction: column;
   }
+}
+
+/* ── CROSS-SELL (Sprint 3.3 NJ-330 — urun.html) ─────── */
+.cross-sell {
+  padding: 5rem var(--gutter);
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+.cross-sell-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.cross-sell h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 0.5rem 0 0;
+  line-height: 1.15;
+}
+.cross-sell .label {
+  display: block;
+  margin-bottom: 0;
+}
+.cross-sell-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+.cross-sell-head a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur);
+}
+.cross-sell-head a:hover {
+  border-bottom-color: var(--accent);
+}
+.cross-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.cross-card {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: border-color var(--dur), transform var(--dur);
+  display: block;
+}
+.cross-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+.cross-foto {
+  aspect-ratio: 1/1;
+  background: var(--surface2);
+  overflow: hidden;
+}
+.cross-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+.cross-card:hover .cross-foto img { transform: scale(1.04); }
+.cross-info {
+  padding: 1rem 1.125rem 1.25rem;
+}
+.cross-seri {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.cross-info h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+}
+@media (max-width: 540px) {
+  .cross-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .cross-info { padding: 0.875rem 0.875rem 1rem; }
+  .cross-info h3 { font-size: 0.8125rem; }
+}
+
+/* ── MOBILE STICKY CTA (Sprint 3.2 NJ-330 — urun.html) ─────── */
+.mobile-sticky-cta {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-sticky-cta {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9995;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+    padding: 12px;
+    gap: 8px;
+    animation: mscSlideUp 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+  }
+  @keyframes mscSlideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .mobile-sticky-cta .msc-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 12px;
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    transition: opacity var(--dur);
+  }
+  .mobile-sticky-cta .msc-btn:active { opacity: 0.7; }
+  .mobile-sticky-cta .msc-hb {
+    background: #ff6000;
+    color: #fff;
+  }
+  .mobile-sticky-cta .msc-shopier {
+    background: #1a1a1a;
+    color: #fff;
+  }
+  body.has-msc { padding-bottom: 84px; }
+  body.has-msc .wa-fab { bottom: 96px !important; }
 }
 .product-buttons .btn {
   padding: 1rem 1.5rem;
