@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fnoren üretim süreci — 304 paslanmaz çelik sac seçimi, lazer kesim, büküm, kaynak ve satin finish. Bursa atölyesinde 4 aşama tek elden.">
+  <title>Üretim — Fnoren</title>
+  <link rel="icon" href="assets/img/brand/logo.png" type="image/png">
+  <link rel="canonical" href="https://fnoren.com/uretim.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=nj330a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fnoren">
+  <meta property="og:title" content="Üretim — Fnoren">
+  <meta property="og:description" content="304 paslanmaz çelik sac seçimi → lazer kesim → büküm → kaynak → satin finish. Bursa atölyesinde 4 aşama tek elden.">
+  <meta property="og:url" content="https://fnoren.com/uretim.html">
+  <meta property="og:image" content="https://fnoren.com/assets/img/products/hero-aski.webp">
+  <meta property="og:locale" content="tr_TR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Üretim — Fnoren">
+  <meta name="twitter:description" content="304 paslanmaz çelik — 4 aşama atölye süreci.">
+  <meta name="twitter:image" content="https://fnoren.com/assets/img/products/hero-aski.webp">
+  <style>
+    .uretim-hero {
+      padding: calc(var(--nav-h) + 4rem) var(--gutter) 4rem;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      text-align: center;
+    }
+    .uretim-hero h1 {
+      margin: 0.5rem 0 1.5rem;
+    }
+    .uretim-hero p {
+      max-width: 640px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .uretim-stage {
+      display: grid;
+      grid-template-columns: 60px 1fr 1fr;
+      gap: 3rem;
+      max-width: var(--max-w);
+      margin: 0 auto 5rem;
+      padding: 0 var(--gutter);
+      align-items: start;
+    }
+    .uretim-stage:nth-child(even) {
+      grid-template-columns: 60px 1fr 1fr;
+      direction: rtl;
+    }
+    .uretim-stage:nth-child(even) > * { direction: ltr; }
+    .stage-num {
+      font-family: var(--font-mono);
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      line-height: 1;
+      padding-top: 0.5rem;
+    }
+    .stage-text {
+      padding-top: 0.5rem;
+    }
+    .stage-label {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.875rem;
+      display: block;
+    }
+    .stage-text h2 {
+      font-size: 1.625rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      margin: 0 0 1.25rem;
+      line-height: 1.15;
+    }
+    .stage-text p {
+      color: var(--text);
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+    .stage-text p.muted {
+      color: var(--muted);
+    }
+    .stage-specs {
+      list-style: none;
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    .stage-specs li {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 1rem;
+      font-size: 0.8125rem;
+    }
+    .stage-specs .key {
+      font-family: var(--font-mono);
+      font-size: 0.625rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      align-self: center;
+    }
+    .stage-foto {
+      aspect-ratio: 4/3;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .stage-foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(0.1);
+    }
+    .stage-foto-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .stage-foto-placeholder span:first-child {
+      color: var(--accent);
+      opacity: 0.4;
+      font-size: 1.25rem;
+    }
+    .uretim-divider {
+      max-width: var(--max-w);
+      margin: 4rem auto;
+      padding: 0 var(--gutter);
+    }
+    .uretim-divider .line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+    .uretim-close {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 5rem var(--gutter);
+      text-align: center;
+    }
+    .uretim-close .label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .uretim-close blockquote {
+      margin: 0;
+      padding: 0;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      color: var(--accent);
+      font-style: italic;
+      font-weight: 300;
+    }
+    .uretim-close p {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+    @media (max-width: 900px) {
+      .uretim-stage,
+      .uretim-stage:nth-child(even) {
+        grid-template-columns: 40px 1fr;
+        direction: ltr;
+        gap: 1.5rem;
+      }
+      .stage-foto {
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+      }
+      .stage-num { font-size: 1.75rem; }
+      .stage-text h2 { font-size: 1.375rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-icon"><img src="assets/img/brand/logo.png" alt="Fn."></a>
+  <a href="index.html" class="nav-brand">Fnoren</a>
+  <ul class="nav-links">
+    <li><a href="urunler.html">Ürünler</a></li>
+    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+  </ul>
+</nav>
+
+<section class="uretim-hero">
+  <span class="label mono">Atölye Süreci — 4 Aşama</span>
+  <h1>Sacdan Esere</h1>
+  <p>Her ürün, Bursa atölyesinde tek elden geçer. Sac seçiminden son satin finish'e — dört aşama, hepsi aynı çatı altında. Bu sayfa o yolculuğu anlatır.</p>
+</section>
+
+<div class="uretim-divider"><div class="line"></div></div>
+
+<article class="uretim-stage">
+  <div class="stage-num">01</div>
+  <div class="stage-text">
+    <span class="stage-label">Sac Seçimi + Lazer Kesim</span>
+    <h2>Doğru sac, doğru kalınlık.</h2>
+    <p>304 paslanmaz çelik. EN 10088-2 standardı, AISI 304 sınıfı. Sertifikalı tedarikçilerden gelen sac, atölye girişinde kalınlık + yüzey kalitesi açısından kontrol edilir.</p>
+    <p class="muted">[Recak doldur: Hangi kalınlık aralığı kullanılıyor? Tedarikçi hikayesi var mı? Lazer kesim makinesi modeli/yeri belirtmek ister misiniz?]</p>
+    <ul class="stage-specs">
+      <li><span class="key">Malzeme</span><span>304 paslanmaz çelik / EN 10088-2</span></li>
+      <li><span class="key">Kalınlık</span><span>[1.5 mm — 2.0 mm — Recak teyit]</span></li>
+      <li><span class="key">Kesim</span><span>CNC lazer kesim — desen toleransı ±0.1 mm</span></li>
+    </ul>
+  </div>
+  <div class="stage-foto">
+    <div class="stage-foto-placeholder">
+      <span>◇</span>
+      <span>Lazer Kesim · Foto Bekleniyor</span>
+    </div>
+  </div>
+</article>
+
+<article class="uretim-stage">
+  <div class="stage-num">02</div>
+  <div class="stage-text">
+    <span class="stage-label">Büküm + Form Verme</span>
+    <h2>Tasarımı üç boyuta taşımak.</h2>
+    <p>Lazerle kesilen düzlemsel form, presle bükülerek kullanılacak şekli alır. Her bükümde açı tutarlılığı önemlidir — bir milimetre sapma, son üründe görünür hata demektir.</p>
+    <p class="muted">[Recak doldur: Manuel pres mi, CNC abkant mı? Kaç ton kapasiteli? Aile mirası bir pres atölyesi vurgusu var mı?]</p>
+    <ul class="stage-specs">
+      <li><span class="key">Yöntem</span><span>[Pres / Abkant — Recak teyit]</span></li>
+      <li><span class="key">Tolerans</span><span>Açı sapması ±1°</span></li>
+      <li><span class="key">Kontrol</span><span>Her parça üzerinde mastar kontrolü</span></li>
+    </ul>
+  </div>
+  <div class="stage-foto">
+    <div class="stage-foto-placeholder">
+      <span>◇</span>
+      <span>Büküm · Foto Bekleniyor</span>
+    </div>
+  </div>
+</article>
+
+<article class="uretim-stage">
+  <div class="stage-num">03</div>
+  <div class="stage-text">
+    <span class="stage-label">Kaynak + Birleştirme</span>
+    <h2>Gizli dikiş, sağlam birleşim.</h2>
+    <p>Çok parçalı ürünlerde, parçalar argon (TIG) kaynak ile birleştirilir. Argon kaynağı, oksidasyonu önler ve dikişi temiz tutar. Kaynak izi sonradan zımparalanır — yüzey tek parça hissi verir.</p>
+    <p class="muted">[Recak doldur: Hangi kaynak yöntemi standart? TIG mi, MIG mi? Her ürün için kaynak gerekli mi yoksa bazıları monoblok mu?]</p>
+    <ul class="stage-specs">
+      <li><span class="key">Yöntem</span><span>TIG (Argon) kaynak</span></li>
+      <li><span class="key">Dikiş</span><span>Sürekli + zımparalama sonrası gizli</span></li>
+      <li><span class="key">Mukavemet</span><span>Tüm kullanım yüklerinde sağlam</span></li>
+    </ul>
+  </div>
+  <div class="stage-foto">
+    <div class="stage-foto-placeholder">
+      <span>◇</span>
+      <span>TIG Kaynak · Foto Bekleniyor</span>
+    </div>
+  </div>
+</article>
+
+<article class="uretim-stage">
+  <div class="stage-num">04</div>
+  <div class="stage-text">
+    <span class="stage-label">Satin Finish + Kalite Kontrol</span>
+    <h2>Pürüzsüz dokunuş, son söz.</h2>
+    <p>Yüzey, satin finish yöntemiyle fırçalanır. Parlatma değil, fırçalama — düz çizgiler hâlinde mat doku elde edilir. Parmak izi tutmaz, çizilmeyi gizler. Son kontrolde her parçanın boyut + yüzey + dikiş kalitesi gözden geçirilir.</p>
+    <p class="muted">[Recak doldur: Fırçalama yönü tek yönlü mü? Kaç mikron derinlik? Paketleme öncesi son test detayı?]</p>
+    <ul class="stage-specs">
+      <li><span class="key">Doku</span><span>Satin finish — tek yönlü fırçalama</span></li>
+      <li><span class="key">Avantaj</span><span>Parmak izi gizler, çizik maskeler</span></li>
+      <li><span class="key">Kontrol</span><span>Boyut + yüzey + dikiş üç kademeli</span></li>
+    </ul>
+  </div>
+  <div class="stage-foto">
+    <div class="stage-foto-placeholder">
+      <span>◇</span>
+      <span>Satin Finish · Foto Bekleniyor</span>
+    </div>
+  </div>
+</article>
+
+<div class="uretim-divider"><div class="line"></div></div>
+
+<section class="uretim-close">
+  <span class="label mono">Atölye Felsefesi</span>
+  <blockquote>"Hep aynı çatı altında. Hep aynı el."</blockquote>
+  <p>Bursa Ovaakça atölyesinde 4 aşamanın tamamı tek bir sürecin parçası. Outsource yok, ara taşeron yok — sac atölyeye girer, kutusunda kapıdan çıkar.</p>
+  <p style="margin-top:2rem"><a href="urunler.html" class="btn btn-primary">Üretilen Ürünleri Gör →</a></p>
+</section>
+
+<footer>
+  <div class="footer-inner footer-grid">
+    <div class="footer-brand">
+      <span class="footer-brand-name">Fnoren</span>
+      <p class="footer-brand-desc">304 paslanmaz çelik. Bursa atölyesinde tek elden tasarım, kaynak, son büküm.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Ürünler</h4>
+      <ul>
+        <li><a href="urunler.html?kategori=mutfak">Mutfak</a></li>
+        <li><a href="urunler.html?kategori=banyo">Banyo</a></li>
+        <li><a href="urunler.html?kategori=giris">Giriş</a></li>
+        <li><a href="urunler.html">Tüm Ürünler</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Şirket</h4>
+      <ul>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="uretim.html">Üretim</a></li>
+        <li><a href="faq.html">SSS</a></li>
+        <li><a href="garanti.html">Garanti</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Yasal</h4>
+      <ul>
+        <li><a href="yasal/kvkk.html">KVKK Aydınlatma</a></li>
+        <li><a href="yasal/gizlilik.html">Gizlilik</a></li>
+        <li><a href="yasal/cerez.html">Çerez Politikası</a></li>
+        <li><a href="yasal/satis-bilgisi.html">Satış Bilgisi</a></li>
+        <li><a href="yasal/iade-degisim.html">İade &amp; Değişim</a></li>
+        <li><a href="yasal/teslimat.html">Teslimat</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>İletişim</h4>
+      <ul>
+        <li><a href="mailto:fnoreforms@gmail.com">fnoreforms@gmail.com</a></li>
+        <li><a href="https://wa.me/message/B74C2W566WVEJ1" target="_blank" rel="noopener noreferrer">WhatsApp Business</a></li>
+        <li class="footer-meta">MBR Metal Makina San. ve Tic. Ltd. Şti.</li>
+        <li class="footer-meta">VKN 6130778319 · Sicil 83467 Bursa</li>
+        <li class="footer-meta">Ovaakça Eğitim Mh., Osmangazi/Bursa</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Fnoren — Tüm hakları saklıdır.</span>
+    <span class="mono">304 Paslanmaz Çelik · Bursa, TR · <a href="https://etbis.ticaret.gov.tr" target="_blank" rel="noopener noreferrer">ETBİS</a> [no eklenecek]</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=nj330a"></script>
+<script src="assets/js/cookie-consent.js?v=nj330a"></script>
+</body>
+</html>
