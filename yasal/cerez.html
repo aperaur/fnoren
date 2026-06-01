@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fnoren — Çerez Politikası. Site tarafından kullanılan çerez türleri, amaçları ve tercih yönetimi.">
+  <title>Çerez Politikası — Fnoren</title>
+  <link rel="icon" href="../assets/img/brand/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css?v=nj330a">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-icon"><img src="../assets/img/brand/logo.png" alt="Fn."></a>
+  <a href="../index.html" class="nav-brand">Fnoren</a>
+  <ul class="nav-links">
+    <li><a href="../urunler.html">Ürünler</a></li>
+    <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+    <li><a href="../iletisim.html">İletişim</a></li>
+  </ul>
+</nav>
+
+<section class="section legal-page" style="padding-top:calc(var(--nav-h) + 3rem);max-width:760px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)">
+  <nav class="breadcrumb mono" aria-label="Sayfa konumu" style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem">
+    <a href="../index.html" style="color:inherit;text-decoration:none">Anasayfa</a> /
+    <span>Yasal</span> /
+    <span aria-current="page">Çerez Politikası</span>
+  </nav>
+
+  <span class="label mono">Yasal — Son güncelleme: 2026-06-01</span>
+  <h1 style="margin-top:0.5rem">Çerez Politikası</h1>
+
+  <div class="legal-content" style="line-height:1.75;font-size:0.9375rem;margin-top:2.5rem">
+
+    <h2 style="font-size:1.25rem;margin-top:2rem;margin-bottom:1rem">1. Çerez Nedir?</h2>
+    <p>Çerezler (cookies), web siteleri tarafından tarayıcınıza gönderilen ve cihazınızda saklanan küçük metin dosyalarıdır. Çerezler site deneyiminizi iyileştirmek, kullanım istatistikleri toplamak ve reklam optimizasyonu için kullanılır.</p>
+
+    <h2 style="font-size:1.25rem;margin-top:2rem;margin-bottom:1rem">2. Kullandığımız Çerez Türleri</h2>
+
+    <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.5rem">a) Zorunlu Çerezler</h3>
+    <p>Site temel işlevleri için gereklidir. Devre dışı bırakılamaz. <strong>Açık rıza gerektirmez.</strong></p>
+    <table class="spec-table" style="margin:1rem 0">
+      <tr><td>fnoren_consent</td><td>Çerez tercih kaydı</td><td>12 ay</td></tr>
+      <tr><td>fnoren_session</td><td>Chat widget oturum</td><td>Oturum</td></tr>
+    </table>
+
+    <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.5rem">b) Analitik Çerezler (Opsiyonel)</h3>
+    <p>Site kullanım istatistikleri için kullanılır. <strong>Açık rıza ile aktif olur.</strong></p>
+    <table class="spec-table" style="margin:1rem 0">
+      <tr><td>_ga, _ga_*</td><td>Google Analytics — ziyaretçi tanıma, oturum</td><td>2 yıl</td></tr>
+      <tr><td>_gid</td><td>Google Analytics — ziyaretçi ayrımı</td><td>24 saat</td></tr>
+    </table>
+
+    <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.5rem">c) Pazarlama Çerezleri (Opsiyonel)</h3>
+    <p>Reklam optimizasyonu ve dönüşüm takibi için kullanılır. <strong>Açık rıza ile aktif olur.</strong></p>
+    <table class="spec-table" style="margin:1rem 0">
+      <tr><td>_fbp</td><td>Meta (Facebook) Pixel — kampanya takip</td><td>3 ay</td></tr>
+      <tr><td>fr</td><td>Meta — reklam targetlama</td><td>3 ay</td></tr>
+    </table>
+
+    <h2 style="font-size:1.25rem;margin-top:2rem;margin-bottom:1rem">3. Çerez Tercihlerinizi Yönetin</h2>
+    <p>Çerez tercihlerinizi istediğiniz zaman değiştirebilirsiniz:</p>
+    <div style="margin:1.5rem 0;padding:1.5rem;border:1px solid var(--border);background:var(--surface2)">
+      <p style="margin:0 0 1rem"><strong>Mevcut tercihiniz:</strong> <span id="current-consent" class="mono">Yükleniyor...</span></p>
+      <div style="display:flex;flex-direction:column;gap:0.5rem">
+        <button onclick="setConsent('all')" class="btn btn-primary">Tümünü Kabul Et</button>
+        <button onclick="setConsent('necessary')" class="btn btn-outline">Yalnızca Zorunlu</button>
+        <button onclick="setConsent(null)" class="btn btn-outline">Tercihimi Sıfırla</button>
+      </div>
+    </div>
+
+    <p>Ayrıca tarayıcınızın ayarlarından çerezleri yönetebilir veya engelleyebilirsiniz:</p>
+    <ul style="margin:1rem 0;padding-left:1.5rem">
+      <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Chrome</a></li>
+      <li><a href="https://support.mozilla.org/tr/kb/cerezler-bilgi" target="_blank" rel="noopener noreferrer">Firefox</a></li>
+      <li><a href="https://support.apple.com/tr-tr/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+      <li><a href="https://support.microsoft.com/tr-tr/microsoft-edge/microsoft-edge-de-tan%C4%B1mlama-bilgilerini-silme-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Edge</a></li>
+    </ul>
+
+    <h2 style="font-size:1.25rem;margin-top:2rem;margin-bottom:1rem">4. Üçüncü Taraflar</h2>
+    <p>Pazarlama ve analitik çerezleri üçüncü taraf sağlayıcılar tarafından yönetilir:</p>
+    <ul style="margin:1rem 0;padding-left:1.5rem">
+      <li>Google LLC — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Gizlilik Politikası</a></li>
+      <li>Meta Platforms Inc. — <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener noreferrer">Gizlilik Politikası</a></li>
+    </ul>
+
+    <h2 style="font-size:1.25rem;margin-top:2rem;margin-bottom:1rem">5. Detaylı Bilgi</h2>
+    <p>Kişisel veri işleme ile ilgili genel bilgi için <a href="gizlilik.html">Gizlilik Politikası</a> ve KVKK aydınlatma metni için <a href="kvkk.html">KVKK Aydınlatma Metni</a> sayfalarımıza bakabilirsiniz.</p>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Fnoren</span>
+    <div class="footer-links">
+      <a href="../urunler.html">Ürünler</a>
+      <a href="../hakkimizda.html">Hakkımızda</a>
+      <a href="../iletisim.html">İletişim</a>
+    </div>
+    <span class="mono" style="font-size:0.625rem">Bursa, TR — 304 Paslanmaz Çelik</span>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js?v=nj330a"></script>
+<script src="../assets/js/cookie-consent.js?v=nj330a"></script>
+<script>
+  // Mevcut tercih göster
+  document.addEventListener("DOMContentLoaded", () => {
+    const consent = localStorage.getItem("fnoren_consent") || "ayarlanmadı";
+    document.getElementById("current-consent").textContent = consent === "all" ? "Tümü Kabul" : consent === "necessary" ? "Yalnızca Zorunlu" : "Ayarlanmadı";
+  });
+  function setConsent(value) {
+    if (value === null) {
+      localStorage.removeItem("fnoren_consent");
+      document.getElementById("current-consent").textContent = "Ayarlanmadı";
+    } else {
+      localStorage.setItem("fnoren_consent", value);
+      document.getElementById("current-consent").textContent = value === "all" ? "Tümü Kabul" : "Yalnızca Zorunlu";
+    }
+    if (typeof window.applyConsent === "function") window.applyConsent(value);
+  }
+</script>
+</body>
+</html>

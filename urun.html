@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=nj329h">
+  <link rel="stylesheet" href="assets/css/main.css?v=nj330a">
 </head>
 <body>
 
@@ -36,18 +36,57 @@
 </section>
 
 <footer>
-  <div class="footer-inner">
-    <span>© 2026 Fnoren</span>
-    <div class="footer-links">
-      <a href="urunler.html">Ürünler</a>
-      <a href="hakkimizda.html">Hakkımızda</a>
-      <a href="iletisim.html">İletişim</a>
+  <div class="footer-inner footer-grid">
+    <div class="footer-brand">
+      <span class="footer-brand-name">Fnoren</span>
+      <p class="footer-brand-desc">304 paslanmaz çelik. Bursa atölyesinde tek elden tasarım, kaynak, son büküm.</p>
     </div>
-    <span class="mono" style="font-size:0.625rem">Bursa, TR — 304 Paslanmaz Çelik</span>
+    <div class="footer-col">
+      <h4>Ürünler</h4>
+      <ul>
+        <li><a href="urunler.html?kategori=mutfak">Mutfak</a></li>
+        <li><a href="urunler.html?kategori=banyo">Banyo</a></li>
+        <li><a href="urunler.html?kategori=giris">Giriş</a></li>
+        <li><a href="urunler.html">Tüm Ürünler</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Şirket</h4>
+      <ul>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Yasal</h4>
+      <ul>
+        <li><a href="yasal/kvkk.html">KVKK Aydınlatma</a></li>
+        <li><a href="yasal/gizlilik.html">Gizlilik</a></li>
+        <li><a href="yasal/cerez.html">Çerez Politikası</a></li>
+        <li><a href="yasal/satis-bilgisi.html">Satış Bilgisi</a></li>
+        <li><a href="yasal/iade-degisim.html">İade &amp; Değişim</a></li>
+        <li><a href="yasal/teslimat.html">Teslimat</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>İletişim</h4>
+      <ul>
+        <li><a href="mailto:fnoreforms@gmail.com">fnoreforms@gmail.com</a></li>
+        <li><a href="https://wa.me/message/B74C2W566WVEJ1" target="_blank" rel="noopener noreferrer">WhatsApp Business</a></li>
+        <li class="footer-meta">[FNOREN ÜNVAN — Recak]</li>
+        <li class="footer-meta">[Vergi No / MERSİS]</li>
+        <li class="footer-meta">[Atölye Adresi, Bursa]</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Fnoren — Tüm hakları saklıdır.</span>
+    <span class="mono">304 Paslanmaz Çelik · Bursa, TR · <a href="https://etbis.ticaret.gov.tr" target="_blank" rel="noopener noreferrer">ETBİS</a> [no eklenecek]</span>
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=nj330a"></script>
+<script src="assets/js/cookie-consent.js?v=nj330a"></script>
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
@@ -83,6 +122,82 @@ document.addEventListener("DOMContentLoaded", async () => {
   const cb        = "?v=nj329h";
 
   document.title = `${ad} — Fnoren`;
+
+  // ── SEO: JSON-LD Product + BreadcrumbList + Canonical + OG/Twitter ──
+  const canonicalUrl = `https://fnoren.com/urun.html?kod=${kod}`;
+  const imageUrl = `https://fnoren.com/assets/img/products/${kod}.jpg`;
+  const platformOffers = [];
+  if (hbUrl) platformOffers.push({"@type":"Offer","url":hbUrl,"priceCurrency":"TRY","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"Fnoren Hepsiburada"}});
+  if (shopUrl) platformOffers.push({"@type":"Offer","url":shopUrl,"priceCurrency":"TRY","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"Fnoren Shopier"}});
+
+  const productLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": ad,
+    "description": kisa || ad,
+    "image": imageUrl,
+    "sku": kod,
+    "brand": {"@type": "Brand", "name": "Fnoren"},
+    "category": kat,
+    "manufacturer": {"@type": "Organization", "name": "Fnoren", "url": "https://fnoren.com"},
+    "material": "304 Paslanmaz Çelik",
+    "url": canonicalUrl,
+    ...(platformOffers.length ? { "offers": platformOffers.length === 1 ? platformOffers[0] : platformOffers } : {})
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Anasayfa", "item": "https://fnoren.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Ürünler", "item": "https://fnoren.com/urunler.html"},
+      {"@type": "ListItem", "position": 3, "name": kat, "item": `https://fnoren.com/urunler.html?kategori=${(urun.kategori || "").toLowerCase()}`},
+      {"@type": "ListItem", "position": 4, "name": ad, "item": canonicalUrl}
+    ]
+  };
+
+  [productLd, breadcrumbLd].forEach(data => {
+    const s = document.createElement("script");
+    s.type = "application/ld+json";
+    s.textContent = JSON.stringify(data);
+    document.head.appendChild(s);
+  });
+
+  let canonicalLink = document.querySelector('link[rel="canonical"]');
+  if (!canonicalLink) {
+    canonicalLink = document.createElement("link");
+    canonicalLink.rel = "canonical";
+    document.head.appendChild(canonicalLink);
+  }
+  canonicalLink.href = canonicalUrl;
+
+  const ogTags = {
+    "og:type": "product",
+    "og:title": `${ad} — Fnoren`,
+    "og:description": kisa || `${ad} — 304 paslanmaz çelik, Bursa atölyesi.`,
+    "og:image": imageUrl,
+    "og:url": canonicalUrl,
+    "og:site_name": "Fnoren",
+    "og:locale": "tr_TR"
+  };
+  Object.entries(ogTags).forEach(([prop, content]) => {
+    let m = document.querySelector(`meta[property="${prop}"]`);
+    if (!m) { m = document.createElement("meta"); m.setAttribute("property", prop); document.head.appendChild(m); }
+    m.content = content;
+  });
+  const twTags = {
+    "twitter:card": "summary_large_image",
+    "twitter:title": `${ad} — Fnoren`,
+    "twitter:description": kisa || `${ad} — 304 paslanmaz çelik`,
+    "twitter:image": imageUrl
+  };
+  Object.entries(twTags).forEach(([name, content]) => {
+    let m = document.querySelector(`meta[name="${name}"]`);
+    if (!m) { m = document.createElement("meta"); m.setAttribute("name", name); document.head.appendChild(m); }
+    m.content = content;
+  });
+  let metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.content = kisa || `${ad} — Fnoren 304 paslanmaz çelik, Bursa atölyesinde tek elden üretim.`;
 
   // Galeri: -01 ana, -02/-03/-04 ek
   const galeriIdx = [1, 2, 3, 4];

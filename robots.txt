@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /.tools/
+Disallow: /data/
+Disallow: /export/
+
+# Crawl-delay önerisi (yoğun bot trafiği için)
+# Crawl-delay: 1
+
+Sitemap: https://fnoren.com/sitemap.xml
