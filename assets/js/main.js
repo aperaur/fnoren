@@ -1,5 +1,38 @@
 /* main.js — fnoren Swiss Industrial v3.0 */
 
+// Analytics — fnorenTrack helper (Sprint 6 — GA4 + Meta Pixel wrapper)
+// Consent Mode v2 uyumlu: gtag('consent', 'default', 'denied') sayesinde
+// kullanıcı "Yalnızca Zorunlu" seçtiyse event'ler anonim/ping olarak
+// işlenir; "Tümünü Kabul" seçtiyse tam veri toplanır.
+window.fnorenTrack = function (eventName, params) {
+  params = params || {};
+  try {
+    if (typeof gtag === "function") {
+      gtag("event", eventName, params);
+    }
+    if (typeof fbq === "function") {
+      const fbMap = {
+        view_item: "ViewContent",
+        select_item: "ViewContent",
+        generate_lead: "Lead",
+        contact: "Contact",
+        add_to_cart: "AddToCart",
+        begin_checkout: "InitiateCheckout"
+      };
+      const fbEvent = fbMap[eventName];
+      if (fbEvent) {
+        const fbParams = {};
+        if (params.item_id) fbParams.content_ids = [params.item_id];
+        if (params.item_name) fbParams.content_name = params.item_name;
+        if (params.item_category) fbParams.content_category = params.item_category;
+        if (params.value) fbParams.value = params.value;
+        if (params.currency) fbParams.currency = params.currency;
+        fbq("track", fbEvent, fbParams);
+      }
+    }
+  } catch (e) { /* silent fail — analytics olmasa da site çalışır */ }
+};
+
 // A11y — skip-to-content + ana içerik detect (Sprint 4.1)
 (function () {
   function injectSkip() {

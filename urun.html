@@ -167,6 +167,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.head.appendChild(s);
   });
 
+  // Analytics — view_item event (Sprint 6)
+  if (window.fnorenTrack) {
+    window.fnorenTrack("view_item", {
+      item_id: kod,
+      item_name: ad,
+      item_category: kat,
+      item_brand: "Fnoren",
+      currency: "TRY"
+    });
+  }
+
   let canonicalLink = document.querySelector('link[rel="canonical"]');
   if (!canonicalLink) {
     canonicalLink = document.createElement("link");
@@ -238,9 +249,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       </div>
       ${ozellikRows ? `<table class="spec-table">${ozellikRows}</table>` : ''}
       <div class="product-buttons">
-        ${hbUrl ? `<a href="${hbUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-hb">Hepsiburada'da Satın Al →</a>` : ''}
-        ${shopUrl ? `<a href="${shopUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-shopier">Shopier'da Satın Al →</a>` : ''}
-        <a href="https://wa.me/message/B74C2W566WVEJ1" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-wa-ask" onclick="if(window.fnorenWhatsappPrefill)window.fnorenWhatsappPrefill('${ad.replace(/'/g, "\\'")}','${canonicalUrl}')">WhatsApp ile Sor</a>
+        ${hbUrl ? `<a href="${hbUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-hb" onclick="window.fnorenTrack&&window.fnorenTrack('select_item',{item_id:'${kod}',item_name:'${ad.replace(/'/g, "\\'")}',item_category:'${kat}',item_list_id:'hepsiburada'})">Hepsiburada'da Satın Al →</a>` : ''}
+        ${shopUrl ? `<a href="${shopUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-shopier" onclick="window.fnorenTrack&&window.fnorenTrack('select_item',{item_id:'${kod}',item_name:'${ad.replace(/'/g, "\\'")}',item_category:'${kat}',item_list_id:'shopier'})">Shopier'da Satın Al →</a>` : ''}
+        <a href="https://wa.me/message/B74C2W566WVEJ1" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-wa-ask" onclick="if(window.fnorenWhatsappPrefill)window.fnorenWhatsappPrefill('${ad.replace(/'/g, "\\'")}','${canonicalUrl}');window.fnorenTrack&&window.fnorenTrack('contact',{item_id:'${kod}',item_name:'${ad.replace(/'/g, "\\'")}',contact_method:'whatsapp'})">WhatsApp ile Sor</a>
       </div>
       ${paragrafHtml ? `<div class="product-long-desc"><span class="label mono detay-baslik">Ürün Detayı</span><div class="detay-text">${paragrafHtml}</div></div>` : ''}
     </div>
