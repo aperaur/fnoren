@@ -1,0 +1,16 @@
+# Satır-sonu kilidi — Windows<->Linux ortak disk CRLF drift'ini onler (NJ-363).
+# Tum metin dosyalari repoda LF olarak saklanir.
+* text=auto eol=lf
+
+# Binary — dokunma (renormalize/EOL filtresi disi)
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
