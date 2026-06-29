@@ -1393,3 +1393,14 @@ select:focus-visible {
   .hero-text { padding: 3rem var(--gutter); }
   .section-dark .container > div { grid-template-columns: 1fr !important; gap: 2rem !important; }
 }
+
+/* Mobil nav cakisma fix (NJ-363): masaustunde .nav-brand position:absolute ile
+   ortaya sabitlenip mobilde sagdaki .nav-links ile ust uste biniyordu.
+   <=640px akisa alinir (logo'nun sagi, linkler margin-left:auto ile saga);
+   <=430px en dar ekranda gizlenir (logo mark zaten markayi tasiyor). */
+@media (max-width: 640px) {
+  .nav-brand { position: static; transform: none; margin-left: 0.75rem; }
+}
+@media (max-width: 430px) {
+  .nav-brand { display: none; }
+}
