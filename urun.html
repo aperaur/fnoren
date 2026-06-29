@@ -124,6 +124,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const platformOffers = [];
   if (hbUrl) platformOffers.push({"@type":"Offer","url":hbUrl,"priceCurrency":"TRY","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"Fnoren Hepsiburada"}});
   if (shopUrl) platformOffers.push({"@type":"Offer","url":shopUrl,"priceCurrency":"TRY","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"Fnoren Shopier"}});
+  // Pazaryeri linki yoksa canonical sayfa = Offer URL (fiyatsiz; vitrin). Google "offers eksik" kritik hatasini onler — NJ-363
+  if (!platformOffers.length) platformOffers.push({"@type":"Offer","url":canonicalUrl,"priceCurrency":"TRY","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"Fnoren"}});
 
   const productLd = {
     "@context": "https://schema.org",
@@ -137,7 +139,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     "manufacturer": {"@type": "Organization", "name": "Fnoren", "url": "https://fnoren.com"},
     "material": "304 Paslanmaz Çelik",
     "url": canonicalUrl,
-    ...(platformOffers.length ? { "offers": platformOffers.length === 1 ? platformOffers[0] : platformOffers } : {})
+    "offers": platformOffers.length === 1 ? platformOffers[0] : platformOffers
   };
 
   const breadcrumbLd = {
