@@ -25,7 +25,7 @@ function widgetInit() {
 
   // Hoş geldin (ilk kez)
   if (gecmis.length === 0) {
-    mesajEkle("Merhaba! Fnoren ürünleri hakkında yardımcı olabilirim. Ne sormak istersiniz?", "bot");
+    mesajEkle("Merhaba! Ben Fnoren'in yapay zekâ destek asistanıyım. Ürünler, kargo, iade, montaj ve bakım hakkında sorularınızı yanıtlarım.", "bot");
   }
 
   toggle.addEventListener("click", () => {

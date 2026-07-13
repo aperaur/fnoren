@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "olusturma": "2026-07-14 NJ-377 D727",
+    "amac": "fnoren destek botu bilgi rafı + site S4 içerik tabanı (çifte kullanım)",
+    "kaynaklar": "site-faq: fnoren.com/faq.html · site-yasal: yasal/satis-teslimat.html · arsiv-malzeme/uretim: AperAur Zion kütüphanesi (NJ-354) · dis-arastirma: seeker 2026-07-14 · emsal: pazar yorum analizi"
+  },
+  "kartlar": [
+    {
+      "id": "malzeme-304",
+      "baslik": "304 paslanmaz çelik nedir, neden 304?",
+      "kaynak": "site-faq + arsiv-malzeme",
+      "metin": "fnoren ürünleri 304 (18/8 krom-nikel) paslanmaz çelikten üretilir. 304, mutfak ve ev kullanımında endüstri standardıdır: gıda güvenli, korozyona dayanıklı. Yüzeyinde kendini yenileyen mikro koruyucu tabaka (krom oksit) oluşur — çizilse bile tabaka kendini onarır, normal ev kullanımında paslanma görülmez. Banyo nemi ve buharı 304 için sorun değildir. 316 kalitesi tuzlu deniz suyu gibi aşırı korozif ortamların malzemesidir; ev ve banyo aksesuarında 304 doğru ve yeterli tercihtir. Ucuz muadillerde kullanılan 200 serisi çelikler görünüşte benzer ama nemli ortamda erken lekelenir — fnoren malzemeyi kalite sertifikalı (mill certificate) tedarik eder. Not: 304 mıknatısı çok az çeker ya da hiç çekmez; büküm görmüş bölgelerde hafif mıknatıslanma normaldir, kalitesizlik işareti değildir."
+    },
+    {
+      "id": "bakim-temizlik",
+      "baslik": "Temizlik ve bakım nasıl yapılır?",
+      "kaynak": "site-faq + arsiv-malzeme + dis-arastirma",
+      "metin": "Rutin temizlik: yumuşak bez veya mikrofiber + ılık su yeterlidir; gerekirse birkaç damla sıvı bulaşık deterjanı. Satin (fırçalı) yüzeylerde daima fırça dokusu YÖNÜNDE silin, çapraz silme izi belirginleştirir. Temizlik sonrası kuru bezle hemen kurulayın — su lekesini önler. Parmak izi için amonyaksız cam temizleyici veya az miktarda izopropil alkol (beze sıkıp) kullanılabilir. Kireç/su lekesi: suyla seyreltilmiş beyaz sirkeyi kısa süre uygulayıp durulayın ve hemen kurulayın; sirke-limon kalıntısını yüzeyde BEKLETMEYİN. KESİNLİKLE KULLANMAYIN: klor/çamaşır suyu içeren temizleyiciler, tuz ruhu ve hidroklorik asitli kireç çözücüler, çelik tel ve aşındırıcı süngerler, fırın temizleyici — bunlar koruyucu tabakayı bozar ve kalıcı hasar verir. Hafif çizik satin yüzeyde doku yönünde ince temizlik pediyle harmanlanabilir."
+    },
+    {
+      "id": "montaj-bant",
+      "baslik": "Montaj: delmeden, çift taraflı bantla — doğru uygulama",
+      "kaynak": "site-faq + arsiv-uretim + emsal-yorum + dis-arastirma",
+      "metin": "fnoren banyo aksesuarlarının çoğu çift taraflı endüstriyel bantla kurulur — duvar/fayans delinmez, kiracılar için idealdir. Bantlı montajın ömrü doğru uygulamaya bağlıdır: (1) Yüzeyi temizleyin ve yağdan arındırın (izopropil alkol idealdir; deterjan kalıntısı bile tutunmayı düşürür). (2) Yüzeyi TAMAMEN kurulayın. (3) Ürünü hizalayıp 30-60 saniye kuvvetle bastırın; uygulama öncesi bandı/yüzeyi saç kurutma makinesiyle hafif ısıtmak yapışmayı belirgin güçlendirir. (4) Yük asmadan önce 24-72 saat bekleyin — bant tam gücüne bu sürede ulaşır. En iyi tutunma düz ve pürüzsüz yüzeylerdedir (fayans, cam, mermer); pürüzlü sıva, tozlu veya kabaran boyalı yüzeylerde tutunma zayıflar. Taşıma kapasitesi ürün açıklamasında belirtilir; ıslak bornoz gibi ağır yükler için üründeki sınıra uyun. Mutfak ürünleri (kesme tahtası, peçetelik vb.) tezgâh üstüdür, kurulum gerektirmez."
+    },
+    {
+      "id": "kargo-teslimat",
+      "baslik": "Kargo süresi ve teslimat",
+      "kaynak": "site-yasal",
+      "metin": "Sipariş hazırlığı 1-2 iş günüdür. Tahmini teslim: şehir içi (Bursa) 1 iş günü, büyükşehirler 1-2 iş günü, diğer şehirler 2-4 iş günü. Süre kargo yoğunluğuna ve resmi tatillere göre değişebilir. Takip numarası, satın aldığınız kanal üzerinden iletilir. ÖNEMLİ: Kargo paketinde dış hasar görürseniz kargo görevlisine hasar tutanağı tutturun ve paketi teslim ALMAYIN. Paketi açtıktan sonra fark edilen kusur için 48 saat içinde fotoğraflı bildirim yapın."
+    },
+    {
+      "id": "iade-cayma",
+      "baslik": "İade ve cayma hakkı",
+      "kaynak": "site-yasal + site-faq",
+      "metin": "Teslim tarihinden itibaren 14 gün içinde gerekçe göstermeden cayma hakkınız vardır (ürün kullanılmamış, orijinal ambalajında ve hasarsız olmalıdır). İade, ürünü satın aldığınız platformun kendi akışıyla başlatılır: Hepsiburada'da Hesap → Siparişlerim → İade Et; diğer satış kanalında Siparişlerim → İade Talep Et; atölye özel siparişlerinde doğrudan WhatsApp veya e-posta. Ürün bize ulaştıktan sonra 3 iş günü içinde incelenir ve iade platform üzerinden başlatılır; banka iade yansıması 7-14 iş günü sürebilir. Kişiye özel (özel ölçü) üretimlerde yasa gereği cayma hakkı kullanılamaz — bu durum sipariş onayı öncesinde yazılı olarak teyit edilir."
+    },
+    {
+      "id": "satin-alma",
+      "baslik": "Nereden satın alınır, ödeme ve fatura",
+      "kaynak": "site-yasal",
+      "metin": "fnoren.com vitrin sitesidir; satın alma resmi satış kanallarından yapılır: Hepsiburada mağazamız (hepsiburada.com/magaza/fnoren — Hepsiburada güvencesi ve taksit imkânı) ve online satış sayfamız (kredi/banka kartı, havale). Özel ölçü ve toptan siparişler WhatsApp Business veya e-posta (fnoreforms@gmail.com) üzerinden alınır. Sitedeki fiyatlar bilgilendirme amaçlıdır; güncel geçerli fiyat satış kanalındaki fiyattır ve tüm fiyatlara KDV dahildir. Fatura e-arşiv olarak düzenlenir; kurumsal fatura için sipariş notuna vergi numarası (VKN) yazılması yeterlidir."
+    },
+    {
+      "id": "uretim-atolye",
+      "baslik": "Üretim nerede ve nasıl yapılıyor?",
+      "kaynak": "site-faq + arsiv-uretim",
+      "metin": "Tüm üretim Bursa Ovaakça'daki fnoren atölyesinde yapılır: tasarım, fiber lazer kesim, büküm, kaynak ve satin (fırçalı) yüzey işlemi — hepsi aynı çatı altında, ara taşeron yoktur. Küçük seri atölye üretimi olduğu için her parça tek tek kontrol edilir. Sınırlı sayıda özel ölçü üretim mümkündür (WhatsApp'tan çizim/ölçü paylaşarak teklif alabilirsiniz). Renk seçeneği yoktur: ürünler 304 paslanmaz çeliğin kendi doğal renginde ve satin dokusundadır — kaplama/boya olmadığı için solmaz, kabarmaz."
+    },
+    {
+      "id": "secim-rehberi",
+      "baslik": "Hangi ürün bana uygun? (seçim rehberi)",
+      "kaynak": "site-faq + katalog",
+      "metin": "Banyoda dar alan ve duş içi düzen için köşe rafları en akılcı çözümdür; duvar boyunca geniş yüzeylerde düz raflar ve havluluk/askılar kullanılır. Seçerken iki ölçüye bakın: monte edeceğiniz yüzeyin genişliği ve koyacağınız eşyaların boyu — her ürünün ölçüleri (cm) ürün sayfasında yazar. Mutfak ürünleri tezgâh üstüdür, kurulum gerektirmez. Aynı serinin ürünleri (ör. Serel, Reone) aynı malzeme ve dokuda üretilir; birlikte kullanıldığında bütünlüklü görünüm verir. Kararsız kaldıysanız WhatsApp'tan yerleştireceğiniz alanın fotoğrafını ve ölçüsünü paylaşın — size uygun ürünü birlikte seçelim."
+    },
+    {
+      "id": "garanti",
+      "baslik": "Garanti ve dayanıklılık",
+      "kaynak": "site-faq",
+      "metin": "Tüm fnoren ürünleri üretim hatasına karşı garantilidir. 304 paslanmaz çelik yapısı sayesinde normal kullanımda kalıcı paslanma görülmez; ürünler kaplama değil masif paslanmaz olduğundan solma ve kabarma yaşanmaz. Üretim kaynaklı bir sorunla karşılaşırsanız fotoğrafla birlikte WhatsApp veya e-posta üzerinden ulaşın — atölye işi olduğu için çözüm doğrudan üreticiyle konuşulur."
+    },
+    {
+      "id": "toptan-kurumsal",
+      "baslik": "Toptan / kurumsal sipariş",
+      "kaynak": "site-faq",
+      "metin": "Restoran, otel, mimari proje gibi kurumsal ve toptan siparişler kabul edilir. Ürün listesi ve adetlerle birlikte WhatsApp Business veya e-posta (fnoreforms@gmail.com) üzerinden teklif isteyebilirsiniz. Fatura kurumsal düzenlenir. Projeye özel ölçü üretimi de aynı kanaldan görüşülür."
+    },
+    {
+      "id": "ozel-siparis",
+      "baslik": "Özel ölçü sipariş",
+      "kaynak": "site-faq + site-yasal",
+      "metin": "Atölye üretimi olduğu için sınırlı sayıda özel ölçü sipariş alınır. WhatsApp Business üzerinden istediğiniz ürünün çizimini/ölçüsünü paylaşın; üretilebilirlik ve fiyat bilgisi verilir. Renk seçeneği yoktur (304 doğal satin doku). Önemli: kişiye özel üretimlerde 14 günlük cayma hakkı yasa gereği geçerli değildir; sipariş onayından önce bu yazılı olarak teyit edilir."
+    }
+  ]
+}
