@@ -1,6 +1,6 @@
 /* widget.js — Alluka chat widget */
-const ALLUKA_URL     = "https://aperaur-production.up.railway.app/api/chat/widget";
-const ALLUKA_LICENSE = "";  // production'da set edilecek veya env'den inject
+const ALLUKA_URL     = "https://aur-node.tailfc3e18.ts.net/api/chat/widget";  // edge + Tailscale Funnel (D724 NJ-377)
+const ALLUKA_LICENSE = "";  // kullanılmıyor — koruma backend'de: origin allowlist + IP başına istek sınırı
 
 function widgetInit() {
   const toggle   = document.getElementById("chat-toggle");
