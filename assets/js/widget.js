@@ -78,7 +78,8 @@ function widgetInit() {
         a.href = parca;
         a.textContent = parca.includes("wa.me")
           ? "WhatsApp hattı"
-          : parca.replace(/^https:\/\/(www\.)?/, "");
+          : (parca.includes("urun.html") ? "ürünü incele"
+             : parca.replace(/^https:\/\/(www\.)?/, ""));
         a.target = "_blank";
         a.rel = "noopener noreferrer";
         div.appendChild(a);
