@@ -60,6 +60,12 @@
       "metin": "Tüm fnoren ürünleri üretim hatasına karşı garantilidir. 304 paslanmaz çelik yapısı sayesinde normal kullanımda kalıcı paslanma görülmez; ürünler kaplama değil masif paslanmaz olduğundan solma ve kabarma yaşanmaz. Üretim kaynaklı bir sorunla karşılaşırsanız fotoğrafla birlikte WhatsApp veya e-posta üzerinden ulaşın — atölye işi olduğu için çözüm doğrudan üreticiyle konuşulur."
     },
     {
+      "id": "magaza-ziyaret",
+      "baslik": "Mağazanız var mı, ürünleri yerinde görebilir miyim?",
+      "kaynak": "site-yasal",
+      "metin": "fnoren'in fiziksel bir perakende mağazası yoktur — fnoren.com vitrin sitesidir, üretim Bursa Ovaakça'daki atölyemizde yapılır ve satış online kanallardan (Hepsiburada mağazamız ve online satış sayfamız) gerçekleşir. Ürünleri yerinde görmek veya atölyeyle ilgili bir talebiniz varsa WhatsApp hattımızdan yazın, birlikte planlayalım."
+    },
+    {
       "id": "toptan-kurumsal",
       "baslik": "Toptan / kurumsal sipariş",
       "kaynak": "site-faq",
