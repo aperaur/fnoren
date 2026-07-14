@@ -720,7 +720,7 @@
       "kategori_adi": "Kesme Tahtası",
       "malzeme": "304 ST",
       "platform": null,
-      "fiyat": 0,
+      "fiyat": 1950,
       "stok": {
         "adet": 0,
         "kritik_seviye": 3,
@@ -756,7 +756,7 @@
       "hashtag_en": [],
       "gorsel_yolu": "E:\\APEX\\AperAur\\pim\\foto\\output\\fnk005",
       "durum": "aktif",
-      "fiyat_kdv": 0,
+      "fiyat_kdv": 1950,
       "kaynak": "PIM aktif (NJ-329 build)",
       "guncelleme": "2026-05-31T17:02"
     }
