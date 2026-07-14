@@ -71,7 +71,21 @@ function widgetInit() {
   function mesajEkle(text, tip, cssClass = "") {
     const div = document.createElement("div");
     div.className = `msg msg-${tip}${cssClass ? " " + cssClass : ""}`;
-    div.textContent = text;
+    // Linkify (D728): URL'ler tıklanabilir — innerHTML YOK, node-bazlı (XSS güvenli)
+    String(text).split(/(https?:\/\/[^\s]+)/g).forEach(parca => {
+      if (/^https?:\/\//.test(parca)) {
+        const a = document.createElement("a");
+        a.href = parca;
+        a.textContent = parca.includes("wa.me")
+          ? "WhatsApp hattı"
+          : parca.replace(/^https:\/\/(www\.)?/, "");
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        div.appendChild(a);
+      } else if (parca) {
+        div.appendChild(document.createTextNode(parca));
+      }
+    });
     msgs.appendChild(div);
     msgs.scrollTop = msgs.scrollHeight;
 
