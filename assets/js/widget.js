@@ -84,7 +84,13 @@ function widgetInit() {
         a.rel = "noopener noreferrer";
         div.appendChild(a);
       } else if (parca) {
-        div.appendChild(document.createTextNode(parca));
+        // NJ-378: satır araları render edilsin — backend yapılandırılmış cevap
+        // gönderiyor (net cevap → boş satır → bağlam → link); createTextNode
+        // \n'i yutuyordu, cevaplar tek blok "metin duvarı" görünüyordu.
+        parca.split("\n").forEach((satir, i) => {
+          if (i > 0) div.appendChild(document.createElement("br"));
+          if (satir) div.appendChild(document.createTextNode(satir));
+        });
       }
     });
     msgs.appendChild(div);
