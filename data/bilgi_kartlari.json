@@ -21,7 +21,7 @@
       "id": "montaj-bant",
       "baslik": "Montaj: delmeden, çift taraflı bantla — doğru uygulama",
       "kaynak": "site-faq + arsiv-uretim + emsal-yorum + dis-arastirma",
-      "metin": "fnoren banyo aksesuarlarının çoğu çift taraflı endüstriyel bantla kurulur — duvar/fayans delinmez, kiracılar için idealdir. Bantlı montajın ömrü doğru uygulamaya bağlıdır: (1) Yüzeyi temizleyin ve yağdan arındırın (izopropil alkol idealdir; deterjan kalıntısı bile tutunmayı düşürür). (2) Yüzeyi TAMAMEN kurulayın. (3) Ürünü hizalayıp 30-60 saniye kuvvetle bastırın; uygulama öncesi bandı/yüzeyi saç kurutma makinesiyle hafif ısıtmak yapışmayı belirgin güçlendirir. (4) Yük asmadan önce 24-72 saat bekleyin — bant tam gücüne bu sürede ulaşır. En iyi tutunma düz ve pürüzsüz yüzeylerdedir (fayans, cam, mermer); pürüzlü sıva, tozlu veya kabaran boyalı yüzeylerde tutunma zayıflar. Taşıma kapasitesi ürün açıklamasında belirtilir; ıslak bornoz gibi ağır yükler için üründeki sınıra uyun. Mutfak ürünleri (kesme tahtası, peçetelik vb.) tezgâh üstüdür, kurulum gerektirmez."
+      "metin": "fnoren banyo aksesuarlarının çoğu çift taraflı endüstriyel bantla kurulur — duvar/fayans delinmez, kiracılar için idealdir. Bantlı montajın ömrü doğru uygulamaya bağlıdır: (1) Yüzeyi temizleyin ve yağdan arındırın (izopropil alkol idealdir; deterjan kalıntısı bile tutunmayı düşürür). (2) Yüzeyi TAMAMEN kurulayın. (3) Ürünü hizalayıp 30-60 saniye kuvvetle bastırın; uygulama öncesi bandı/yüzeyi saç kurutma makinesiyle hafif ısıtmak yapışmayı belirgin güçlendirir. (4) Yük asmadan önce 24-72 saat bekleyin — bant tam gücüne bu sürede ulaşır. En iyi tutunma düz ve pürüzsüz yüzeylerdedir. Taşıma kapasitesi ürün açıklamasında belirtilir; ıslak bornoz gibi ağır yükler için üründeki sınıra uyun. Mutfak ürünleri (kesme tahtası, peçetelik vb.) tezgâh üstüdür, kurulum gerektirmez. Testlerimiz fayans, mermer ve beyaz MDF kaplama üzerinde yapıldı; bu tür temiz, düz ve pürüzsüz yüzeylere uygundur. Boyalı duvar, pürüzlü sıva veya tozlu yüzeylerde tutunma sağlanamaz — bu yüzeylere montajı önermiyoruz. Kurallara uygun uygulamada testlerimizde yaklaşık 4 kg yükü sorunsuz taşıdı; ısı uygulanmadan hemen yük konursa tutunma zayıflar ve ürün düşebilir. Söküldüğünde yüzeyde iz bırakmaz; ürünü başka yere taşımak isterseniz yeni çift taraflı bant uygulanması gerekir."
     },
     {
       "id": "kargo-teslimat",
@@ -75,7 +75,31 @@
       "id": "ozel-siparis",
       "baslik": "Özel ölçü sipariş",
       "kaynak": "site-faq + site-yasal",
-      "metin": "Atölye üretimi olduğu için sınırlı sayıda özel ölçü sipariş alınır. WhatsApp Business üzerinden istediğiniz ürünün çizimini/ölçüsünü paylaşın; üretilebilirlik ve fiyat bilgisi verilir. Renk seçeneği yoktur (304 doğal satin doku). Önemli: kişiye özel üretimlerde 14 günlük cayma hakkı yasa gereği geçerli değildir; sipariş onayından önce bu yazılı olarak teyit edilir."
+      "metin": "Atölye üretimi olduğu için sınırlı sayıda özel ölçü sipariş alınır. WhatsApp Business üzerinden istediğiniz ürünün çizimini/ölçüsünü paylaşın; üretilebilirlik ve fiyat bilgisi verilir. Renk seçeneği yoktur (304 doğal satin doku). Önemli: kişiye özel üretimlerde 14 günlük cayma hakkı yasa gereği geçerli değildir; sipariş onayından önce bu yazılı olarak teyit edilir. Üretim süresi projeye göre değişir — teklifle birlikte net süre bildirilir. Ölçü ve detaylar WhatsApp üzerinden konuşulur, size özel fiyat teklifi hazırlanıp sunulur; ödeme koşulları teklifle birlikte netleştirilir."
+    },
+    {
+      "id": "urun-gami",
+      "baslik": "Ürün ailemiz — seriler ve çeşitler",
+      "metin": "fnoren ürün ailesi — tüm ürünler 304 paslanmaz çeliktir, Bursa'daki atölyemizde üretilir.\nBanyo: köşe rafı 2 çeşit (Serel, Reone) · çift taraflı duvar rafı 2 çeşit (Serel, Reone) · duvar rafı (Stryn) · tuvalet kağıdı askısı 4 çeşit (Serel, Reone, Era, ion).\nMutfak: kesme tahtası 2 boy (Vayon 24×34 ve 28×38 cm) + ikili set · masaüstü peçetelik (Linvo) · rulo havlu tutacağı (Linore).\nGenel: kapı/duvar askılığı (Docka).\nSerilerimiz: Serel, Reone, Stryn, Era, ion, Vayon, Linvo, Linore, Docka. Seriler arasında malzeme farkı yoktur — fark tasarım ve desendedir. Fiyat ve ölçüler her ürünün kendi sayfasındadır.",
+      "kaynak": "katalog envanteri NJ-378 (Recak onaylı)"
+    },
+    {
+      "id": "ekran-gercek-gorunum",
+      "baslik": "Fotoğraftaki ile gerçek görünüm aynı mı?",
+      "metin": "Ürünlerimizin yüzeyi fırçalanmış (hairline) 304 paslanmaz çeliktir; parlaklık ortam ışığına göre değişir — gün ışığında daha mat, spot ışıkta daha parlak görünür. Doku ve form fotoğraftakiyle birebir aynıdır. Emin olamadıysanız WhatsApp hattımızdan yazın, ürünün güncel fotoğraf ve videosunu paylaşalım.",
+      "kaynak": "NJ-378 Recak onaylı taslak"
+    },
+    {
+      "id": "islak-alan-dus",
+      "baslik": "Duş içinde / ıslak alanda kullanılır mı?",
+      "metin": "Tüm ürünlerimiz 304 paslanmaz çeliktir — duş içi dahil ıslak alanlarda güvenle kullanılır, paslanmaz. Kireç ve su lekesi birikimini önlemek için ara sıra yumuşak bezle kurulamanız yeterlidir; ayrıntılar bakım kartımızdadır.",
+      "kaynak": "NJ-378 Recak onaylı taslak"
+    },
+    {
+      "id": "kargo-hasar",
+      "baslik": "Kargoda hasarlı ürün gelirse ne yapmalıyım?",
+      "metin": "Ürünlerimiz kırılmaz — 304 paslanmaz çeliktir; nadiren, uzun parçalarda taşıma sırasında ezilme/yamulma olabilir. Paketi teslim alırken ambalajda belirgin ezilme/yırtılma görürseniz kargo görevlisinden hasar tespit tutanağı isteyebilirsiniz; tutanak düzenlenmese bile haklarınız kaybolmaz. Ürünü teslim alın ve hasarı 48 saat içinde bize bildirin: birkaç fotoğrafla birlikte, satın aldığınız platformun mesaj/iade bölümünden ya da dilerseniz WhatsApp hattımızdan. Hasarlı ürün iade sürecine alınır; ürün bize ulaşıp incelendikten sonra yenisi ücretsiz gönderilir. 14 günlük cayma ve ayıplı ürün haklarınız her durumda saklıdır.",
+      "kaynak": "NJ-378 Recak onaylı (48 saat + ücretsiz değişim teyitli)"
     }
   ]
 }
