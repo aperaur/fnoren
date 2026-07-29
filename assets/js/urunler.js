@@ -1,6 +1,7 @@
 /* urunler.js — fnoren Swiss Industrial v3.2 — PIM-aligned NJ-329 */
 const SHOPIER_BASE = "https://www.shopier.com/ShowProduct/api/?s=";
 const HB_STORE     = "https://www.hepsiburada.com/magaza/fnoren";
+const UC_KODLAR    = ["FNB001", "FNB005", "FNB007"];   // 3B modeli hazır ürünler (NJ-392)
 
 async function urunleriYukle(hedefId, limit = 0, kategori = null) {
   const hedef = document.getElementById(hedefId);
@@ -16,11 +17,9 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
     return;
   }
 
-  let urunler = (veri.urunler || []).filter(u => {
-    if (u.durum !== "aktif") return false;
-    const pl = u.platform_links || {};
-    return Boolean(pl.shopier || pl.hepsiburada);
-  });
+  // NJ-392 Recak: aktif ürün platform linki olmasa da vitrinde durur
+  // (stok/link yoksa satın alma butonları zaten koşullu gizli)
+  let urunler = (veri.urunler || []).filter(u => u.durum === "aktif");
 
   if (kategori) {
     const katMap = { mutfak: "K", banyo: "B", giris: "E", aksesuar: "A" };
@@ -55,7 +54,7 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
     const seri     = u.seri || u.ad || "";
     const baseKod  = u.base_kod || "";
     const kisa     = u.aciklama_tr || "";
-    const cb       = "?v=nj329";
+    const cb       = "?v=nj392g";
 
     const kart = document.createElement("div");
     kart.className = "urun-kart fade-in";
@@ -79,6 +78,7 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
       <span class="card-mark-tl"></span>
       <span class="card-mark-br"></span>
       <div class="urun-img-wrap">
+        ${UC_KODLAR.includes(baseKod) ? '<span class="uc-rozet mono">3B</span>' : ''}
         <img src="assets/img/products/${baseKod}.jpg${cb}" alt="${ad}" loading="lazy" width="400" height="400">
       </div>
       <span class="label mono meta-num" style="display:block;margin-bottom:0.25rem;font-size:0.625rem">${baseKod}</span>
@@ -101,11 +101,80 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
   hedef.querySelectorAll(".fade-in").forEach(el => obs.observe(el));
 }
 
+// "Yakında" vitrini — kod atanmamış tasarımlar, 3B stilize model kartları (NJ-392 Recak: model kullan)
+async function yakindaYukle(hedefId) {
+  const hedef = document.getElementById(hedefId);
+  if (!hedef) return;
+
+  let veri;
+  try {
+    const resp = await fetch("data/yakinda.json");
+    if (!resp.ok) return;
+    veri = await resp.json();
+  } catch (e) { return; }
+
+  const modeller = veri.modeller || [];
+  if (!modeller.length) return;
+
+  const bolum = document.getElementById("yakinda-bolum");
+  if (bolum) bolum.hidden = false;
+
+  if (!document.getElementById("mv-modul")) {
+    const mv = document.createElement("script");
+    mv.id = "mv-modul";
+    mv.type = "module";
+    mv.src = "assets/3d/model-viewer.min.js?v=nj392g";
+    document.head.appendChild(mv);
+  }
+
+  hedef.innerHTML = "";
+  modeller.forEach((m, i) => {
+    const kart = document.createElement("div");
+    kart.className = "urun-kart urun-kart--yakinda fade-in";
+    kart.style.transitionDelay = `${i * 60}ms`;
+    kart.innerHTML = `
+      <span class="card-mark-tl"></span>
+      <span class="card-mark-br"></span>
+      <div class="urun-img-wrap yakinda-viewer">
+        <model-viewer src="${m.dosya}?v=nj392g" camera-controls auto-rotate disable-zoom
+          rotation-per-second="9deg" tone-mapping="commerce" interaction-prompt="none"
+          loading="lazy" camera-orbit="${m.az} 72deg 115%" field-of-view="30deg"
+          environment-image="neutral" exposure="1.0" style="background:${m.fon}"
+          alt="${m.ad} — 3B önizleme"></model-viewer>
+      </div>
+      <h3>${m.ad}</h3>
+      <span class="label meta-tri" style="display:block;margin-top:0.125rem;font-size:0.5625rem">304 paslanmaz çelik</span>
+      <div class="stok-badge stok-badge--soon" style="margin:0.75rem 0 0">
+        <span class="stok-dot stok-soon"></span>
+        Yakında
+      </div>
+    `;
+    hedef.appendChild(kart);
+  });
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  hedef.querySelectorAll(".fade-in").forEach(el => obs.observe(el));
+}
+
 // Kategori filtresi — URL sync ile
 function kategoriFiltre(btn, kat) {
   document.querySelectorAll(".kat-btn").forEach(b => b.classList.remove("active"));
   btn.classList.add("active");
   urunleriYukle("urun-grid", 0, kat === "hepsi" ? null : kat);
+
+  // NJ-393: Yakında bölümü yalnız "Hepsi" görünümünde (kategori altında karışma fix)
+  const yb = document.getElementById("yakinda-bolum");
+  if (yb) {
+    if (kat === "hepsi") {
+      const grid = document.getElementById("yakinda-grid");
+      if (grid && grid.children.length) yb.hidden = false;
+      else yakindaYukle("yakinda-grid");
+    } else {
+      yb.hidden = true;
+    }
+  }
 
   // URL state — geri butonu çalışır, paylaşılabilir
   const url = new URL(window.location.href);

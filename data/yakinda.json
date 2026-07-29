@@ -1,0 +1,148 @@
+{
+  "modeller": [
+    {
+      "slug": "aql",
+      "ad": "Aql",
+      "dosya": "assets/3d/yakinda/aql_stil.glb",
+      "fon": "#EDEAE3",
+      "az": "-5deg",
+      "olcu_mm": [
+        220,
+        90,
+        44
+      ]
+    },
+    {
+      "slug": "arelon",
+      "ad": "Arelon",
+      "dosya": "assets/3d/yakinda/arelon_stil.glb",
+      "fon": "#E6EBE6",
+      "az": "32deg",
+      "olcu_mm": [
+        218,
+        53,
+        202
+      ]
+    },
+    {
+      "slug": "gingko",
+      "ad": "Gingko",
+      "dosya": "assets/3d/yakinda/gingko_stil.glb",
+      "fon": "#E9EAEE",
+      "az": "19deg",
+      "olcu_mm": [
+        220,
+        89,
+        44
+      ]
+    },
+    {
+      "slug": "lupus",
+      "ad": "Lupus",
+      "dosya": "assets/3d/yakinda/lupus_stil.glb",
+      "fon": "#EFE9E4",
+      "az": "6deg",
+      "olcu_mm": [
+        220,
+        90,
+        44
+      ]
+    },
+    {
+      "slug": "maris",
+      "ad": "Maris",
+      "dosya": "assets/3d/yakinda/maris_stil.glb",
+      "fon": "#EDEAE3",
+      "az": "43deg",
+      "olcu_mm": [
+        220,
+        86,
+        44
+      ]
+    },
+    {
+      "slug": "runa",
+      "ad": "Runa",
+      "dosya": "assets/3d/yakinda/runa_stil.glb",
+      "fon": "#E6EBE6",
+      "az": "30deg",
+      "olcu_mm": [
+        220,
+        90,
+        44
+      ]
+    },
+    {
+      "slug": "semen",
+      "ad": "Semen",
+      "dosya": "assets/3d/yakinda/semen_stil.glb",
+      "fon": "#E9EAEE",
+      "az": "17deg",
+      "olcu_mm": [
+        220,
+        90,
+        44
+      ]
+    },
+    {
+      "slug": "sol",
+      "ad": "Sol",
+      "dosya": "assets/3d/yakinda/sol_stil.glb",
+      "fon": "#EFE9E4",
+      "az": "4deg",
+      "olcu_mm": [
+        220,
+        90,
+        44
+      ]
+    },
+    {
+      "slug": "umbe",
+      "ad": "Umbe",
+      "dosya": "assets/3d/yakinda/umbe_stil.glb",
+      "fon": "#EDEAE3",
+      "az": "41deg",
+      "olcu_mm": [
+        220,
+        89,
+        44
+      ]
+    },
+    {
+      "slug": "ucgen-pecetelik",
+      "ad": "Üçgen Peçetelik N2",
+      "dosya": "assets/3d/yakinda/ucgen-pecetelik_stil.glb",
+      "fon": "#E6EBE6",
+      "az": "28deg",
+      "olcu_mm": [
+        220,
+        90,
+        44
+      ]
+    },
+    {
+      "slug": "elbise-aski",
+      "ad": "Elbise Askısı",
+      "dosya": "assets/3d/yakinda/elbise-aski_stil.glb",
+      "fon": "#E9EAEE",
+      "az": "15deg",
+      "olcu_mm": [
+        388,
+        168,
+        2
+      ]
+    },
+    {
+      "slug": "havlu-aski",
+      "ad": "Havlu Askısı",
+      "dosya": "assets/3d/yakinda/havlu-aski_stil.glb",
+      "fon": "#EFE9E4",
+      "az": "2deg",
+      "olcu_mm": [
+        40,
+        61,
+        49
+      ]
+    }
+  ]
+}

@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Fnoren üretim — Bursa Ovaakça atölyesinde 304 paslanmaz çelik. Lazer kesim, büküm, kaynak, satin finish.">
   <title>Üretim — Fnoren</title>
-  <link rel="icon" href="assets/img/brand/logo.png" type="image/png">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/brand/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
   <link rel="canonical" href="https://fnoren.com/uretim.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=nj330c">
+  <link rel="stylesheet" href="assets/css/main.css?v=nj392g">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Fnoren">
   <meta property="og:title" content="Üretim — Fnoren">
@@ -163,8 +165,8 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-icon"><img src="assets/img/brand/logo.png" alt="Fn."></a>
-  <a href="index.html" class="nav-brand">Fnoren</a>
+  <a href="index.html" class="nav-icon"><img src="assets/img/brand/logo.svg" alt="Fn."></a>
+  <a href="index.html" class="nav-brand"><img src="assets/img/brand/wordmark.svg" alt="Fnoren"></a>
   <ul class="nav-links">
     <li><a href="urunler.html">Ürünler</a></li>
     <li><a href="hakkimizda.html">Hakkımızda</a></li>
@@ -272,7 +274,7 @@
       <ul>
         <li><a href="urunler.html?kategori=mutfak">Mutfak</a></li>
         <li><a href="urunler.html?kategori=banyo">Banyo</a></li>
-        <li><a href="urunler.html?kategori=giris">Giriş</a></li>
+        <li><a href="urunler.html?kategori=giris">Genel</a></li>
         <li><a href="urunler.html">Tüm Ürünler</a></li>
       </ul>
     </div>
@@ -306,8 +308,27 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=nj330c"></script>
-<script src="assets/js/cookie-consent.js?v=nj330c"></script>
-<script src="assets/js/whatsapp-cta.js?v=nj330c"></script>
+<button id="chat-toggle" title="Destek" aria-label="Destek sohbetini aç">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </svg>
+</button>
+<div id="chat-panel">
+  <div class="chat-header">
+    <span>Fnoren Destek</span>
+    <button id="chat-close" aria-label="Sohbeti kapat" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:1rem;line-height:1">✕</button>
+  </div>
+  <div class="chat-msgs" id="chat-msgs"></div>
+  <div class="chat-input-row">
+    <label for="chat-input" class="sr-only">Sorunuz</label>
+    <input id="chat-input" type="text" placeholder="Soru sorun..." autocomplete="off">
+    <button id="chat-send" aria-label="Gönder">→</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js?v=nj392g"></script>
+<script src="assets/js/cookie-consent.js?v=nj392g"></script>
+<script src="assets/js/whatsapp-cta.js?v=nj392g"></script>
+<script src="assets/js/widget.js?v=nj392g"></script>
 </body>
 </html>

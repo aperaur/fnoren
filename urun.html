@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Fnoren ürün detayı — 304 paslanmaz çelik.">
   <title>Ürün — Fnoren</title>
-  <link rel="icon" href="assets/img/brand/logo.png" type="image/png">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/brand/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=nj330a">
+  <link rel="stylesheet" href="assets/css/main.css?v=nj392g">
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-icon"><img src="assets/img/brand/logo.png" alt="Fn."></a>
-  <a href="index.html" class="nav-brand">Fnoren</a>
+  <a href="index.html" class="nav-icon"><img src="assets/img/brand/logo.svg" alt="Fn."></a>
+  <a href="index.html" class="nav-brand"><img src="assets/img/brand/wordmark.svg" alt="Fnoren"></a>
   <ul class="nav-links">
     <li><a href="urunler.html">Ürünler</a></li>
     <li><a href="hakkimizda.html">Hakkımızda</a></li>
@@ -45,7 +47,7 @@
       <ul>
         <li><a href="urunler.html?kategori=mutfak">Mutfak</a></li>
         <li><a href="urunler.html?kategori=banyo">Banyo</a></li>
-        <li><a href="urunler.html?kategori=giris">Giriş</a></li>
+        <li><a href="urunler.html?kategori=giris">Genel</a></li>
         <li><a href="urunler.html">Tüm Ürünler</a></li>
       </ul>
     </div>
@@ -79,9 +81,28 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=nj330a"></script>
-<script src="assets/js/cookie-consent.js?v=nj330a"></script>
-<script src="assets/js/whatsapp-cta.js?v=nj330a"></script>
+<button id="chat-toggle" title="Destek" aria-label="Destek sohbetini aç">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </svg>
+</button>
+<div id="chat-panel">
+  <div class="chat-header">
+    <span>Fnoren Destek</span>
+    <button id="chat-close" aria-label="Sohbeti kapat" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:1rem;line-height:1">✕</button>
+  </div>
+  <div class="chat-msgs" id="chat-msgs"></div>
+  <div class="chat-input-row">
+    <label for="chat-input" class="sr-only">Sorunuz</label>
+    <input id="chat-input" type="text" placeholder="Soru sorun..." autocomplete="off">
+    <button id="chat-send" aria-label="Gönder">→</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js?v=nj392g"></script>
+<script src="assets/js/cookie-consent.js?v=nj392g"></script>
+<script src="assets/js/whatsapp-cta.js?v=nj392g"></script>
+<script src="assets/js/widget.js?v=nj392g"></script>
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
@@ -90,7 +111,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const SHOPIER_BASE = "https://www.shopier.com/ShowProduct/api/?s=";
   const HB_STORE     = "https://www.hepsiburada.com/magaza/fnoren";
-  const katMap = { K: "Mutfak", B: "Banyo", E: "Giriş", A: "Aksesuar" };
+  const katMap = { K: "Mutfak", B: "Banyo", E: "Genel", A: "Aksesuar" };
 
   let veri;
   try {
@@ -114,7 +135,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const kisa      = urun.aciklama_tr || "";
   const paragraflar = urun.aciklama_paragraflar || [];
   const ozellikler  = urun.ozellikler || {};
-  const cb        = "?v=nj329h";
+  const cb        = "?v=nj392g";
 
   document.title = `${ad} — Fnoren`;
 
@@ -286,6 +307,35 @@ document.addEventListener("DOMContentLoaded", async () => {
       </section>
     `;
     document.querySelector('section.section').insertAdjacentHTML('afterend', crossHtml);
+  }
+
+  // ── 3B stilize sergi (NJ-392) — modeli hazır ürünlerde, kil+kontur dili ──
+  const UC_BOYUT = {
+    FNB005: { az: "28deg",  fon: "#EDEAE3", olcu: "400 × 100 mm · yapışkanlı montaj" },
+    FNB007: { az: "-32deg", fon: "#E6EBE6", olcu: "324 × 93 mm · rulo kolu 170 mm" },
+    FNB001: { az: "36deg",  fon: "#E9EAEE", olcu: "202 × 202 mm · köşeye 45° montaj" }
+  };
+  const u3 = UC_BOYUT[kod];
+  if (u3) {
+    const mv = document.createElement("script");
+    mv.type = "module";
+    mv.src = `assets/3d/model-viewer.min.js${cb}`;
+    document.head.appendChild(mv);
+    document.querySelector("section.section").insertAdjacentHTML("afterend", `
+      <section class="uc-boyut">
+        <div class="container">
+          <span class="label mono">3B İNCELE</span>
+          <h2 class="uc-baslik">Elinizde çevirir gibi</h2>
+          <div class="uc-viewer-wrap">
+            <model-viewer src="assets/3d/${kod}_stil.glb${cb}" camera-controls auto-rotate
+              rotation-per-second="10deg" tone-mapping="commerce" disable-zoom
+              camera-orbit="${u3.az} 72deg 112%" field-of-view="30deg"
+              environment-image="neutral" exposure="1.0" shadow-intensity="0.9" shadow-softness="0.9"
+              style="background:${u3.fon}" alt="${ad} — 3B stilize model"></model-viewer>
+            <div class="uc-olcu mono">${u3.olcu} · 304 çelik · stilize sergi modeli, gerçek ölçülerde</div>
+          </div>
+        </div>
+      </section>`);
   }
 
   // Mobile sticky CTA bar — sadece satış kanalı buton(lar)ı varsa

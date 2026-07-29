@@ -134,23 +134,24 @@ nav {
   align-items: center;
   flex-shrink: 0;
 }
-.nav-icon img { height: 64px; width: auto; filter: brightness(0.3); }
+/* NJ-392: SVG'nin viewBox'i icerige daraltildi (tuvaldeki bos pay atildi),
+   bu yukseklik artik dogrudan gorsel yukseklik. 72px nav icinde ust/alt nefes payi. */
+.nav-icon img { height: 58px; width: auto; }
 .nav-icon:hover { opacity: 0.7; }
 
+/* NJ-392: marka yazisi web-fontu (Hybrid/cdnfonts) yerine SVG wordmark.
+   Gerekce: font render'inda cizgi kalinligi ve harf araligi kontrol edilemiyordu.
+   Metin karsiligi <img alt="Fnoren"> icinde korunur. */
 .nav-brand {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family: var(--font-brand);
-  font-size: 4rem;
-  font-weight: 400;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: #5A5A66;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  white-space: nowrap;
 }
-.nav-brand:hover { color: var(--text); }
+.nav-brand img { height: 36px; width: auto; display: block; }
+.nav-brand:hover { opacity: 0.7; }
 
 .nav-links { list-style: none; display: flex; gap: 2rem; margin-left: auto; }
 .nav-links a {
@@ -479,10 +480,12 @@ footer {
 .footer-links { display: flex; gap: 2rem; }
 
 /* ── CHAT WIDGET ──────────────────────── */
+/* NJ-392: destek balonu WhatsApp'tan kucuktu (44 vs 56) — oncelik tersine donmustu.
+   Sohbet 60px'e cikti, WhatsApp 46px'e indi (whatsapp-cta.js). */
 #chat-toggle {
   position: fixed;
   bottom: 2rem; right: 2rem;
-  width: 44px; height: 44px;
+  width: 60px; height: 60px;
   background: var(--text);
   color: var(--bg);
   border: none;
@@ -495,9 +498,16 @@ footer {
 }
 #chat-toggle:hover { background: var(--accent); }
 
+/* NJ-392: cerez bandi acikken destek balonu ve WhatsApp bandin altinda kaliyordu
+   (banner z-index 9998 > wa-fab 9996 > chat-toggle 200). Band yuksekligi
+   cookie-consent.js tarafindan --cerez-h degiskenine yazilir. */
+body.cerez-acik #chat-toggle { bottom: calc(2rem + var(--cerez-h, 0px) + 0.75rem); }
+body.cerez-acik .wa-fab { bottom: calc(24px + var(--cerez-h, 0px) + 12px) !important; }
+body.cerez-acik #chat-panel { bottom: calc(6.5rem + var(--cerez-h, 0px) + 0.75rem); }
+
 #chat-panel {
   position: fixed;
-  bottom: 5.5rem; right: 2rem;
+  bottom: 6.5rem; right: 2rem;
   width: 300px;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -540,6 +550,22 @@ footer {
 .msg-user { background: var(--text); color: var(--bg); align-self: flex-end; }
 .msg-bot  { background: var(--surface2); color: var(--text); align-self: flex-start; border: 1px solid var(--border); }
 .msg.typing { color: var(--muted); font-style: italic; }
+
+/* ── 3B stilize sergi — urun.html bloğu + vitrin kart rozeti (NJ-392) ── */
+.uc-boyut { padding: 4rem 0 4.5rem; }
+.uc-boyut .uc-baslik { margin: 0.4rem 0 1.5rem; }
+.uc-viewer-wrap { border: 1px solid var(--border); background: var(--surface); }
+.uc-viewer-wrap model-viewer { width: 100%; height: min(62vh, 540px); display: block; }
+.uc-olcu { padding: 0.7rem 1.1rem; font-size: 0.72rem; letter-spacing: 0.08em; color: var(--muted); border-top: 1px solid var(--border); }
+.urun-img-wrap { position: relative; }
+.uc-rozet { position: absolute; top: 0.55rem; right: 0.55rem; background: var(--text); color: #fff; font-size: 0.5625rem; letter-spacing: 0.14em; padding: 0.22rem 0.5rem; z-index: 2; }
+
+/* ── "Yakında" vitrini — kod atanmamış tasarımlar, 3B kartlar (NJ-392) ── */
+.urun-kart--yakinda { cursor: default; }
+.urun-kart--yakinda .urun-img-wrap img { opacity: 0.92; }
+.yakinda-viewer model-viewer { width: 100%; aspect-ratio: 1 / 1; display: block; }
+.stok-badge--soon { color: var(--steel); }
+.stok-soon { background: var(--steel); }
 
 .chat-input-row { display: flex; border-top: 1px solid var(--border); }
 #chat-input {
@@ -1363,7 +1389,7 @@ select:focus-visible {
 
 /* ── RESPONSIVE ───────────────────────── */
 @media (max-width: 960px) {
-  .nav-brand { font-size: 2.5rem; }
+  .nav-brand img { height: 22px; }
   .urun-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-visual { min-height: 300px; }
@@ -1386,7 +1412,7 @@ select:focus-visible {
 @media (max-width: 540px) {
   .urun-grid { grid-template-columns: 1fr; }
   .nav-links { gap: 1rem; }
-  .nav-brand { font-size: 1.5rem; letter-spacing: 0.15em; }
+  .nav-brand img { height: 14px; }
   .nav-icon img { height: 28px; }
   .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
   .footer-links { flex-wrap: wrap; justify-content: center; }

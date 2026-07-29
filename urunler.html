@@ -6,11 +6,13 @@
   <meta name="description" content="Fnoren ürün kataloğu — 304 paslanmaz çelik mutfak ve banyo aksesuarları.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.cdnfonts.com; font-src https://fonts.gstatic.com https://fonts.cdnfonts.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net; connect-src 'self' https://aur-node.tailfc3e18.ts.net https://www.google-analytics.com https://connect.facebook.net; img-src 'self' data: https://cdn.shopier.app https://www.facebook.com;">
   <title>Ürünler — Fnoren</title>
-  <link rel="icon" href="assets/img/brand/logo.png" type="image/png">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/brand/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=nj330a">
+  <link rel="stylesheet" href="assets/css/main.css?v=nj392g">
   <link rel="canonical" href="https://fnoren.com/urunler.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Fnoren">
@@ -37,8 +39,8 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-icon"><img src="assets/img/brand/logo.png" alt="Fn."></a>
-  <a href="index.html" class="nav-brand">Fnoren</a>
+  <a href="index.html" class="nav-icon"><img src="assets/img/brand/logo.svg" alt="Fn."></a>
+  <a href="index.html" class="nav-brand"><img src="assets/img/brand/wordmark.svg" alt="Fnoren"></a>
   <ul class="nav-links">
     <li><a href="urunler.html" class="active">Ürünler</a></li>
     <li><a href="hakkimizda.html">Hakkımızda</a></li>
@@ -56,10 +58,18 @@
       <button class="kat-btn active" onclick="kategoriFiltre(this,'hepsi')">Hepsi</button>
       <button class="kat-btn" onclick="kategoriFiltre(this,'mutfak')">Mutfak</button>
       <button class="kat-btn" onclick="kategoriFiltre(this,'banyo')">Banyo</button>
-      <button class="kat-btn" onclick="kategoriFiltre(this,'giris')">Giriş</button>
+      <button class="kat-btn" onclick="kategoriFiltre(this,'giris')">Genel</button>
     </div>
 
     <div class="urun-grid" id="urun-grid"></div>
+
+    <div id="yakinda-bolum" hidden>
+      <hr class="divider" style="margin-top:4rem">
+      <span class="label">Atölyeden</span>
+      <h2 style="margin-top:0.5rem;margin-bottom:0.4rem">Yakında</h2>
+      <p style="max-width:52ch;margin-bottom:1.5rem">Tasarımı hazır, üretim sırası bekleyen modeller — 3B önizleme. Fareyle çevirebilirsiniz; satışa çıktığında bu sayfada yerini alır.</p>
+      <div class="urun-grid" id="yakinda-grid"></div>
+    </div>
   </div>
 </section>
 
@@ -73,7 +83,7 @@
       <ul>
         <li><a href="urunler.html?kategori=mutfak">Mutfak</a></li>
         <li><a href="urunler.html?kategori=banyo">Banyo</a></li>
-        <li><a href="urunler.html?kategori=giris">Giriş</a></li>
+        <li><a href="urunler.html?kategori=giris">Genel</a></li>
         <li><a href="urunler.html">Tüm Ürünler</a></li>
       </ul>
     </div>
@@ -107,8 +117,8 @@
   </div>
 </footer>
 
-<button id="chat-toggle" title="Destek" aria-label="Destek">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+<button id="chat-toggle" title="Destek" aria-label="Destek sohbetini aç">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
   </svg>
 </button>
@@ -124,11 +134,11 @@
   </div>
 </div>
 
-<script src="assets/js/main.js?v=nj330a"></script>
-<script src="assets/js/cookie-consent.js?v=nj330a"></script>
-<script src="assets/js/whatsapp-cta.js?v=nj330a"></script>
-<script src="assets/js/urunler.js"></script>
-<script src="assets/js/widget.js?v=nj378a"></script>
+<script src="assets/js/main.js?v=nj392g"></script>
+<script src="assets/js/cookie-consent.js?v=nj392g"></script>
+<script src="assets/js/whatsapp-cta.js?v=nj392g"></script>
+<script src="assets/js/urunler.js?v=nj393a"></script>
+<script src="assets/js/widget.js?v=nj392g"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
@@ -142,6 +152,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.title = `${kat.charAt(0).toUpperCase()+kat.slice(1)} — Fnoren`;
   } else {
     urunleriYukle("urun-grid");
+  }
+  // NJ-393: Yakında yalnız "Hepsi" görünümünde — kategori seçiliyken ürünler bitince
+  // hemen altında belirip kategoriyle karışıyordu (Recak)
+  if (!kat || !validKats.includes(kat)) {
+    yakindaYukle("yakinda-grid");
   }
 });
 </script>

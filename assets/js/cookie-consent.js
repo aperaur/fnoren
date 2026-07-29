@@ -76,6 +76,16 @@
     banner.setAttribute("aria-modal", "false"); // non-blocking, sayfaya devam edilebilir
     document.body.appendChild(banner);
 
+    // NJ-392: banner z-index 9998 — destek balonu (200) ve WhatsApp (9996) altinda
+    // kaliyordu, yani cerez kabul edilene kadar ikisi de tiklanamiyordu. Bandin
+    // gercek yuksekligi olculup degiskene yazilir; CSS ikonlari o kadar yukari alir.
+    const _yukselt = () => {
+      document.documentElement.style.setProperty("--cerez-h", banner.offsetHeight + "px");
+      document.body.classList.add("cerez-acik");
+    };
+    _yukselt();
+    window.addEventListener("resize", _yukselt);
+
     const styleEl = document.createElement("style");
     styleEl.textContent = "@keyframes cookieFade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}";
     document.head.appendChild(styleEl);
@@ -87,6 +97,8 @@
       banner.style.transition = "opacity 0.3s, transform 0.3s";
       banner.style.opacity = "0";
       banner.style.transform = "translateY(20px)";
+      window.removeEventListener("resize", _yukselt);
+      document.body.classList.remove("cerez-acik");
       setTimeout(() => banner.remove(), 300);
     }
 

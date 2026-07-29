@@ -14,8 +14,8 @@
         z-index: 9996;
         background: #25D366;
         color: #fff;
-        width: 56px;
-        height: 56px;
+        width: 46px;
+        height: 46px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -29,7 +29,7 @@
         transform: scale(1.08);
         box-shadow: 0 6px 24px rgba(37,211,102,0.45);
       }
-      .wa-fab svg { width: 30px; height: 30px; fill: #fff; }
+      .wa-fab svg { width: 24px; height: 24px; fill: #fff; }
       .wa-fab-label {
         position: absolute;
         left: 68px;
@@ -56,10 +56,10 @@
         .wa-fab {
           bottom: 16px;
           left: 16px;
-          width: 52px;
-          height: 52px;
+          width: 42px;
+          height: 42px;
         }
-        .wa-fab svg { width: 26px; height: 26px; }
+        .wa-fab svg { width: 22px; height: 22px; }
         .wa-fab-label { display: none; }
       }
     `;
