@@ -109,6 +109,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   const kod = params.get("kod");
   if (!kod) { window.location.href = "urunler.html"; return; }
 
+  // NJ-393 — bu şablon artık yalnız ESKİ ?kod= adreslerini taşıyıcıdır.
+  // Ürün sayfaları /urun/<seri>/<slug>.html: içerik KAYNAK HTML'de. Sebep:
+  // bu şablonun kaynağı tüm ürünlerde aynıydı, Google birinci render dalgasında
+  // hiçbir ürün içeriği göremeyip 15 sayfayı tek sayfanın kopyası sayıyordu.
+  // Harita okunamazsa aşağıdaki eski render yedek olarak çalışmaya devam eder.
+  try {
+    const hr = await fetch("data/url_haritasi.json");
+    if (hr.ok) {
+      const harita = await hr.json();
+      const hedef = (harita[kod] || {}).url;
+      if (hedef) { window.location.replace(hedef); return; }
+    }
+  } catch (e) { /* sessiz: yedek render devam */ }
+
   const SHOPIER_BASE = "https://www.shopier.com/ShowProduct/api/?s=";
   const HB_STORE     = "https://www.hepsiburada.com/magaza/fnoren";
   const katMap = { K: "Mutfak", B: "Banyo", E: "Genel", A: "Aksesuar" };

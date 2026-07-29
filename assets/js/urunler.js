@@ -3,13 +3,32 @@ const SHOPIER_BASE = "https://www.shopier.com/ShowProduct/api/?s=";
 const HB_STORE     = "https://www.hepsiburada.com/magaza/fnoren";
 const UC_KODLAR    = ["FNB001", "FNB005", "FNB007"];   // 3B modeli hazır ürünler (NJ-392)
 
+/* NJ-393 — ürün sayfaları artık /urun/<seri>/<slug>.html statik dosyaları.
+   Harita tools/fnoren_urun_sayfa_uret.py tarafından üretilir. Harita gelmezse
+   eski ?kod= yoluna düşer (o yol da yeni adrese yönlendiriyor). */
+let URL_HARITASI = null;
+
+async function haritayiYukle() {
+  if (URL_HARITASI) return URL_HARITASI;
+  try {
+    const r = await fetch("data/url_haritasi.json");
+    if (r.ok) URL_HARITASI = await r.json();
+  } catch (e) { /* sessiz: fallback zaten var */ }
+  return URL_HARITASI;
+}
+
+function urunAdresi(baseKod) {
+  const kayit = URL_HARITASI && URL_HARITASI[baseKod];
+  return (kayit && kayit.url) ? kayit.url : `urun.html?kod=${baseKod}`;
+}
+
 async function urunleriYukle(hedefId, limit = 0, kategori = null) {
   const hedef = document.getElementById(hedefId);
   if (!hedef) return;
 
   let veri;
   try {
-    const resp = await fetch("data/urunler.json");
+    const [resp] = await Promise.all([fetch("data/urunler.json"), haritayiYukle()]);
     if (!resp.ok) throw new Error("Veri yüklenemedi");
     veri = await resp.json();
   } catch (e) {
@@ -69,7 +88,7 @@ async function urunleriYukle(hedefId, limit = 0, kategori = null) {
           item_brand: "Fnoren"
         });
       }
-      window.location.href = `urun.html?kod=${baseKod}`;
+      window.location.href = urunAdresi(baseKod);
     };
     const buttons = [];
     if (hbUrl)  buttons.push(`<a href="${hbUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-hb" onclick="event.stopPropagation()">Hepsiburada'da Gör →</a>`);
