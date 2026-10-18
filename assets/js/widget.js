@@ -12,10 +12,12 @@ function widgetInit() {
 
   if (!toggle || !panel) return;
 
-  // Session ID
+  // Session ID — NJ-468: tahmin edilemez kimlik (Math.random kriptografik değil); eski "s_xxxxxxxx" kimliği geçerli kalır
   let sessionId = localStorage.getItem("fnoren_session");
   if (!sessionId) {
-    sessionId = "s_" + Math.random().toString(36).slice(2, 10);
+    const rastgele = crypto.randomUUID ? crypto.randomUUID().replace(/-/g, "")
+      : Array.from(crypto.getRandomValues(new Uint8Array(16)), b => b.toString(16).padStart(2, "0")).join("");
+    sessionId = "s_" + rastgele;
     localStorage.setItem("fnoren_session", sessionId);
   }
 
